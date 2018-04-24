@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtPw1 = new System.Windows.Forms.TextBox();
+            this.txtPw2 = new System.Windows.Forms.TextBox();
+            this.btnSubmmit = new System.Windows.Forms.Button();
+            this.btnCancle = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox2
+            // txtId
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Font = new System.Drawing.Font("Gulim", 13F);
-            this.textBox2.Location = new System.Drawing.Point(241, 159);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(127, 27);
-            this.textBox2.TabIndex = 10;
+            this.txtId.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtId.Font = new System.Drawing.Font("Gulim", 13F);
+            this.txtId.Location = new System.Drawing.Point(241, 159);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(127, 27);
+            this.txtId.TabIndex = 10;
             // 
             // label2
             // 
@@ -82,45 +82,46 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "비밀번호 확인";
             // 
-            // textBox1
+            // txtPw1
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Gulim", 13F);
-            this.textBox1.Location = new System.Drawing.Point(241, 203);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(127, 27);
-            this.textBox1.TabIndex = 13;
+            this.txtPw1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPw1.Font = new System.Drawing.Font("Gulim", 13F);
+            this.txtPw1.Location = new System.Drawing.Point(241, 203);
+            this.txtPw1.Name = "txtPw1";
+            this.txtPw1.Size = new System.Drawing.Size(127, 27);
+            this.txtPw1.TabIndex = 13;
             // 
-            // textBox3
+            // txtPw2
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.Font = new System.Drawing.Font("Gulim", 13F);
-            this.textBox3.Location = new System.Drawing.Point(241, 245);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(127, 27);
-            this.textBox3.TabIndex = 14;
+            this.txtPw2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPw2.Font = new System.Drawing.Font("Gulim", 13F);
+            this.txtPw2.Location = new System.Drawing.Point(241, 245);
+            this.txtPw2.Name = "txtPw2";
+            this.txtPw2.Size = new System.Drawing.Size(127, 27);
+            this.txtPw2.TabIndex = 14;
             // 
-            // button2
+            // btnSubmmit
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(109, 302);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 31);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "가입";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnSubmmit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSubmmit.BackColor = System.Drawing.Color.White;
+            this.btnSubmmit.Location = new System.Drawing.Point(109, 302);
+            this.btnSubmmit.Name = "btnSubmmit";
+            this.btnSubmmit.Size = new System.Drawing.Size(94, 31);
+            this.btnSubmmit.TabIndex = 15;
+            this.btnSubmmit.Text = "가입";
+            this.btnSubmmit.UseVisualStyleBackColor = false;
+            this.btnSubmmit.Click += new System.EventHandler(this.btnSubmmit_Click);
             // 
-            // button1
+            // btnCancle
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(253, 302);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 31);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "취소";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCancle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCancle.BackColor = System.Drawing.Color.White;
+            this.btnCancle.Location = new System.Drawing.Point(253, 302);
+            this.btnCancle.Name = "btnCancle";
+            this.btnCancle.Size = new System.Drawing.Size(94, 31);
+            this.btnCancle.TabIndex = 16;
+            this.btnCancle.Text = "취소";
+            this.btnCancle.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -133,22 +134,22 @@
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
-            // Join
+            // JoinForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(452, 429);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnCancle);
+            this.Controls.Add(this.btnSubmmit);
+            this.Controls.Add(this.txtPw2);
+            this.Controls.Add(this.txtPw1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.label2);
-            this.Name = "Join";
+            this.Name = "JoinForm";
             this.Text = "Join";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -158,14 +159,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtPw1;
+        private System.Windows.Forms.TextBox txtPw2;
+        private System.Windows.Forms.Button btnSubmmit;
+        private System.Windows.Forms.Button btnCancle;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

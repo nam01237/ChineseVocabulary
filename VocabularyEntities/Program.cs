@@ -10,7 +10,18 @@ namespace VocabularyEntities
     {
         static void Main(string[] args)
         {
+            using (VocabularyEntities context = new VocabularyEntities())
+            {
+                var test = context.Words.
+                            Where(x => x.WordId < 30).
+                            Select(x => x.Gancheza);
 
+
+                foreach (var item in test)
+                {
+                    Console.WriteLine(item);
+                }
+            }
         }
     }
 }

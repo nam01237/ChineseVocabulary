@@ -16,5 +16,11 @@ namespace ChineseVocabulary
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            JoinForm joinForm = new JoinForm();
+            joinForm.ShowDialog();
+        }
     }
 }
