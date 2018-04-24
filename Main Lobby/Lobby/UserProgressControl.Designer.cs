@@ -28,49 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.userProgressBar = new System.Windows.Forms.ProgressBar();
-            this.userProgress = new System.Windows.Forms.Label();
-            this.userLevelCount = new System.Windows.Forms.Label();
+            this.pgbLearn = new System.Windows.Forms.ProgressBar();
+            this.lblLearnPer = new System.Windows.Forms.Label();
+            this.lblGrade = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // userProgressBar
+            // pgbLearn
             // 
-            this.userProgressBar.BackColor = System.Drawing.Color.White;
-            this.userProgressBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.userProgressBar.Location = new System.Drawing.Point(72, 13);
-            this.userProgressBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.userProgressBar.Name = "userProgressBar";
-            this.userProgressBar.Size = new System.Drawing.Size(357, 22);
-            this.userProgressBar.TabIndex = 0;
+            this.pgbLearn.BackColor = System.Drawing.Color.White;
+            this.pgbLearn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pgbLearn.Location = new System.Drawing.Point(72, 13);
+            this.pgbLearn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pgbLearn.Name = "pgbLearn";
+            this.pgbLearn.Size = new System.Drawing.Size(357, 22);
+            this.pgbLearn.TabIndex = 0;
             // 
-            // userProgress
+            // lblLearnPer
             // 
-            this.userProgress.AutoSize = true;
-            this.userProgress.Font = new System.Drawing.Font("Gulim", 10F, System.Drawing.FontStyle.Bold);
-            this.userProgress.Location = new System.Drawing.Point(435, 17);
-            this.userProgress.Name = "userProgress";
-            this.userProgress.Size = new System.Drawing.Size(62, 14);
-            this.userProgress.TabIndex = 1;
-            this.userProgress.Text = "0  /   n";
+            this.lblLearnPer.AutoSize = true;
+            this.lblLearnPer.Font = new System.Drawing.Font("Gulim", 10F, System.Drawing.FontStyle.Bold);
+            this.lblLearnPer.Location = new System.Drawing.Point(435, 17);
+            this.lblLearnPer.Name = "lblLearnPer";
+            this.lblLearnPer.Size = new System.Drawing.Size(62, 14);
+            this.lblLearnPer.TabIndex = 1;
+            this.lblLearnPer.Text = "0  /   n";
             // 
-            // userLevelCount
+            // lblGrade
             // 
-            this.userLevelCount.AutoSize = true;
-            this.userLevelCount.Font = new System.Drawing.Font("Gulim", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.userLevelCount.Location = new System.Drawing.Point(8, 13);
-            this.userLevelCount.Name = "userLevelCount";
-            this.userLevelCount.Size = new System.Drawing.Size(45, 22);
-            this.userLevelCount.TabIndex = 2;
-            this.userLevelCount.Text = "n급";
+            this.lblGrade.AutoSize = true;
+            this.lblGrade.Font = new System.Drawing.Font("Gulim", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblGrade.Location = new System.Drawing.Point(8, 13);
+            this.lblGrade.Name = "lblGrade";
+            this.lblGrade.Size = new System.Drawing.Size(45, 22);
+            this.lblGrade.TabIndex = 2;
+            this.lblGrade.Text = "n급";
             // 
             // UserProgressControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.userLevelCount);
-            this.Controls.Add(this.userProgress);
-            this.Controls.Add(this.userProgressBar);
+            this.Controls.Add(this.lblGrade);
+            this.Controls.Add(this.lblLearnPer);
+            this.Controls.Add(this.pgbLearn);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserProgressControl";
             this.Size = new System.Drawing.Size(514, 45);
@@ -81,8 +81,8 @@
 
         #endregion
 
-        private System.Windows.Forms.ProgressBar userProgressBar;
-        private System.Windows.Forms.Label userProgress;
-        private System.Windows.Forms.Label userLevelCount;
+        private System.Windows.Forms.ProgressBar pgbLearn;
+        private System.Windows.Forms.Label lblLearnPer;
+        private System.Windows.Forms.Label lblGrade;
     }
 }

@@ -20,8 +20,22 @@ namespace ChineseVocabulary
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            LoginForm loginForm = new LoginForm();
+
+            RootForm currentForm = loginForm;
+            Application.Run(loginForm);
+
+            while(true)
+            {
+                if (currentForm.ShowChild)
+                    currentForm = currentForm.ChildeForm;
+                else
+                    break;
+
+                Application.Run(currentForm);
+            }
 
         }
+
     }
 }

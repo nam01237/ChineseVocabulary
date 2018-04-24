@@ -44,7 +44,7 @@
             // 
             this.txtId.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtId.Font = new System.Drawing.Font("Gulim", 13F);
-            this.txtId.Location = new System.Drawing.Point(241, 159);
+            this.txtId.Location = new System.Drawing.Point(188, 164);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(127, 27);
             this.txtId.TabIndex = 10;
@@ -86,7 +86,7 @@
             // 
             this.txtPw1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPw1.Font = new System.Drawing.Font("Gulim", 13F);
-            this.txtPw1.Location = new System.Drawing.Point(241, 203);
+            this.txtPw1.Location = new System.Drawing.Point(188, 208);
             this.txtPw1.Name = "txtPw1";
             this.txtPw1.PasswordChar = '*';
             this.txtPw1.Size = new System.Drawing.Size(127, 27);
@@ -96,7 +96,7 @@
             // 
             this.txtPw2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPw2.Font = new System.Drawing.Font("Gulim", 13F);
-            this.txtPw2.Location = new System.Drawing.Point(241, 245);
+            this.txtPw2.Location = new System.Drawing.Point(188, 250);
             this.txtPw2.Name = "txtPw2";
             this.txtPw2.PasswordChar = '*';
             this.txtPw2.Size = new System.Drawing.Size(127, 27);
@@ -106,7 +106,7 @@
             // 
             this.btnSubmmit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSubmmit.BackColor = System.Drawing.Color.White;
-            this.btnSubmmit.Location = new System.Drawing.Point(109, 302);
+            this.btnSubmmit.Location = new System.Drawing.Point(53, 301);
             this.btnSubmmit.Name = "btnSubmmit";
             this.btnSubmmit.Size = new System.Drawing.Size(94, 31);
             this.btnSubmmit.TabIndex = 15;
@@ -118,7 +118,7 @@
             // 
             this.btnCancle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnCancle.BackColor = System.Drawing.Color.White;
-            this.btnCancle.Location = new System.Drawing.Point(253, 302);
+            this.btnCancle.Location = new System.Drawing.Point(197, 301);
             this.btnCancle.Name = "btnCancle";
             this.btnCancle.Size = new System.Drawing.Size(94, 31);
             this.btnCancle.TabIndex = 16;

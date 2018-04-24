@@ -73,10 +73,10 @@
             // wordControl1
             // 
             this.wordControl1.BackColor = System.Drawing.Color.White;
-            this.wordControl1.Location = new System.Drawing.Point(217, 124);
+            this.wordControl1.Location = new System.Drawing.Point(217, 105);
             this.wordControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.wordControl1.Name = "wordControl1";
-            this.wordControl1.Size = new System.Drawing.Size(448, 351);
+            this.wordControl1.Size = new System.Drawing.Size(431, 402);
             this.wordControl1.TabIndex = 5;
             // 
             // userClassLevelControl1
@@ -90,10 +90,12 @@
             // 
             // testControl1
             // 
-            this.testControl1.Location = new System.Drawing.Point(259, 105);
+            this.testControl1.Location = new System.Drawing.Point(217, 105);
             this.testControl1.Name = "testControl1";
-            this.testControl1.Size = new System.Drawing.Size(341, 402);
+            this.testControl1.Size = new System.Drawing.Size(431, 402);
             this.testControl1.TabIndex = 7;
+            this.testControl1.Visible = false;
+            this.testControl1.Load += new System.EventHandler(this.testControl1_Load);
             // 
             // StudyForm
             // 

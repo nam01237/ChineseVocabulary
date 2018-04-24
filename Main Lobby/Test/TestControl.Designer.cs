@@ -45,7 +45,7 @@
             // 
             this.pictureBox4.BackgroundImage = global::ChineseVocabulary.Properties.Resources.pandagreen;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(276, 339);
+            this.pictureBox4.Location = new System.Drawing.Point(319, 327);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(55, 57);
             this.pictureBox4.TabIndex = 28;
@@ -55,7 +55,7 @@
             // 
             this.pictureBox3.BackgroundImage = global::ChineseVocabulary.Properties.Resources.pandared;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(14, 339);
+            this.pictureBox3.Location = new System.Drawing.Point(57, 327);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(55, 57);
             this.pictureBox3.TabIndex = 27;
@@ -65,7 +65,7 @@
             // 
             this.txtMeaning.BackColor = System.Drawing.Color.Snow;
             this.txtMeaning.Font = new System.Drawing.Font("Gulim", 20F);
-            this.txtMeaning.Location = new System.Drawing.Point(14, 228);
+            this.txtMeaning.Location = new System.Drawing.Point(57, 228);
             this.txtMeaning.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMeaning.Multiline = true;
             this.txtMeaning.Name = "txtMeaning";
@@ -80,7 +80,7 @@
             // 
             this.txtWord.BackColor = System.Drawing.Color.Snow;
             this.txtWord.Font = new System.Drawing.Font("Gulim", 55F);
-            this.txtWord.Location = new System.Drawing.Point(14, 45);
+            this.txtWord.Location = new System.Drawing.Point(57, 45);
             this.txtWord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtWord.Multiline = true;
             this.txtWord.Name = "txtWord";
@@ -93,7 +93,7 @@
             // btnYes
             // 
             this.btnYes.BackColor = System.Drawing.Color.White;
-            this.btnYes.Location = new System.Drawing.Point(201, 348);
+            this.btnYes.Location = new System.Drawing.Point(244, 336);
             this.btnYes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnYes.Name = "btnYes";
             this.btnYes.Size = new System.Drawing.Size(69, 42);
@@ -104,7 +104,7 @@
             // btnNo
             // 
             this.btnNo.BackColor = System.Drawing.Color.White;
-            this.btnNo.Location = new System.Drawing.Point(75, 348);
+            this.btnNo.Location = new System.Drawing.Point(118, 336);
             this.btnNo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNo.Name = "btnNo";
             this.btnNo.Size = new System.Drawing.Size(84, 42);
@@ -116,7 +116,7 @@
             // 
             this.btnReveal.BackColor = System.Drawing.Color.White;
             this.btnReveal.Font = new System.Drawing.Font("Gulim", 12F);
-            this.btnReveal.Location = new System.Drawing.Point(303, 260);
+            this.btnReveal.Location = new System.Drawing.Point(346, 261);
             this.btnReveal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReveal.Name = "btnReveal";
             this.btnReveal.Size = new System.Drawing.Size(28, 31);
@@ -128,7 +128,7 @@
             // 
             this.LblWordProgress.AutoSize = true;
             this.LblWordProgress.Font = new System.Drawing.Font("Gulim", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LblWordProgress.Location = new System.Drawing.Point(277, 14);
+            this.LblWordProgress.Location = new System.Drawing.Point(320, 14);
             this.LblWordProgress.Name = "LblWordProgress";
             this.LblWordProgress.Size = new System.Drawing.Size(54, 19);
             this.LblWordProgress.TabIndex = 21;
@@ -137,7 +137,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Gulim", 20F);
-            this.label1.Location = new System.Drawing.Point(9, 6);
+            this.label1.Location = new System.Drawing.Point(57, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 37);
             this.label1.TabIndex = 29;
@@ -157,7 +157,7 @@
             this.Controls.Add(this.btnReveal);
             this.Controls.Add(this.LblWordProgress);
             this.Name = "TestControl";
-            this.Size = new System.Drawing.Size(341, 402);
+            this.Size = new System.Drawing.Size(431, 402);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);

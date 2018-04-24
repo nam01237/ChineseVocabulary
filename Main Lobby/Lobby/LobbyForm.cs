@@ -12,11 +12,7 @@ namespace ChineseVocabulary.Main_Lobby
 {
     public partial class LobbyForm : RootForm
     {
-        
-        public LobbyForm(string accessId) : this()
-        {
-            _accessId = accessId;
-        }
+        private int _selectedGrade;
 
         public LobbyForm()
         {
@@ -29,97 +25,26 @@ namespace ChineseVocabulary.Main_Lobby
         }
  
 
-        private void btnLevel1_Click(object sender, EventArgs e)
-        {
-            int btnClick;
-            btnClick = 0;
-
-            btnLevel1.Enabled = true;
-            btnLevel2.Enabled = false;
-            btnLevel3.Enabled = false;
-            btnLevel4.Enabled = false;
-            btnLevel5.Enabled = false;
-            btnLevel6.Enabled = false;
-            
-            btnClick++;
-
-            if (btnClick == 2)
-            {
-                btnLevel1.Enabled = true;
-                btnLevel2.Enabled = true;
-                btnLevel3.Enabled = true;
-                btnLevel4.Enabled = true;
-                btnLevel5.Enabled = true;
-                btnLevel6.Enabled = true;
-            }
-
-
-        }
-
-        private void btnLevel2_Click(object sender, EventArgs e)
-        {
-            btnLevel1.Enabled = false;
-            btnLevel2.Enabled = true;
-            btnLevel3.Enabled = false;
-            btnLevel4.Enabled = false;
-            btnLevel5.Enabled = false;
-            btnLevel6.Enabled = false;
-
-
-        }
-
-        private void btnLevel3_Click(object sender, EventArgs e)
-        {
-            btnLevel1.Enabled = false;
-            btnLevel2.Enabled = false;
-            btnLevel3.Enabled = true;
-            btnLevel4.Enabled = false;
-            btnLevel5.Enabled = false;
-            btnLevel6.Enabled = false;
-
-
-        }
-
-        private void btnLevel4_Click(object sender, EventArgs e)
-        {
-            btnLevel1.Enabled = false;
-            btnLevel2.Enabled = false;
-            btnLevel3.Enabled = false;
-            btnLevel4.Enabled = true;
-            btnLevel5.Enabled = false;
-            btnLevel6.Enabled = false;
-
-
-        }
-
-        private void btnLevel5_Click(object sender, EventArgs e)
-        {
-            btnLevel1.Enabled = false;
-            btnLevel2.Enabled = false;
-            btnLevel3.Enabled = false;
-            btnLevel4.Enabled = false;
-            btnLevel5.Enabled = true;
-            btnLevel6.Enabled = false;
-
-
-        }
-
-        private void btnLevel6_Click(object sender, EventArgs e)
-        {
-            btnLevel1.Enabled = false;
-            btnLevel2.Enabled = false;
-            btnLevel3.Enabled = false;
-            btnLevel4.Enabled = false;
-            btnLevel5.Enabled = false;
-            btnLevel6.Enabled = true;
-
-
-        }
-
         private void btnStuddy_Click(object sender, EventArgs e)
         {
-            StudyForm studyForm = new StudyForm();
-            studyForm.ShowDialog();
+            ShowChild = true;
+            ChildeForm = new StudyForm(_selectedGrade);
+            Close();
         }
+
+        private void LobbyForm_Shown(object sender, EventArgs e)
+        {
+            _selectedGrade = 1;
+
+            foreach(Control control in Controls)
+            {
+                if( control is UserProgressControl)
+                {
+
+                }
+            }
+        }
+
+
     }
 }

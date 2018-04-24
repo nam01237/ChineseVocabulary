@@ -13,7 +13,7 @@ using VocabularyEntities.Data;
 
 namespace ChineseVocabulary
 {
-    public partial class LoginForm : Form
+    public partial class LoginForm : RootForm
     {
         public LoginForm()
         {
@@ -48,8 +48,9 @@ namespace ChineseVocabulary
             {
                 if( user.PassWord.Equals(pw) )
                 {
-                    LobbyForm lobby = new LobbyForm(id);
-                    lobby.ShowDialog();
+                    AccessId = id;
+                    ChildeForm = new LobbyForm();
+                    ShowChild = true;
                     Close();
                 }
                 else

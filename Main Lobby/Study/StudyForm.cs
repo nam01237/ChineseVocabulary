@@ -10,12 +10,19 @@ using System.Windows.Forms;
 
 namespace ChineseVocabulary.Main_Lobby
 {
-    public partial class StudyForm : Form
+    public partial class StudyForm : RootForm
     {
-        public StudyForm()
+        private int _currentGrade;
+
+        public StudyForm(int grade)
         {
+            _currentGrade = grade;
             InitializeComponent();
         }
 
+        private void testControl1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
