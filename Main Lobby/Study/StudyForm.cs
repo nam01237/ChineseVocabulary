@@ -16,5 +16,6 @@ namespace ChineseVocabulary.Main_Lobby
         {
             InitializeComponent();
         }
+
     }
 }

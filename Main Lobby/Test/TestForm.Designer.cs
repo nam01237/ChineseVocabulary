@@ -1,6 +1,6 @@
 ﻿namespace ChineseVocabulary.Main_Lobby
 {
-    partial class Test
+    partial class TestForm
     {
         /// <summary>
         /// Required designer variable.
@@ -45,20 +45,21 @@
             // 
             this.LblWordProgress.AutoSize = true;
             this.LblWordProgress.Font = new System.Drawing.Font("Gulim", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LblWordProgress.Location = new System.Drawing.Point(284, 53);
+            this.LblWordProgress.Location = new System.Drawing.Point(325, 66);
             this.LblWordProgress.Name = "LblWordProgress";
-            this.LblWordProgress.Size = new System.Drawing.Size(54, 19);
+            this.LblWordProgress.Size = new System.Drawing.Size(63, 24);
             this.LblWordProgress.TabIndex = 10;
             this.LblWordProgress.Text = "0 / n";
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Enabled = false;
             this.button1.Font = new System.Drawing.Font("Gulim", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.Location = new System.Drawing.Point(21, 17);
+            this.button1.Location = new System.Drawing.Point(24, 21);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(51, 42);
+            this.button1.Size = new System.Drawing.Size(58, 52);
             this.button1.TabIndex = 11;
             this.button1.Text = "n";
             this.button1.UseVisualStyleBackColor = false;
@@ -67,10 +68,10 @@
             // 
             this.btnReveal.BackColor = System.Drawing.Color.White;
             this.btnReveal.Font = new System.Drawing.Font("Gulim", 12F);
-            this.btnReveal.Location = new System.Drawing.Point(310, 299);
+            this.btnReveal.Location = new System.Drawing.Point(354, 374);
             this.btnReveal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReveal.Name = "btnReveal";
-            this.btnReveal.Size = new System.Drawing.Size(28, 31);
+            this.btnReveal.Size = new System.Drawing.Size(32, 39);
             this.btnReveal.TabIndex = 12;
             this.btnReveal.Text = "답";
             this.btnReveal.UseVisualStyleBackColor = false;
@@ -78,10 +79,10 @@
             // btnNo
             // 
             this.btnNo.BackColor = System.Drawing.Color.White;
-            this.btnNo.Location = new System.Drawing.Point(82, 387);
+            this.btnNo.Location = new System.Drawing.Point(94, 484);
             this.btnNo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNo.Name = "btnNo";
-            this.btnNo.Size = new System.Drawing.Size(84, 42);
+            this.btnNo.Size = new System.Drawing.Size(96, 52);
             this.btnNo.TabIndex = 13;
             this.btnNo.Text = "모르겠어요";
             this.btnNo.UseVisualStyleBackColor = false;
@@ -89,10 +90,10 @@
             // btnYes
             // 
             this.btnYes.BackColor = System.Drawing.Color.White;
-            this.btnYes.Location = new System.Drawing.Point(208, 387);
+            this.btnYes.Location = new System.Drawing.Point(238, 484);
             this.btnYes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnYes.Name = "btnYes";
-            this.btnYes.Size = new System.Drawing.Size(69, 42);
+            this.btnYes.Size = new System.Drawing.Size(79, 52);
             this.btnYes.TabIndex = 14;
             this.btnYes.Text = "알겠어요";
             this.btnYes.UseVisualStyleBackColor = false;
@@ -101,12 +102,12 @@
             // 
             this.txtWord.BackColor = System.Drawing.Color.Snow;
             this.txtWord.Font = new System.Drawing.Font("Gulim", 55F);
-            this.txtWord.Location = new System.Drawing.Point(21, 84);
+            this.txtWord.Location = new System.Drawing.Point(24, 105);
             this.txtWord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtWord.Multiline = true;
             this.txtWord.Name = "txtWord";
             this.txtWord.ReadOnly = true;
-            this.txtWord.Size = new System.Drawing.Size(317, 179);
+            this.txtWord.Size = new System.Drawing.Size(362, 223);
             this.txtWord.TabIndex = 15;
             this.txtWord.Text = "단어";
             this.txtWord.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -115,13 +116,13 @@
             // 
             this.txtMeaning.BackColor = System.Drawing.Color.Snow;
             this.txtMeaning.Font = new System.Drawing.Font("Gulim", 20F);
-            this.txtMeaning.Location = new System.Drawing.Point(21, 267);
+            this.txtMeaning.Location = new System.Drawing.Point(24, 334);
             this.txtMeaning.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMeaning.Multiline = true;
             this.txtMeaning.Name = "txtMeaning";
             this.txtMeaning.ReadOnly = true;
             this.txtMeaning.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtMeaning.Size = new System.Drawing.Size(283, 94);
+            this.txtMeaning.Size = new System.Drawing.Size(323, 116);
             this.txtMeaning.TabIndex = 16;
             this.txtMeaning.Text = "뜻";
             this.txtMeaning.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -130,9 +131,10 @@
             // 
             this.pictureBox3.BackgroundImage = global::ChineseVocabulary.Properties.Resources.pandared;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(21, 378);
+            this.pictureBox3.Location = new System.Drawing.Point(24, 472);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(55, 57);
+            this.pictureBox3.Size = new System.Drawing.Size(63, 71);
             this.pictureBox3.TabIndex = 19;
             this.pictureBox3.TabStop = false;
             // 
@@ -140,18 +142,19 @@
             // 
             this.pictureBox4.BackgroundImage = global::ChineseVocabulary.Properties.Resources.pandagreen;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(283, 378);
+            this.pictureBox4.Location = new System.Drawing.Point(323, 472);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(55, 57);
+            this.pictureBox4.Size = new System.Drawing.Size(63, 71);
             this.pictureBox4.TabIndex = 20;
             this.pictureBox4.TabStop = false;
             // 
-            // Test
+            // TestForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(355, 448);
+            this.ClientSize = new System.Drawing.Size(406, 560);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.txtMeaning);
@@ -162,7 +165,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.LblWordProgress);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Test";
+            this.Name = "TestForm";
             this.Text = "Test";
             this.Load += new System.EventHandler(this.Test_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

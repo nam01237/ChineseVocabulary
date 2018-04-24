@@ -54,7 +54,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Gulim", 15F);
-            this.label2.Location = new System.Drawing.Point(86, 161);
+            this.label2.Location = new System.Drawing.Point(29, 171);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 20);
             this.label2.TabIndex = 9;
@@ -65,7 +65,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Gulim", 15F);
-            this.label1.Location = new System.Drawing.Point(86, 205);
+            this.label1.Location = new System.Drawing.Point(29, 215);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 20);
             this.label1.TabIndex = 11;
@@ -76,7 +76,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Gulim", 15F);
-            this.label3.Location = new System.Drawing.Point(86, 247);
+            this.label3.Location = new System.Drawing.Point(29, 257);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(136, 20);
             this.label3.TabIndex = 12;
@@ -131,7 +131,7 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackgroundImage = global::ChineseVocabulary.Properties.Resources.pandewhite;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(157, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(100, 32);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(127, 119);
             this.pictureBox1.TabIndex = 17;
@@ -142,7 +142,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(440, 431);
+            this.ClientSize = new System.Drawing.Size(327, 378);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCancle);
             this.Controls.Add(this.btnSubmmit);

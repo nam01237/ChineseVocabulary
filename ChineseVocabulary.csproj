@@ -94,6 +94,12 @@
     <Compile Include="Main Lobby\Study\WordControl.Designer.cs">
       <DependentUpon>WordControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main Lobby\Test\TestControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main Lobby\Test\TestControl.Designer.cs">
+      <DependentUpon>TestControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main Lobby\Test\TestForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main Lobby\Study\WordControl.resx">
       <DependentUpon>WordControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Lobby\Test\TestControl.resx">
+      <DependentUpon>TestControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main Lobby\Test\TestForm.resx">
       <DependentUpon>TestForm.cs</DependentUpon>

@@ -44,7 +44,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Gulim", 15F);
-            this.label1.Location = new System.Drawing.Point(100, 228);
+            this.label1.Location = new System.Drawing.Point(222, 281);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 20);
             this.label1.TabIndex = 1;
@@ -55,7 +55,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Gulim", 15F);
-            this.label2.Location = new System.Drawing.Point(91, 294);
+            this.label2.Location = new System.Drawing.Point(213, 347);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 20);
             this.label2.TabIndex = 2;
@@ -80,7 +80,7 @@
             this.txtPw.Size = new System.Drawing.Size(127, 27);
             this.txtPw.TabIndex = 4;
             // 
-            // button1
+            // btnLogin
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.BackColor = System.Drawing.Color.White;
@@ -92,7 +92,7 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnRegister
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.BackColor = System.Drawing.Color.White;
@@ -109,7 +109,7 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(62, 49);
+            this.pictureBox1.Location = new System.Drawing.Point(184, 102);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(286, 134);
             this.pictureBox1.TabIndex = 0;
