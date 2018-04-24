@@ -58,6 +58,48 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main Lobby\Study\StudyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Lobby\Study\StudyForm.Designer.cs">
+      <DependentUpon>StudyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Lobby\Lobby\LobbyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Lobby\Lobby\LobbyForm.Designer.cs">
+      <DependentUpon>LobbyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Lobby\Lobby\UserStateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main Lobby\Lobby\UserStateControl.Designer.cs">
+      <DependentUpon>UserStateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Lobby\Lobby\UserProgressControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main Lobby\Lobby\UserProgressControl.Designer.cs">
+      <DependentUpon>UserProgressControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Lobby\Study\UserClassLevelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main Lobby\Study\UserClassLevelControl.Designer.cs">
+      <DependentUpon>UserClassLevelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Lobby\Study\WordControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main Lobby\Study\WordControl.Designer.cs">
+      <DependentUpon>WordControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Lobby\Test\TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Lobby\Test\TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm\JoinForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +114,27 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Main Lobby\Study\StudyForm.resx">
+      <DependentUpon>StudyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Lobby\Lobby\LobbyForm.resx">
+      <DependentUpon>LobbyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Lobby\Lobby\UserStateControl.resx">
+      <DependentUpon>UserStateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Lobby\Lobby\UserProgressControl.resx">
+      <DependentUpon>UserProgressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Lobby\Study\UserClassLevelControl.resx">
+      <DependentUpon>UserClassLevelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Lobby\Study\WordControl.resx">
+      <DependentUpon>WordControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Lobby\Test\TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm\JoinForm.resx">
       <DependentUpon>JoinForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +164,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\nihao.png" />
