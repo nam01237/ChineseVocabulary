@@ -17,10 +17,5 @@ namespace ChineseVocabulary.Main_Lobby
             InitializeComponent();
         }
 
-        private void TestStart_Click(object sender, EventArgs e)
-        {
-            TestForm testForm = new TestForm();
-            testForm.ShowDialog();
-        }
     }
 }

@@ -59,7 +59,6 @@
             this.TestStart.TabIndex = 1;
             this.TestStart.Text = "시험보기";
             this.TestStart.UseVisualStyleBackColor = false;
-            this.TestStart.Click += new System.EventHandler(this.TestStart_Click);
             // 
             // pictureBox3
             // 
