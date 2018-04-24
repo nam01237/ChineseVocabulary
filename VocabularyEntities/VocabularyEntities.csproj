@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataRepository.cs" />
+    <Compile Include="Data\StagedData.cs" />
     <Compile Include="Data\UserData.cs" />
     <Compile Include="History.cs">
       <DependentUpon>VocabularyEntities.tt</DependentUpon>

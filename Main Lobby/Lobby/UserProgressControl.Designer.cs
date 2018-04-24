@@ -37,7 +37,7 @@
             // 
             this.pgbLearn.BackColor = System.Drawing.Color.White;
             this.pgbLearn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pgbLearn.Location = new System.Drawing.Point(72, 13);
+            this.pgbLearn.Location = new System.Drawing.Point(79, 12);
             this.pgbLearn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pgbLearn.Name = "pgbLearn";
             this.pgbLearn.Size = new System.Drawing.Size(357, 22);
@@ -47,7 +47,7 @@
             // 
             this.lblLearnPer.AutoSize = true;
             this.lblLearnPer.Font = new System.Drawing.Font("Gulim", 10F, System.Drawing.FontStyle.Bold);
-            this.lblLearnPer.Location = new System.Drawing.Point(435, 17);
+            this.lblLearnPer.Location = new System.Drawing.Point(442, 16);
             this.lblLearnPer.Name = "lblLearnPer";
             this.lblLearnPer.Size = new System.Drawing.Size(62, 14);
             this.lblLearnPer.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             this.lblGrade.AutoSize = true;
             this.lblGrade.Font = new System.Drawing.Font("Gulim", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblGrade.Location = new System.Drawing.Point(8, 13);
+            this.lblGrade.Location = new System.Drawing.Point(15, 12);
             this.lblGrade.Name = "lblGrade";
             this.lblGrade.Size = new System.Drawing.Size(45, 22);
             this.lblGrade.TabIndex = 2;
@@ -73,7 +73,12 @@
             this.Controls.Add(this.pgbLearn);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserProgressControl";
-            this.Size = new System.Drawing.Size(514, 45);
+            this.Size = new System.Drawing.Size(523, 45);
+            this.Load += new System.EventHandler(this.UserProgressControl_Load);
+            this.Enter += new System.EventHandler(this.UserProgressControl_Enter);
+            this.Leave += new System.EventHandler(this.UserProgressControl_Leave);
+            this.MouseEnter += new System.EventHandler(this.UserProgressControl_MouseEnter);
+            this.MouseLeave += new System.EventHandler(this.UserProgressControl_MouseLeave);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -83,6 +88,6 @@
 
         private System.Windows.Forms.ProgressBar pgbLearn;
         private System.Windows.Forms.Label lblLearnPer;
-        private System.Windows.Forms.Label lblGrade;
+        public System.Windows.Forms.Label lblGrade;
     }
 }

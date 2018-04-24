@@ -28,20 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.TestStart = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.wordControl1 = new ChineseVocabulary.Main_Lobby.Study.WordControl();
             this.userClassLevelControl1 = new ChineseVocabulary.Main_Lobby.UserClassLevelControl();
             this.testControl1 = new ChineseVocabulary.Main_Lobby.Test.TestControl();
+            this.bdsWords = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsWords)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Snow;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.DataSource = this.bdsWords;
             this.dataGridView1.Location = new System.Drawing.Point(24, 71);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
@@ -114,6 +119,7 @@
             this.Text = "학습하기";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsWords)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -126,5 +132,6 @@
         private Study.WordControl wordControl1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private Test.TestControl testControl1;
+        private System.Windows.Forms.BindingSource bdsWords;
     }
 }

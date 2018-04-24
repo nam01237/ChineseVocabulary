@@ -20,12 +20,16 @@ namespace ChineseVocabulary
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            LoginForm loginForm = new LoginForm();
 
-            RootForm currentForm = loginForm;
-            Application.Run(loginForm);
+            LobbyForm lobbyForm = new LobbyForm();
+            Application.Run(lobbyForm);
+            RootForm currentForm = lobbyForm;
+            
+            //LoginForm loginForm = new LoginForm();
+            //RootForm currentForm = loginForm;
+            //Application.Run(loginForm);
 
-            while(true)
+            while (true)
             {
                 if (currentForm.ShowChild)
                     currentForm = currentForm.ChildeForm;

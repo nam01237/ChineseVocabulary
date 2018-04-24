@@ -12,7 +12,7 @@ namespace ChineseVocabulary.Main_Lobby
 {
     public partial class LobbyForm : RootForm
     {
-        private int _selectedGrade;
+        private int _selectedGrade = 1;
 
         public LobbyForm()
         {
@@ -32,19 +32,24 @@ namespace ChineseVocabulary.Main_Lobby
             Close();
         }
 
-        private void LobbyForm_Shown(object sender, EventArgs e)
+        private void LobbyForm_Load(object sender, EventArgs e)
         {
-            _selectedGrade = 1;
-
             foreach(Control control in Controls)
             {
-                if( control is UserProgressControl)
+                if (control is UserProgressControl)
                 {
-
+                    int grade = ((UserProgressControl)control).Grade;
+                    ((UserProgressControl)control).lblGrade.Text = $"{grade}급";
+                    control.Enter += GradeSelected;
                 }
             }
+
+            userProgressControl1.Select();
         }
 
-
+        private void GradeSelected(object sender, EventArgs e)
+        {
+            _selectedGrade = ((UserProgressControl)sender).Grade;
+        }
     }
 }

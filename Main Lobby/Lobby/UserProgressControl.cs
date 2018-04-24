@@ -20,29 +20,43 @@ namespace ChineseVocabulary.Main_Lobby
             InitializeComponent();
         }
 
-        //private void UserProgressControl_MouseEnter(object sender, EventArgs e)
-        //{
-        //    if ( !_focused )
-        //        BackColor =  Color.Azure;
-        //}
+        private void UserProgressControl_MouseEnter(object sender, EventArgs e)
+        {
+            if (!_focused)
+                BackColor = Color.Pink;
+        }
 
-        //private void UserProgressControl_MouseLeave(object sender, EventArgs e)
-        //{
-        //    if ( !_focused)
-        //        BackColor = Color.White;
-        //}
+        private void UserProgressControl_MouseLeave(object sender, EventArgs e)
+        {
+            if (!_focused)
+                BackColor = Color.White;
+        }
 
-        //private void UserProgressControl_Enter(object sender, EventArgs e)
-        //{
-        //    _focused = true;
-        //    BackColor = Color.DeepSkyBlue;
-        //}
+        private void UserProgressControl_Enter(object sender, EventArgs e)
+        {
+            _focused = true;
+            BackColor = Color.Violet;
+        }
 
-        //private void UserProgressControl_Leave(object sender, EventArgs e)
-        //{
-        //    _focused = false;
-        //    BackColor = Color.White;
-        //}
-        
+        private void UserProgressControl_Leave(object sender, EventArgs e)
+        {
+            _focused = false;
+            BackColor = Color.White;
+        }
+
+        private void UserProgressControl_Load(object sender, EventArgs e)
+        {
+            foreach (Control control in Controls)
+            {
+                control.MouseEnter += UserProgressControl_MouseEnter;
+                control.MouseLeave += UserProgressControl_MouseLeave;
+                control.Click += ChildControlClicked;
+            }
+        }
+
+         private void ChildControlClicked(object sender, EventArgs e)
+        {
+            Select();
+        }
     }
 }
