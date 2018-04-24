@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ChineseVocabulary.LoginForm
+namespace ChineseVocabulary
 {
-    public partial class Join : Form
+    public partial class JoinForm : Form
     {
-        public Join()
+        public JoinForm()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
-﻿namespace ChineseVocabulary.LoginForm
+﻿namespace ChineseVocabulary
 {
-    partial class Join
+    partial class JoinForm
     {
         /// <summary>
         /// Required designer variable.
