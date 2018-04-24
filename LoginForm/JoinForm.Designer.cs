@@ -44,10 +44,9 @@
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox2.Font = new System.Drawing.Font("Gulim", 13F);
-            this.textBox2.Location = new System.Drawing.Point(269, 200);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox2.Location = new System.Drawing.Point(178, 170);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(145, 32);
+            this.textBox2.Size = new System.Drawing.Size(127, 27);
             this.textBox2.TabIndex = 10;
             // 
             // label2
@@ -55,9 +54,9 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Gulim", 15F);
-            this.label2.Location = new System.Drawing.Point(98, 201);
+            this.label2.Location = new System.Drawing.Point(29, 171);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 25);
+            this.label2.Size = new System.Drawing.Size(69, 20);
             this.label2.TabIndex = 9;
             this.label2.Text = "아이디";
             // 
@@ -66,9 +65,9 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Gulim", 15F);
-            this.label1.Location = new System.Drawing.Point(98, 256);
+            this.label1.Location = new System.Drawing.Point(29, 215);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 25);
+            this.label1.Size = new System.Drawing.Size(89, 20);
             this.label1.TabIndex = 11;
             this.label1.Text = "비밀번호";
             // 
@@ -77,9 +76,9 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Gulim", 15F);
-            this.label3.Location = new System.Drawing.Point(98, 309);
+            this.label3.Location = new System.Drawing.Point(29, 257);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(170, 25);
+            this.label3.Size = new System.Drawing.Size(136, 20);
             this.label3.TabIndex = 12;
             this.label3.Text = "비밀번호 확인";
             // 
@@ -87,30 +86,27 @@
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox1.Font = new System.Drawing.Font("Gulim", 13F);
-            this.textBox1.Location = new System.Drawing.Point(269, 255);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox1.Location = new System.Drawing.Point(178, 214);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(145, 32);
+            this.textBox1.Size = new System.Drawing.Size(127, 27);
             this.textBox1.TabIndex = 13;
             // 
             // textBox3
             // 
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox3.Font = new System.Drawing.Font("Gulim", 13F);
-            this.textBox3.Location = new System.Drawing.Point(269, 308);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox3.Location = new System.Drawing.Point(178, 256);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(145, 32);
+            this.textBox3.Size = new System.Drawing.Size(127, 27);
             this.textBox3.TabIndex = 14;
             // 
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(118, 379);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button2.Location = new System.Drawing.Point(46, 313);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 39);
+            this.button2.Size = new System.Drawing.Size(94, 31);
             this.button2.TabIndex = 15;
             this.button2.Text = "가입";
             this.button2.UseVisualStyleBackColor = false;
@@ -119,10 +115,9 @@
             // 
             this.btnCancel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnCancel.BackColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(282, 379);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCancel.Location = new System.Drawing.Point(190, 313);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(107, 39);
+            this.btnCancel.Size = new System.Drawing.Size(94, 31);
             this.btnCancel.TabIndex = 16;
             this.btnCancel.Text = "취소";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -133,19 +128,18 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackgroundImage = global::ChineseVocabulary.Properties.Resources.pandewhite;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(179, 28);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(100, 32);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(145, 149);
+            this.pictureBox1.Size = new System.Drawing.Size(127, 119);
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
             // JoinForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(503, 539);
+            this.ClientSize = new System.Drawing.Size(327, 378);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.button2);
@@ -155,7 +149,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "JoinForm";
             this.Text = "Join";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

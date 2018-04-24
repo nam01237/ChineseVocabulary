@@ -101,7 +101,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(645, 530);
+            this.ClientSize = new System.Drawing.Size(644, 530);
             this.Controls.Add(this.testControl1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.wordControl1);
