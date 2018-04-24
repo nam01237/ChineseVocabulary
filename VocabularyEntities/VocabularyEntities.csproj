@@ -51,7 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\EntityDataLibrary.cs" />
+    <Compile Include="DataRepository.cs" />
+    <Compile Include="Data\UserData.cs" />
+    <Compile Include="Data\WordData.cs" />
     <Compile Include="History.cs">
       <DependentUpon>VocabularyEntities.tt</DependentUpon>
     </Compile>
@@ -112,11 +114,11 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data\" />
+    <Folder Include="Entities\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Chinook\EntityDataLibrary\EntityDataLibrary.csproj">
+    <ProjectReference Include="..\EntityDataLibrary\EntityDataLibrary.csproj">
       <Project>{e747e0d6-fa38-44db-a354-5aef0925e022}</Project>
       <Name>EntityDataLibrary</Name>
     </ProjectReference>
