@@ -35,18 +35,21 @@
             // 
             // userProgressBar
             // 
-            this.userProgressBar.Location = new System.Drawing.Point(107, 26);
+            this.userProgressBar.BackColor = System.Drawing.Color.White;
+            this.userProgressBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.userProgressBar.Location = new System.Drawing.Point(94, 21);
+            this.userProgressBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userProgressBar.Name = "userProgressBar";
-            this.userProgressBar.Size = new System.Drawing.Size(633, 28);
+            this.userProgressBar.Size = new System.Drawing.Size(554, 22);
             this.userProgressBar.TabIndex = 0;
             // 
             // userProgress
             // 
             this.userProgress.AutoSize = true;
             this.userProgress.Font = new System.Drawing.Font("Gulim", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.userProgress.Location = new System.Drawing.Point(755, 26);
+            this.userProgress.Location = new System.Drawing.Point(661, 21);
             this.userProgress.Name = "userProgress";
-            this.userProgress.Size = new System.Drawing.Size(109, 28);
+            this.userProgress.Size = new System.Drawing.Size(85, 22);
             this.userProgress.TabIndex = 1;
             this.userProgress.Text = "0  /   n";
             // 
@@ -54,21 +57,23 @@
             // 
             this.userLevelCount.AutoSize = true;
             this.userLevelCount.Font = new System.Drawing.Font("Gulim", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.userLevelCount.Location = new System.Drawing.Point(31, 26);
+            this.userLevelCount.Location = new System.Drawing.Point(27, 21);
             this.userLevelCount.Name = "userLevelCount";
-            this.userLevelCount.Size = new System.Drawing.Size(58, 28);
+            this.userLevelCount.Size = new System.Drawing.Size(45, 22);
             this.userLevelCount.TabIndex = 2;
             this.userLevelCount.Text = "n급";
             // 
             // UserProgressControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.userLevelCount);
             this.Controls.Add(this.userProgress);
             this.Controls.Add(this.userProgressBar);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserProgressControl";
-            this.Size = new System.Drawing.Size(906, 74);
+            this.Size = new System.Drawing.Size(793, 59);
             this.ResumeLayout(false);
             this.PerformLayout();
 
