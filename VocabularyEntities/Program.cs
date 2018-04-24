@@ -10,6 +10,7 @@ namespace VocabularyEntities
     {
         static void Main(string[] args)
         {
+
         }
     }
 }

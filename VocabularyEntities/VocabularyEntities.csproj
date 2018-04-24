@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2E1A79EE-0603-457E-BE9A-6A75A9C731BA}</ProjectGuid>
+    <ProjectGuid>{BE6BF0A3-76DA-434D-89D8-DB10A97A8F52}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>VocabularyEntities</RootNamespace>
     <AssemblyName>VocabularyEntities</AssemblyName>
@@ -33,10 +33,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -86,11 +86,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
     <EntityDeploy Include="VocabularyEntities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>VocabularyEntities.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="packages.config" />
     <None Include="VocabularyEntities.edmx.diagram">
       <DependentUpon>VocabularyEntities.edmx</DependentUpon>
     </None>
@@ -98,8 +98,8 @@
   <ItemGroup>
     <Content Include="VocabularyEntities.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>VocabularyEntities.edmx</DependentUpon>
       <LastGenOutput>VocabularyEntities.Context.cs</LastGenOutput>
+      <DependentUpon>VocabularyEntities.edmx</DependentUpon>
     </Content>
     <Content Include="VocabularyEntities.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
