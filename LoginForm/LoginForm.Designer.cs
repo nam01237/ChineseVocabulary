@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtPw = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -61,23 +61,24 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "비밀번호";
             // 
-            // textBox1
+            // txtId
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Gulim", 13F);
-            this.textBox1.Location = new System.Drawing.Point(399, 271);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(127, 27);
-            this.textBox1.TabIndex = 3;
+            this.txtId.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtId.Font = new System.Drawing.Font("Gulim", 13F);
+            this.txtId.Location = new System.Drawing.Point(399, 271);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(127, 27);
+            this.txtId.TabIndex = 3;
             // 
-            // textBox2
+            // txtPw
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Font = new System.Drawing.Font("Gulim", 13F);
-            this.textBox2.Location = new System.Drawing.Point(399, 336);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(127, 27);
-            this.textBox2.TabIndex = 4;
+            this.txtPw.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPw.Font = new System.Drawing.Font("Gulim", 13F);
+            this.txtPw.Location = new System.Drawing.Point(399, 336);
+            this.txtPw.Name = "txtPw";
+            this.txtPw.PasswordChar = '*';
+            this.txtPw.Size = new System.Drawing.Size(127, 27);
+            this.txtPw.TabIndex = 4;
             // 
             // button1
             // 
@@ -89,6 +90,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "로그인";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -121,8 +123,8 @@
             this.ClientSize = new System.Drawing.Size(807, 511);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPw);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -139,8 +141,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtPw;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }

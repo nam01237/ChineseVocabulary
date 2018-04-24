@@ -48,12 +48,6 @@
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(127, 27);
             this.txtId.TabIndex = 10;
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Font = new System.Drawing.Font("Gulim", 13F);
-            this.textBox2.Location = new System.Drawing.Point(235, 160);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(127, 27);
-            this.textBox2.TabIndex = 10;
             // 
             // label2
             // 
@@ -94,6 +88,7 @@
             this.txtPw1.Font = new System.Drawing.Font("Gulim", 13F);
             this.txtPw1.Location = new System.Drawing.Point(241, 203);
             this.txtPw1.Name = "txtPw1";
+            this.txtPw1.PasswordChar = '*';
             this.txtPw1.Size = new System.Drawing.Size(127, 27);
             this.txtPw1.TabIndex = 13;
             // 
@@ -103,6 +98,7 @@
             this.txtPw2.Font = new System.Drawing.Font("Gulim", 13F);
             this.txtPw2.Location = new System.Drawing.Point(241, 245);
             this.txtPw2.Name = "txtPw2";
+            this.txtPw2.PasswordChar = '*';
             this.txtPw2.Size = new System.Drawing.Size(127, 27);
             this.txtPw2.TabIndex = 14;
             // 
@@ -128,6 +124,7 @@
             this.btnCancle.TabIndex = 16;
             this.btnCancle.Text = "취소";
             this.btnCancle.UseVisualStyleBackColor = false;
+            this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
             // pictureBox1
             // 

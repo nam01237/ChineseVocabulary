@@ -17,5 +17,13 @@ namespace VocabularyEntities.Data
                 return context.Users.FirstOrDefault(x => x.UserKey == userKey);
             }
         }
+
+        public User GetByUserId(string id)
+        {
+            using (VocabularyEntities context = new VocabularyEntities())
+            {
+                return context.Users.FirstOrDefault(x => x.Id == id);
+            }
+        }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ChineseVocabulary.Main_Lobby;
-
+using EntityDataLibrary;
 
 namespace ChineseVocabulary
 {
@@ -16,6 +16,8 @@ namespace ChineseVocabulary
         [STAThread]
         static void Main()
         {
+            EntityDataInitializer.ConnectionString = "VocabularyEntities";
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LoginForm());

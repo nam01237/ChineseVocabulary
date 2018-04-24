@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using VocabularyEntities.Data;
 
-namespace EntityDataLibrary
+namespace VocabularyEntities.Data
 {
-    class DataRepository
+    public class DataRepository
     {
         public static UserData Users { get; } = new UserData();
     }
