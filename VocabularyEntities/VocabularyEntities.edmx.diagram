@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6d90aefe168745c4b858c77c95edea03" Name="Diagram1">
+        <EntityTypeShape EntityType="VocabularyModel.History" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="VocabularyModel.LastSelect" Width="1.5" PointX="6" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="VocabularyModel.StagedWord" Width="1.5" PointX="6" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VocabularyModel.Word" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <AssociationConnector Association="VocabularyModel.FK_History_StagedWord1" ManuallyRouted="false" />
+        <AssociationConnector Association="VocabularyModel.FK_History_Word" ManuallyRouted="false" />
+        <AssociationConnector Association="VocabularyModel.FK_LastSelect_Word" ManuallyRouted="false" />
+        <AssociationConnector Association="VocabularyModel.FK_StagedWord_Word1" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="VocabularyModel.User" Width="1.5" PointX="0.75" PointY="0.75" />
+        <AssociationConnector Association="VocabularyModel.FK_History_StagedWord11" />
+        <AssociationConnector Association="VocabularyModel.FK_History_User" />
+        <AssociationConnector Association="VocabularyModel.FK_LastSelect_User" />
+        <AssociationConnector Association="VocabularyModel.FK_StagedWord_User" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

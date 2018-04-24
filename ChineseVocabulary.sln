@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChineseVocabulary", "ChineseVocabulary.csproj", "{F2C4FD2B-6B7F-494C-8E23-0ECBEE2D56D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VocabularyEntities", "VocabularyEntities\VocabularyEntities.csproj", "{2E1A79EE-0603-457E-BE9A-6A75A9C731BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F2C4FD2B-6B7F-494C-8E23-0ECBEE2D56D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2C4FD2B-6B7F-494C-8E23-0ECBEE2D56D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2C4FD2B-6B7F-494C-8E23-0ECBEE2D56D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E1A79EE-0603-457E-BE9A-6A75A9C731BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E1A79EE-0603-457E-BE9A-6A75A9C731BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E1A79EE-0603-457E-BE9A-6A75A9C731BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E1A79EE-0603-457E-BE9A-6A75A9C731BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
