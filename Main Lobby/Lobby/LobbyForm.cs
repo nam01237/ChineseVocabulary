@@ -111,5 +111,10 @@ namespace ChineseVocabulary.Main_Lobby
 
         }
 
+        private void btnStuddy_Click(object sender, EventArgs e)
+        {
+            StudyForm studyForm = new StudyForm();
+            studyForm.ShowDialog();
+        }
     }
 }

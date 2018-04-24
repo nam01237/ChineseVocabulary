@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ChineseVocabulary.Main_Lobby
 {
-    public partial class Test : Form
+    public partial class TestForm : Form
     {
-        public Test()
+        public TestForm()
         {
             InitializeComponent();
         }

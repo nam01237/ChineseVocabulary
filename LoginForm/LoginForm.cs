@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ChineseVocabulary.Main_Lobby;
 
 namespace ChineseVocabulary
 {
@@ -15,6 +16,23 @@ namespace ChineseVocabulary
         public LoginForm()
         {
             InitializeComponent();
+        }
+
+        
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            JoinForm joinForm = new JoinForm();
+            joinForm.ShowDialog();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            
+            LobbyForm lobbyForm = new LobbyForm();
+            lobbyForm.ShowDialog();
+
+           
         }
     }
 }
