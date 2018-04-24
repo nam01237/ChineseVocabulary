@@ -44,7 +44,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Gulim", 15F);
-            this.label1.Location = new System.Drawing.Point(303, 271);
+            this.label1.Location = new System.Drawing.Point(100, 228);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 20);
             this.label1.TabIndex = 1;
@@ -55,7 +55,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Gulim", 15F);
-            this.label2.Location = new System.Drawing.Point(294, 337);
+            this.label2.Location = new System.Drawing.Point(91, 294);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 20);
             this.label2.TabIndex = 2;
@@ -65,7 +65,7 @@
             // 
             this.txtId.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtId.Font = new System.Drawing.Font("Gulim", 13F);
-            this.txtId.Location = new System.Drawing.Point(399, 271);
+            this.txtId.Location = new System.Drawing.Point(196, 228);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(127, 27);
             this.txtId.TabIndex = 3;
@@ -74,7 +74,7 @@
             // 
             this.txtPw.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPw.Font = new System.Drawing.Font("Gulim", 13F);
-            this.txtPw.Location = new System.Drawing.Point(399, 336);
+            this.txtPw.Location = new System.Drawing.Point(196, 293);
             this.txtPw.Name = "txtPw";
             this.txtPw.PasswordChar = '*';
             this.txtPw.Size = new System.Drawing.Size(127, 27);
@@ -84,7 +84,7 @@
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(457, 396);
+            this.button1.Location = new System.Drawing.Point(254, 353);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 31);
             this.button1.TabIndex = 5;
@@ -96,7 +96,7 @@
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(265, 396);
+            this.button2.Location = new System.Drawing.Point(62, 353);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 31);
             this.button2.TabIndex = 6;
@@ -109,7 +109,7 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(265, 92);
+            this.pictureBox1.Location = new System.Drawing.Point(62, 49);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(286, 134);
             this.pictureBox1.TabIndex = 0;
@@ -120,7 +120,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(807, 511);
+            this.ClientSize = new System.Drawing.Size(401, 424);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtPw);

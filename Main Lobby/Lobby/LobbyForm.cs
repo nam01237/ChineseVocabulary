@@ -10,9 +10,14 @@ using System.Windows.Forms;
 
 namespace ChineseVocabulary.Main_Lobby
 {
-    public partial class LobbyForm : Form
+    public partial class LobbyForm : RootForm
     {
         
+        public LobbyForm(string accessId) : this()
+        {
+            _accessId = accessId;
+        }
+
         public LobbyForm()
         {
             InitializeComponent();

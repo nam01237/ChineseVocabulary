@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChineseVocabulary.Main_Lobby;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -47,7 +48,9 @@ namespace ChineseVocabulary
             {
                 if( user.PassWord.Equals(pw) )
                 {
-                    
+                    LobbyForm lobby = new LobbyForm(id);
+                    lobby.ShowDialog();
+                    Close();
                 }
                 else
                 {

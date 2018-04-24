@@ -14,11 +14,6 @@ namespace ChineseVocabulary
     {
         protected string _accessId;
 
-        protected RootForm(string accessId) : this()
-        {
-
-        }
-
         public RootForm()
         {
             InitializeComponent();
