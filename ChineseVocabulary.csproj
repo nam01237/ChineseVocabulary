@@ -189,5 +189,17 @@
       <Name>VocabularyEntities</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pandas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pandared.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pandagreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pandewhite.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
