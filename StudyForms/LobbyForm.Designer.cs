@@ -45,7 +45,7 @@ namespace ChineseVocabulary
             // btnStuddy
             // 
             this.btnStuddy.BackColor = System.Drawing.Color.White;
-            this.btnStuddy.Location = new System.Drawing.Point(491, 443);
+            this.btnStuddy.Location = new System.Drawing.Point(527, 453);
             this.btnStuddy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStuddy.Name = "btnStuddy";
             this.btnStuddy.Size = new System.Drawing.Size(84, 45);
@@ -57,7 +57,7 @@ namespace ChineseVocabulary
             // btnReStudy
             // 
             this.btnReStudy.BackColor = System.Drawing.Color.White;
-            this.btnReStudy.Location = new System.Drawing.Point(401, 443);
+            this.btnReStudy.Location = new System.Drawing.Point(437, 453);
             this.btnReStudy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReStudy.Name = "btnReStudy";
             this.btnReStudy.Size = new System.Drawing.Size(84, 45);
@@ -71,67 +71,67 @@ namespace ChineseVocabulary
             this.userStateControl1.Location = new System.Drawing.Point(18, 25);
             this.userStateControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userStateControl1.Name = "userStateControl1";
-            this.userStateControl1.Size = new System.Drawing.Size(355, 56);
+            this.userStateControl1.Size = new System.Drawing.Size(355, 63);
             this.userStateControl1.TabIndex = 17;
             // 
             // userProgressControl1
             // 
             this.userProgressControl1.BackColor = System.Drawing.Color.White;
             this.userProgressControl1.Grade = 1;
-            this.userProgressControl1.Location = new System.Drawing.Point(36, 94);
+            this.userProgressControl1.Location = new System.Drawing.Point(15, 106);
             this.userProgressControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userProgressControl1.Name = "userProgressControl1";
-            this.userProgressControl1.Size = new System.Drawing.Size(564, 45);
+            this.userProgressControl1.Size = new System.Drawing.Size(608, 45);
             this.userProgressControl1.TabIndex = 18;
             // 
             // userProgressControl2
             // 
             this.userProgressControl2.BackColor = System.Drawing.Color.White;
             this.userProgressControl2.Grade = 2;
-            this.userProgressControl2.Location = new System.Drawing.Point(36, 152);
+            this.userProgressControl2.Location = new System.Drawing.Point(15, 164);
             this.userProgressControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userProgressControl2.Name = "userProgressControl2";
-            this.userProgressControl2.Size = new System.Drawing.Size(564, 45);
+            this.userProgressControl2.Size = new System.Drawing.Size(608, 45);
             this.userProgressControl2.TabIndex = 18;
             // 
             // userProgressControl3
             // 
             this.userProgressControl3.BackColor = System.Drawing.Color.White;
             this.userProgressControl3.Grade = 3;
-            this.userProgressControl3.Location = new System.Drawing.Point(36, 210);
+            this.userProgressControl3.Location = new System.Drawing.Point(15, 222);
             this.userProgressControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userProgressControl3.Name = "userProgressControl3";
-            this.userProgressControl3.Size = new System.Drawing.Size(564, 45);
+            this.userProgressControl3.Size = new System.Drawing.Size(608, 45);
             this.userProgressControl3.TabIndex = 18;
             // 
             // userProgressControl4
             // 
             this.userProgressControl4.BackColor = System.Drawing.Color.White;
             this.userProgressControl4.Grade = 4;
-            this.userProgressControl4.Location = new System.Drawing.Point(36, 268);
+            this.userProgressControl4.Location = new System.Drawing.Point(15, 280);
             this.userProgressControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userProgressControl4.Name = "userProgressControl4";
-            this.userProgressControl4.Size = new System.Drawing.Size(564, 45);
+            this.userProgressControl4.Size = new System.Drawing.Size(608, 45);
             this.userProgressControl4.TabIndex = 18;
             // 
             // userProgressControl5
             // 
             this.userProgressControl5.BackColor = System.Drawing.Color.White;
             this.userProgressControl5.Grade = 5;
-            this.userProgressControl5.Location = new System.Drawing.Point(36, 326);
+            this.userProgressControl5.Location = new System.Drawing.Point(15, 338);
             this.userProgressControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userProgressControl5.Name = "userProgressControl5";
-            this.userProgressControl5.Size = new System.Drawing.Size(564, 45);
+            this.userProgressControl5.Size = new System.Drawing.Size(608, 45);
             this.userProgressControl5.TabIndex = 18;
             // 
             // userProgressControl6
             // 
             this.userProgressControl6.BackColor = System.Drawing.Color.White;
             this.userProgressControl6.Grade = 6;
-            this.userProgressControl6.Location = new System.Drawing.Point(36, 384);
+            this.userProgressControl6.Location = new System.Drawing.Point(15, 396);
             this.userProgressControl6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userProgressControl6.Name = "userProgressControl6";
-            this.userProgressControl6.Size = new System.Drawing.Size(564, 45);
+            this.userProgressControl6.Size = new System.Drawing.Size(608, 45);
             this.userProgressControl6.TabIndex = 18;
             // 
             // LobbyForm

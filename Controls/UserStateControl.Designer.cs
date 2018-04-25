@@ -45,12 +45,12 @@
             // 
             // userPicture
             // 
-            this.userPicture.BackgroundImage = global::ChineseVocabulary.Properties.Resources.pandewhite;
+            this.userPicture.BackgroundImage = global::ChineseVocabulary.Properties.Resources.PnadaW;
             this.userPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.userPicture.Location = new System.Drawing.Point(13, 0);
+            this.userPicture.Location = new System.Drawing.Point(13, -10);
             this.userPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userPicture.Name = "userPicture";
-            this.userPicture.Size = new System.Drawing.Size(70, 60);
+            this.userPicture.Size = new System.Drawing.Size(70, 70);
             this.userPicture.TabIndex = 1;
             this.userPicture.TabStop = false;
             // 
@@ -63,7 +63,7 @@
             this.Controls.Add(this.userName);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserStateControl";
-            this.Size = new System.Drawing.Size(240, 56);
+            this.Size = new System.Drawing.Size(240, 60);
             ((System.ComponentModel.ISupportInitialize)(this.userPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
