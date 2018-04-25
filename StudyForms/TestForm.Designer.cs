@@ -68,20 +68,21 @@
             // 
             // dgvWords
             // 
+            this.dgvWords.AllowUserToResizeColumns = false;
+            this.dgvWords.AllowUserToResizeRows = false;
             this.dgvWords.AutoGenerateColumns = false;
+            this.dgvWords.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvWords.BackgroundColor = System.Drawing.Color.Snow;
-            this.dgvWords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvWords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvWords.ColumnHeadersVisible = false;
-            this.dgvWords.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.wordIdDataGridViewTextBoxColumn,
-            this.historiesDataGridViewTextBoxColumn});
-            this.dgvWords.DataSource = this.bdsStagedWords;
-            this.dgvWords.Location = new System.Drawing.Point(17, 71);
-            this.dgvWords.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvWords.Location = new System.Drawing.Point(16, 72);
             this.dgvWords.MultiSelect = false;
             this.dgvWords.Name = "dgvWords";
-            this.dgvWords.RowTemplate.Height = 27;
-            this.dgvWords.Size = new System.Drawing.Size(187, 393);
+            this.dgvWords.RowHeadersVisible = false;
+            this.dgvWords.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvWords.RowTemplate.Height = 23;
+            this.dgvWords.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvWords.Size = new System.Drawing.Size(188, 391);
             this.dgvWords.TabIndex = 17;
             // 
             // wordIdDataGridViewTextBoxColumn

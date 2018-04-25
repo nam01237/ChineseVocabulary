@@ -222,9 +222,7 @@
   <ItemGroup>
     <None Include="Resources\pandewhite.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Main_Lobby\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\PnadaW.jpg" />
   </ItemGroup>

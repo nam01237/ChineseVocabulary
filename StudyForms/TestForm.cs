@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ChineseVocabulary
 {
-    public partial class TestForm : Form
+    public partial class TestForm : RootForm
     {
         public TestForm()
         {
@@ -19,7 +19,7 @@ namespace ChineseVocabulary
 
         private void Test_Load(object sender, EventArgs e)
         {
-
+            ModalParentForm.Visible = false;
         }
     }
 }

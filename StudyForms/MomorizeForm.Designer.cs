@@ -63,6 +63,7 @@ namespace ChineseVocabulary
             this.TestStart.TabIndex = 1;
             this.TestStart.Text = "시험보기";
             this.TestStart.UseVisualStyleBackColor = false;
+            this.TestStart.Click += new System.EventHandler(this.TestStart_Click);
             // 
             // btnGrade6
             // 
@@ -174,7 +175,6 @@ namespace ChineseVocabulary
             this.dgvWords.Size = new System.Drawing.Size(188, 391);
             this.dgvWords.TabIndex = 17;
             this.dgvWords.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvWords_CellEnter);
-            this.dgvWords.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgvWords_RowsAdded);
             // 
             // ganchezaDataGridViewTextBoxColumn
             // 

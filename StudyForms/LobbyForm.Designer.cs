@@ -152,7 +152,6 @@ namespace ChineseVocabulary
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "LobbyForm";
             this.Text = "중국어 학습";
-            this.Load += new System.EventHandler(this.LobbyForm_Load);
             this.ResumeLayout(false);
 
         }

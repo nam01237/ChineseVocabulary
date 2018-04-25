@@ -62,7 +62,7 @@ namespace ChineseVocabulary
                 if( !word.Tested)
                 {
                     int index = bdsWord.IndexOf(word);
-                    dgvWords.Rows[index].DefaultCellStyle.BackColor = Color.Lime;
+                    dgvWords.Rows[index].DefaultCellStyle.BackColor = Color.Pink;
                 }
             }
         }
@@ -74,6 +74,7 @@ namespace ChineseVocabulary
                 Word currentWord = bdsWord.Current as Word;
                 Word nextWord = DataRepository.Words.GetNetxWord(currentWord, AccessUserKey);
                 bdsWord.Add(nextWord);
+                dgvWords.CurrentRow.DefaultCellStyle.BackColor = Color.Pink;
 
                 StagedWord stagedWord =
                     new StagedWord
@@ -116,9 +117,11 @@ namespace ChineseVocabulary
 
         }
 
-        private void dgvWords_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
+        private void TestStart_Click(object sender, EventArgs e)
         {
-
+            TestForm testForm = new TestForm();
+            testForm.ModalParentForm = this;
+            testForm.ShowDialog();
         }
     }
 }
