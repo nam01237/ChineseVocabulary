@@ -40,11 +40,12 @@ namespace ChineseVocabulary
             this.btnGrade1 = new ChineseVocabulary.Controls.GradeSelectButton();
             this.uscWord = new ChineseVocabulary.Controls.WordControl();
             this.dgvWords = new System.Windows.Forms.DataGridView();
-            this.ganchezaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bdsWord = new System.Windows.Forms.BindingSource(this.components);
             this.pbNext = new System.Windows.Forms.PictureBox();
             this.pbPrev = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.ganchezaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ByeongEum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvWords)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsWord)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNext)).BeginInit();
@@ -152,6 +153,7 @@ namespace ChineseVocabulary
             // 
             // dgvWords
             // 
+            this.dgvWords.AllowUserToResizeColumns = false;
             this.dgvWords.AllowUserToResizeRows = false;
             this.dgvWords.AutoGenerateColumns = false;
             this.dgvWords.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -159,7 +161,8 @@ namespace ChineseVocabulary
             this.dgvWords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvWords.ColumnHeadersVisible = false;
             this.dgvWords.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ganchezaDataGridViewTextBoxColumn});
+            this.ganchezaDataGridViewTextBoxColumn,
+            this.ByeongEum});
             this.dgvWords.DataSource = this.bdsWord;
             this.dgvWords.Location = new System.Drawing.Point(16, 72);
             this.dgvWords.MultiSelect = false;
@@ -167,15 +170,10 @@ namespace ChineseVocabulary
             this.dgvWords.RowHeadersVisible = false;
             this.dgvWords.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvWords.RowTemplate.Height = 23;
+            this.dgvWords.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvWords.Size = new System.Drawing.Size(188, 391);
             this.dgvWords.TabIndex = 17;
             this.dgvWords.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvWords_CellEnter);
-            // 
-            // ganchezaDataGridViewTextBoxColumn
-            // 
-            this.ganchezaDataGridViewTextBoxColumn.DataPropertyName = "Gancheza";
-            this.ganchezaDataGridViewTextBoxColumn.HeaderText = "Gancheza";
-            this.ganchezaDataGridViewTextBoxColumn.Name = "ganchezaDataGridViewTextBoxColumn";
             // 
             // bdsWord
             // 
@@ -215,6 +213,18 @@ namespace ChineseVocabulary
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // ganchezaDataGridViewTextBoxColumn
+            // 
+            this.ganchezaDataGridViewTextBoxColumn.DataPropertyName = "Gancheza";
+            this.ganchezaDataGridViewTextBoxColumn.HeaderText = "Gancheza";
+            this.ganchezaDataGridViewTextBoxColumn.Name = "ganchezaDataGridViewTextBoxColumn";
+            // 
+            // ByeongEum
+            // 
+            this.ByeongEum.DataPropertyName = "ByeongEum";
+            this.ByeongEum.HeaderText = "ByeongEum";
+            this.ByeongEum.Name = "ByeongEum";
             // 
             // StudyForm
             // 
@@ -260,7 +270,8 @@ namespace ChineseVocabulary
         private System.Windows.Forms.PictureBox pbPrev;
         private Controls.WordControl uscWord;
         private System.Windows.Forms.DataGridView dgvWords;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ganchezaDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource bdsWord;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ganchezaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ByeongEum;
     }
 }
