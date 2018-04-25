@@ -225,5 +225,8 @@
   <ItemGroup>
     <Folder Include="Main_Lobby\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PnadaW.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
