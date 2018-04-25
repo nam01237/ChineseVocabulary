@@ -28,7 +28,7 @@ namespace ChineseVocabulary
 
         private void btnStuddy_Click(object sender, EventArgs e)
         {
-            AccessUserKey = 7;
+            //AccessUserKey = 7;
             ShowChild = true;
             ChildeForm = new StudyForm(_selectedGrade);
             Close();

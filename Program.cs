@@ -21,13 +21,13 @@ namespace ChineseVocabulary
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            LobbyForm lobbyForm = new LobbyForm();
-            Application.Run(lobbyForm);
-            RootForm currentForm = lobbyForm;
-            
-            //LoginForm loginForm = new LoginForm();
-            //RootForm currentForm = loginForm;
-            //Application.Run(loginForm);
+            //LobbyForm lobbyForm = new LobbyForm();
+            //Application.Run(lobbyForm);
+            //RootForm currentForm = lobbyForm;
+
+            LoginForm loginForm = new LoginForm();
+            RootForm currentForm = loginForm;
+            Application.Run(loginForm);
 
             while (true)
             {
