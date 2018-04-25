@@ -77,7 +77,7 @@ namespace ChineseVocabulary
             // userProgressControl1
             // 
             this.userProgressControl1.BackColor = System.Drawing.Color.White;
-            this.userProgressControl1.Grade = 0;
+            this.userProgressControl1.Grade = 1;
             this.userProgressControl1.Location = new System.Drawing.Point(36, 94);
             this.userProgressControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userProgressControl1.Name = "userProgressControl1";
@@ -87,7 +87,7 @@ namespace ChineseVocabulary
             // userProgressControl2
             // 
             this.userProgressControl2.BackColor = System.Drawing.Color.White;
-            this.userProgressControl2.Grade = 0;
+            this.userProgressControl2.Grade = 2;
             this.userProgressControl2.Location = new System.Drawing.Point(36, 152);
             this.userProgressControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userProgressControl2.Name = "userProgressControl2";
@@ -97,7 +97,7 @@ namespace ChineseVocabulary
             // userProgressControl3
             // 
             this.userProgressControl3.BackColor = System.Drawing.Color.White;
-            this.userProgressControl3.Grade = 0;
+            this.userProgressControl3.Grade = 3;
             this.userProgressControl3.Location = new System.Drawing.Point(36, 210);
             this.userProgressControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userProgressControl3.Name = "userProgressControl3";
@@ -107,7 +107,7 @@ namespace ChineseVocabulary
             // userProgressControl4
             // 
             this.userProgressControl4.BackColor = System.Drawing.Color.White;
-            this.userProgressControl4.Grade = 0;
+            this.userProgressControl4.Grade = 4;
             this.userProgressControl4.Location = new System.Drawing.Point(36, 268);
             this.userProgressControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userProgressControl4.Name = "userProgressControl4";
@@ -117,7 +117,7 @@ namespace ChineseVocabulary
             // userProgressControl5
             // 
             this.userProgressControl5.BackColor = System.Drawing.Color.White;
-            this.userProgressControl5.Grade = 0;
+            this.userProgressControl5.Grade = 5;
             this.userProgressControl5.Location = new System.Drawing.Point(36, 326);
             this.userProgressControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userProgressControl5.Name = "userProgressControl5";
@@ -127,7 +127,7 @@ namespace ChineseVocabulary
             // userProgressControl6
             // 
             this.userProgressControl6.BackColor = System.Drawing.Color.White;
-            this.userProgressControl6.Grade = 0;
+            this.userProgressControl6.Grade = 6;
             this.userProgressControl6.Location = new System.Drawing.Point(36, 384);
             this.userProgressControl6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userProgressControl6.Name = "userProgressControl6";
@@ -152,6 +152,7 @@ namespace ChineseVocabulary
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "LobbyForm";
             this.Text = "중국어 학습";
+            this.Shown += new System.EventHandler(this.LobbyForm_Shown);
             this.ResumeLayout(false);
 
         }

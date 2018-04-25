@@ -54,7 +54,7 @@ namespace ChineseVocabulary.Controls
             }
         }
 
-         private void ChildControlClicked(object sender, EventArgs e)
+        private void ChildControlClicked(object sender, EventArgs e)
         {
             Select();
         }

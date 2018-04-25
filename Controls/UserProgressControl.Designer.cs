@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.pgbLearn = new System.Windows.Forms.ProgressBar();
-            this.lblLearnPer = new System.Windows.Forms.Label();
+            this.lblMemorize = new System.Windows.Forms.Label();
             this.lblGrade = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -45,15 +45,15 @@
             this.pgbLearn.Size = new System.Drawing.Size(357, 22);
             this.pgbLearn.TabIndex = 0;
             // 
-            // lblLearnPer
+            // lblMemorize
             // 
-            this.lblLearnPer.AutoSize = true;
-            this.lblLearnPer.Font = new System.Drawing.Font("Gulim", 10F, System.Drawing.FontStyle.Bold);
-            this.lblLearnPer.Location = new System.Drawing.Point(442, 16);
-            this.lblLearnPer.Name = "lblLearnPer";
-            this.lblLearnPer.Size = new System.Drawing.Size(62, 14);
-            this.lblLearnPer.TabIndex = 1;
-            this.lblLearnPer.Text = "0  /   n";
+            this.lblMemorize.AutoSize = true;
+            this.lblMemorize.Font = new System.Drawing.Font("Gulim", 10F, System.Drawing.FontStyle.Bold);
+            this.lblMemorize.Location = new System.Drawing.Point(442, 16);
+            this.lblMemorize.Name = "lblMemorize";
+            this.lblMemorize.Size = new System.Drawing.Size(62, 14);
+            this.lblMemorize.TabIndex = 1;
+            this.lblMemorize.Text = "0  /   n";
             // 
             // lblGrade
             // 
@@ -82,7 +82,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblGrade);
-            this.Controls.Add(this.lblLearnPer);
+            this.Controls.Add(this.lblMemorize);
             this.Controls.Add(this.pgbLearn);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserProgressControl";
@@ -101,8 +101,8 @@
         #endregion
 
         private System.Windows.Forms.ProgressBar pgbLearn;
-        private System.Windows.Forms.Label lblLearnPer;
         public System.Windows.Forms.Label lblGrade;
         private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Label lblMemorize;
     }
 }
