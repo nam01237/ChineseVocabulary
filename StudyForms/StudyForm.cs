@@ -25,8 +25,8 @@ namespace ChineseVocabulary
 
         private void StudyForm_Shown(object sender, EventArgs e)
         {
-            List<StagedWord> stagedWords = DataRepository.StagedWords.GetByGrade(AccessUserKey, _currentGrade);
-            bdsStagedWords.DataSource = stagedWords;
+            List<Word> Words = DataRepository.StagedWords.GetByGrade(AccessUserKey, _currentGrade);
+            bdsStagedWords.DataSource = dWords;
             
         }
     }

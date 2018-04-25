@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvWords = new System.Windows.Forms.DataGridView();
+            this.wordIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.historiesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bdsStagedWords = new System.Windows.Forms.BindingSource(this.components);
             this.TestStart = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -42,13 +44,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.wordControl1 = new ChineseVocabulary.Controls.WordControl();
-            this.userKeyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.wordIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passedCountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.testedDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.historiesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.wordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvWords)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsStagedWords)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -63,13 +58,8 @@
             this.dgvWords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvWords.ColumnHeadersVisible = false;
             this.dgvWords.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.userKeyDataGridViewTextBoxColumn,
             this.wordIdDataGridViewTextBoxColumn,
-            this.passedCountDataGridViewTextBoxColumn,
-            this.testedDataGridViewCheckBoxColumn,
-            this.historiesDataGridViewTextBoxColumn,
-            this.userDataGridViewTextBoxColumn,
-            this.wordDataGridViewTextBoxColumn});
+            this.historiesDataGridViewTextBoxColumn});
             this.dgvWords.DataSource = this.bdsStagedWords;
             this.dgvWords.Location = new System.Drawing.Point(24, 71);
             this.dgvWords.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -79,9 +69,22 @@
             this.dgvWords.Size = new System.Drawing.Size(187, 393);
             this.dgvWords.TabIndex = 0;
             // 
+            // wordIdDataGridViewTextBoxColumn
+            // 
+            this.wordIdDataGridViewTextBoxColumn.DataPropertyName = "WordId";
+            this.wordIdDataGridViewTextBoxColumn.HeaderText = "WordId";
+            this.wordIdDataGridViewTextBoxColumn.Name = "wordIdDataGridViewTextBoxColumn";
+            // 
+            // historiesDataGridViewTextBoxColumn
+            // 
+            this.historiesDataGridViewTextBoxColumn.DataPropertyName = "Histories";
+            this.historiesDataGridViewTextBoxColumn.HeaderText = "Histories";
+            this.historiesDataGridViewTextBoxColumn.Name = "historiesDataGridViewTextBoxColumn";
+            this.historiesDataGridViewTextBoxColumn.Visible = false;
+            // 
             // bdsStagedWords
             // 
-            this.bdsStagedWords.DataSource = typeof(VocabularyEntities.StagedWord);
+            this.bdsStagedWords.DataSource = typeof(VocabularyEntities.Word);
             // 
             // TestStart
             // 
@@ -207,55 +210,6 @@
             this.wordControl1.Size = new System.Drawing.Size(346, 340);
             this.wordControl1.TabIndex = 16;
             // 
-            // userKeyDataGridViewTextBoxColumn
-            // 
-            this.userKeyDataGridViewTextBoxColumn.DataPropertyName = "UserKey";
-            this.userKeyDataGridViewTextBoxColumn.HeaderText = "UserKey";
-            this.userKeyDataGridViewTextBoxColumn.Name = "userKeyDataGridViewTextBoxColumn";
-            this.userKeyDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // wordIdDataGridViewTextBoxColumn
-            // 
-            this.wordIdDataGridViewTextBoxColumn.DataPropertyName = "WordId";
-            this.wordIdDataGridViewTextBoxColumn.HeaderText = "WordId";
-            this.wordIdDataGridViewTextBoxColumn.Name = "wordIdDataGridViewTextBoxColumn";
-            this.wordIdDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // passedCountDataGridViewTextBoxColumn
-            // 
-            this.passedCountDataGridViewTextBoxColumn.DataPropertyName = "PassedCount";
-            this.passedCountDataGridViewTextBoxColumn.HeaderText = "PassedCount";
-            this.passedCountDataGridViewTextBoxColumn.Name = "passedCountDataGridViewTextBoxColumn";
-            this.passedCountDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // testedDataGridViewCheckBoxColumn
-            // 
-            this.testedDataGridViewCheckBoxColumn.DataPropertyName = "Tested";
-            this.testedDataGridViewCheckBoxColumn.HeaderText = "Tested";
-            this.testedDataGridViewCheckBoxColumn.Name = "testedDataGridViewCheckBoxColumn";
-            this.testedDataGridViewCheckBoxColumn.Visible = false;
-            // 
-            // historiesDataGridViewTextBoxColumn
-            // 
-            this.historiesDataGridViewTextBoxColumn.DataPropertyName = "Histories";
-            this.historiesDataGridViewTextBoxColumn.HeaderText = "Histories";
-            this.historiesDataGridViewTextBoxColumn.Name = "historiesDataGridViewTextBoxColumn";
-            this.historiesDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // userDataGridViewTextBoxColumn
-            // 
-            this.userDataGridViewTextBoxColumn.DataPropertyName = "User";
-            this.userDataGridViewTextBoxColumn.HeaderText = "User";
-            this.userDataGridViewTextBoxColumn.Name = "userDataGridViewTextBoxColumn";
-            this.userDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // wordDataGridViewTextBoxColumn
-            // 
-            this.wordDataGridViewTextBoxColumn.DataPropertyName = "Word";
-            this.wordDataGridViewTextBoxColumn.HeaderText = "Word";
-            this.wordDataGridViewTextBoxColumn.Name = "wordDataGridViewTextBoxColumn";
-            this.wordDataGridViewTextBoxColumn.Visible = false;
-            // 
             // StudyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -302,12 +256,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Controls.WordControl wordControl1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn userKeyDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn wordIdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn passedCountDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn testedDataGridViewCheckBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn historiesDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn userDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn wordDataGridViewTextBoxColumn;
     }
 }

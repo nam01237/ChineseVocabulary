@@ -13,7 +13,7 @@ namespace VocabularyEntities.Data
         {
             using (VocabularyEntities context = new VocabularyEntities())
             {
-                var list = context.StagedWords
+                var list = context.StagedWords.
                             .Where(x  => x.UserKey == userKey && x.Word.Grade == grade)
                             .ToList();
 
