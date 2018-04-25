@@ -13,12 +13,11 @@ namespace ChineseVocabulary
     public partial class RootForm : Form
     {
         public static int AccessUserKey { get; set; }
-        public RootForm ChildeForm { get; set; } 
-        public bool ShowChild { get; set; }
+        public static string AccessUSerId { get; set; }
+        public RootForm ModalParentForm { get; set; }
 
         protected RootForm()
         {
-            ShowChild = false;
             InitializeComponent();
         }
     }

@@ -28,14 +28,16 @@ namespace ChineseVocabulary
 
         private void btnStuddy_Click(object sender, EventArgs e)
         {
-            ShowChild = true;
-            ChildeForm = new StudyForm(_selectedGrade);
-            Close();
+            StudyForm studyForm = new StudyForm(_selectedGrade);
+            studyForm.ModalParentForm = this;
+            studyForm.ShowDialog();
         }
 
         private void LobbyForm_Load(object sender, EventArgs e)
         {
-            foreach(Control control in Controls)
+            ModalParentForm.Visible = false;
+
+            foreach (Control control in Controls)
             {
                 if (control is UserProgressControl)
                 {

@@ -1,4 +1,6 @@
-﻿namespace ChineseVocabulary
+﻿using ChineseVocabulary.Controls;
+
+namespace ChineseVocabulary
 {
     partial class StudyForm
     {
@@ -30,12 +32,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.TestStart = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGrade6 = new ChineseVocabulary.Controls.GradeSelectButton();
+            this.btnGrade5 = new ChineseVocabulary.Controls.GradeSelectButton();
+            this.btnGrade4 = new ChineseVocabulary.Controls.GradeSelectButton();
+            this.btnGrade3 = new ChineseVocabulary.Controls.GradeSelectButton();
+            this.btnGrade2 = new ChineseVocabulary.Controls.GradeSelectButton();
+            this.btnGrade1 = new ChineseVocabulary.Controls.GradeSelectButton();
             this.uscWord = new ChineseVocabulary.Controls.WordControl();
             this.dgvWords = new System.Windows.Forms.DataGridView();
             this.ganchezaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,77 +63,83 @@
             this.TestStart.Text = "시험보기";
             this.TestStart.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnGrade6
             // 
-            this.button6.BackColor = System.Drawing.Color.White;
-            this.button6.Font = new System.Drawing.Font("Gulim", 13F);
-            this.button6.Location = new System.Drawing.Point(296, 11);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(51, 42);
-            this.button6.TabIndex = 13;
-            this.button6.Text = "6급";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnGrade6.BackColor = System.Drawing.Color.White;
+            this.btnGrade6.Font = new System.Drawing.Font("Gulim", 13F);
+            this.btnGrade6.Grade = 6;
+            this.btnGrade6.Location = new System.Drawing.Point(296, 11);
+            this.btnGrade6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnGrade6.Name = "btnGrade6";
+            this.btnGrade6.Size = new System.Drawing.Size(51, 42);
+            this.btnGrade6.TabIndex = 13;
+            this.btnGrade6.Text = "6급";
+            this.btnGrade6.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnGrade5
             // 
-            this.button5.BackColor = System.Drawing.Color.White;
-            this.button5.Font = new System.Drawing.Font("Gulim", 13F);
-            this.button5.Location = new System.Drawing.Point(240, 11);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(51, 42);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "5급";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnGrade5.BackColor = System.Drawing.Color.White;
+            this.btnGrade5.Font = new System.Drawing.Font("Gulim", 13F);
+            this.btnGrade5.Grade = 5;
+            this.btnGrade5.Location = new System.Drawing.Point(240, 11);
+            this.btnGrade5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnGrade5.Name = "btnGrade5";
+            this.btnGrade5.Size = new System.Drawing.Size(51, 42);
+            this.btnGrade5.TabIndex = 12;
+            this.btnGrade5.Text = "5급";
+            this.btnGrade5.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnGrade4
             // 
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.Font = new System.Drawing.Font("Gulim", 13F);
-            this.button4.Location = new System.Drawing.Point(184, 11);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(51, 42);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "4급";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnGrade4.BackColor = System.Drawing.Color.White;
+            this.btnGrade4.Font = new System.Drawing.Font("Gulim", 13F);
+            this.btnGrade4.Grade = 4;
+            this.btnGrade4.Location = new System.Drawing.Point(184, 11);
+            this.btnGrade4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnGrade4.Name = "btnGrade4";
+            this.btnGrade4.Size = new System.Drawing.Size(51, 42);
+            this.btnGrade4.TabIndex = 11;
+            this.btnGrade4.Text = "4급";
+            this.btnGrade4.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnGrade3
             // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.Font = new System.Drawing.Font("Gulim", 13F);
-            this.button3.Location = new System.Drawing.Point(128, 11);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(51, 42);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "3급";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnGrade3.BackColor = System.Drawing.Color.White;
+            this.btnGrade3.Font = new System.Drawing.Font("Gulim", 13F);
+            this.btnGrade3.Grade = 3;
+            this.btnGrade3.Location = new System.Drawing.Point(128, 11);
+            this.btnGrade3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnGrade3.Name = "btnGrade3";
+            this.btnGrade3.Size = new System.Drawing.Size(51, 42);
+            this.btnGrade3.TabIndex = 10;
+            this.btnGrade3.Text = "3급";
+            this.btnGrade3.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnGrade2
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Font = new System.Drawing.Font("Gulim", 13F);
-            this.button2.Location = new System.Drawing.Point(72, 11);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(51, 42);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "2급";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnGrade2.BackColor = System.Drawing.Color.White;
+            this.btnGrade2.Font = new System.Drawing.Font("Gulim", 13F);
+            this.btnGrade2.Grade = 2;
+            this.btnGrade2.Location = new System.Drawing.Point(72, 11);
+            this.btnGrade2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnGrade2.Name = "btnGrade2";
+            this.btnGrade2.Size = new System.Drawing.Size(51, 42);
+            this.btnGrade2.TabIndex = 9;
+            this.btnGrade2.Text = "2급";
+            this.btnGrade2.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnGrade1
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Gulim", 13F);
-            this.button1.Location = new System.Drawing.Point(16, 11);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(51, 42);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "1급";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnGrade1.BackColor = System.Drawing.Color.White;
+            this.btnGrade1.Font = new System.Drawing.Font("Gulim", 13F);
+            this.btnGrade1.Grade = 1;
+            this.btnGrade1.Location = new System.Drawing.Point(16, 11);
+            this.btnGrade1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnGrade1.Name = "btnGrade1";
+            this.btnGrade1.Size = new System.Drawing.Size(51, 42);
+            this.btnGrade1.TabIndex = 8;
+            this.btnGrade1.Text = "1급";
+            this.btnGrade1.UseVisualStyleBackColor = false;
             // 
             // uscWord
             // 
@@ -144,17 +152,20 @@
             // 
             // dgvWords
             // 
+            this.dgvWords.AllowUserToResizeRows = false;
             this.dgvWords.AutoGenerateColumns = false;
             this.dgvWords.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvWords.BackgroundColor = System.Drawing.Color.Snow;
-            this.dgvWords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvWords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvWords.ColumnHeadersVisible = false;
             this.dgvWords.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ganchezaDataGridViewTextBoxColumn});
             this.dgvWords.DataSource = this.bdsWord;
             this.dgvWords.Location = new System.Drawing.Point(16, 72);
+            this.dgvWords.MultiSelect = false;
             this.dgvWords.Name = "dgvWords";
             this.dgvWords.RowHeadersVisible = false;
+            this.dgvWords.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvWords.RowTemplate.Height = 23;
             this.dgvWords.Size = new System.Drawing.Size(188, 391);
             this.dgvWords.TabIndex = 17;
@@ -203,6 +214,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(112, 102);
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // StudyForm
             // 
@@ -214,12 +226,12 @@
             this.Controls.Add(this.uscWord);
             this.Controls.Add(this.pbNext);
             this.Controls.Add(this.pbPrev);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnGrade6);
+            this.Controls.Add(this.btnGrade5);
+            this.Controls.Add(this.btnGrade4);
+            this.Controls.Add(this.btnGrade3);
+            this.Controls.Add(this.btnGrade2);
+            this.Controls.Add(this.btnGrade1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.TestStart);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -238,12 +250,12 @@
         #endregion
         private System.Windows.Forms.Button TestStart;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private GradeSelectButton btnGrade6;
+        private GradeSelectButton btnGrade5;
+        private GradeSelectButton btnGrade4;
+        private GradeSelectButton btnGrade3;
+        private GradeSelectButton btnGrade2;
+        private GradeSelectButton btnGrade1;
         private System.Windows.Forms.PictureBox pbNext;
         private System.Windows.Forms.PictureBox pbPrev;
         private Controls.WordControl uscWord;

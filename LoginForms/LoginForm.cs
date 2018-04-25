@@ -49,9 +49,13 @@ namespace ChineseVocabulary
                 if( user.PassWord.Equals(pw) )
                 {
                     AccessUserKey = user.UserKey;
-                    ChildeForm = new LobbyForm();
-                    ShowChild = true;
+                    AccessUSerId = id;
+
+                    LobbyForm lobbyForm = new LobbyForm();
+                    lobbyForm.ModalParentForm = this;
+                    lobbyForm.ShowDialog();
                     Close();
+                    
                 }
                 else
                 {

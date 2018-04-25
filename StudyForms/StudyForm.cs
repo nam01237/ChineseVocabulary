@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using VocabularyEntities;
 using VocabularyEntities.Data;
+using ChineseVocabulary.Controls;
 
 namespace ChineseVocabulary
 {
@@ -30,6 +31,13 @@ namespace ChineseVocabulary
         private void StudyForm_Shown(object sender, EventArgs e)
         {
             _gradeCount = DataRepository.Words.GetCount(x => x.Grade == _currentGrade);
+
+            foreach (Control control in Controls)
+            {
+                if (control is GradeSelectButton)
+                    ((GradeSelectButton)control).GradeButtonClicked += btnGrade_Click;
+            }
+
             UpdateWordList();
         }
 
@@ -50,7 +58,7 @@ namespace ChineseVocabulary
 
         private void pbNext_Click(object sender, EventArgs e)
         {
-            if (bdsWord.Position == bdsWord.Count - 1 && bdsWord.Position < bdsWord.Count - 1)
+            if (bdsWord.Position == bdsWord.Count - 1 && bdsWord.Position < _gradeCount - 1)
             {
                 Word currentWord = bdsWord.Current as Word;
                 Word nextWord = DataRepository.Words.GetNetxWord(currentWord, AccessUserKey);
@@ -64,7 +72,6 @@ namespace ChineseVocabulary
                     };
 
                 DataRepository.StagedWords.Insert(stagedWord);
-                return;
             }
 
             bdsWord.MoveNext();
@@ -76,12 +83,26 @@ namespace ChineseVocabulary
             Word word = bdsWord.Current as Word;
             uscWord.txtWord.Text = word.Gancheza;
             uscWord.txtMeaning.Text = word.Meaning;
+            uscWord.txtByeongEum.Text = word.ByeongEum;
+            uscWord.txtWordClass.Text = word.WordClass;
             uscWord.LblWordProgress.Text = $"{bdsWord.Position + 1} / {_gradeCount}";
         }
 
         private void pbPrev_Click(object sender, EventArgs e)
         {
             bdsWord.MovePrevious();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnGrade_Click(object sender, EventArgs e)
+        {
+            _currentGrade = ((GradeButtonClickedEventArgs)e).Geade;
+            UpdateWordList();
+
         }
     }
 }

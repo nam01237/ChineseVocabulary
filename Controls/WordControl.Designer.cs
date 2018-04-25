@@ -32,8 +32,8 @@
             this.txtWord = new System.Windows.Forms.TextBox();
             this.LblWordProgress = new System.Windows.Forms.Label();
             this.lblGrade = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtWordClass = new System.Windows.Forms.TextBox();
+            this.txtByeongEum = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtMeaning
@@ -85,43 +85,43 @@
             this.lblGrade.TabIndex = 30;
             this.lblGrade.Text = "N급";
             // 
-            // textBox1
+            // txtWordClass
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Snow;
-            this.textBox1.Font = new System.Drawing.Font("Gulim", 13F);
-            this.textBox1.Location = new System.Drawing.Point(14, 192);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox1.Size = new System.Drawing.Size(317, 28);
-            this.textBox1.TabIndex = 31;
-            this.textBox1.Text = "품사";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtWordClass.BackColor = System.Drawing.Color.Snow;
+            this.txtWordClass.Font = new System.Drawing.Font("Gulim", 13F);
+            this.txtWordClass.Location = new System.Drawing.Point(14, 192);
+            this.txtWordClass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtWordClass.Multiline = true;
+            this.txtWordClass.Name = "txtWordClass";
+            this.txtWordClass.ReadOnly = true;
+            this.txtWordClass.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtWordClass.Size = new System.Drawing.Size(317, 28);
+            this.txtWordClass.TabIndex = 31;
+            this.txtWordClass.Text = "품사";
+            this.txtWordClass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox2
+            // txtByeongEum
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Snow;
-            this.textBox2.Font = new System.Drawing.Font("Gulim", 30F);
-            this.textBox2.Location = new System.Drawing.Point(14, 139);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox2.Size = new System.Drawing.Size(317, 49);
-            this.textBox2.TabIndex = 32;
-            this.textBox2.Text = "병음";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtByeongEum.BackColor = System.Drawing.Color.Snow;
+            this.txtByeongEum.Font = new System.Drawing.Font("Gulim", 30F);
+            this.txtByeongEum.Location = new System.Drawing.Point(14, 139);
+            this.txtByeongEum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtByeongEum.Multiline = true;
+            this.txtByeongEum.Name = "txtByeongEum";
+            this.txtByeongEum.ReadOnly = true;
+            this.txtByeongEum.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtByeongEum.Size = new System.Drawing.Size(317, 49);
+            this.txtByeongEum.TabIndex = 32;
+            this.txtByeongEum.Text = "병음";
+            this.txtByeongEum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // WordControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtByeongEum);
+            this.Controls.Add(this.txtWordClass);
             this.Controls.Add(this.lblGrade);
             this.Controls.Add(this.LblWordProgress);
             this.Controls.Add(this.txtWord);
@@ -140,7 +140,7 @@
         public System.Windows.Forms.TextBox txtWord;
         public System.Windows.Forms.Label LblWordProgress;
         public System.Windows.Forms.Label lblGrade;
-        public System.Windows.Forms.TextBox textBox1;
-        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox txtWordClass;
+        public System.Windows.Forms.TextBox txtByeongEum;
     }
 }

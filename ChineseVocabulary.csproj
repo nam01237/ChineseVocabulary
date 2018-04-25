@@ -52,6 +52,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\GradeSelectButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,12 +102,6 @@
     </Compile>
     <Compile Include="Controls\WordControl.Designer.cs">
       <DependentUpon>WordControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\TestControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\TestControl.Designer.cs">
-      <DependentUpon>TestControl.cs</DependentUpon>
     </Compile>
     <Compile Include="StudyForms\TestForm.cs">
       <SubType>Form</SubType>
@@ -143,9 +146,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\WordControl.resx">
       <DependentUpon>WordControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\TestControl.resx">
-      <DependentUpon>TestControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudyForms\TestForm.resx">
       <DependentUpon>TestForm.cs</DependentUpon>
