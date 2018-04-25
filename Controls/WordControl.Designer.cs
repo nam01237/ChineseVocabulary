@@ -31,7 +31,7 @@
             this.txtMeaning = new System.Windows.Forms.TextBox();
             this.txtWord = new System.Windows.Forms.TextBox();
             this.LblWordProgress = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblGrade = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtMeaning
@@ -75,19 +75,19 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Gulim", 20F);
-            this.label1.Location = new System.Drawing.Point(9, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 37);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "N급";
+            this.lblGrade.Font = new System.Drawing.Font("Gulim", 20F);
+            this.lblGrade.Location = new System.Drawing.Point(9, 10);
+            this.lblGrade.Name = "label1";
+            this.lblGrade.Size = new System.Drawing.Size(65, 37);
+            this.lblGrade.TabIndex = 30;
+            this.lblGrade.Text = "N급";
             // 
             // WordControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblGrade);
             this.Controls.Add(this.LblWordProgress);
             this.Controls.Add(this.txtWord);
             this.Controls.Add(this.txtMeaning);
@@ -101,9 +101,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtMeaning;
-        private System.Windows.Forms.TextBox txtWord;
-        private System.Windows.Forms.Label LblWordProgress;
-        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox txtMeaning;
+        public System.Windows.Forms.TextBox txtWord;
+        public System.Windows.Forms.Label LblWordProgress;
+        public System.Windows.Forms.Label lblGrade;
     }
 }

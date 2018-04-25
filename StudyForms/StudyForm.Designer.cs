@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dgvWords = new System.Windows.Forms.DataGridView();
-            this.wordIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.historiesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bdsStagedWords = new System.Windows.Forms.BindingSource(this.components);
             this.TestStart = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button6 = new System.Windows.Forms.Button();
@@ -41,50 +37,18 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.wordControl1 = new ChineseVocabulary.Controls.WordControl();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvWords)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bdsStagedWords)).BeginInit();
+            this.pbNext = new System.Windows.Forms.PictureBox();
+            this.pbPrev = new System.Windows.Forms.PictureBox();
+            this.uscWord = new ChineseVocabulary.Controls.WordControl();
+            this.dgvWords = new System.Windows.Forms.DataGridView();
+            this.ganchezaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bdsWord = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNext)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPrev)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWords)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsWord)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dgvWords
-            // 
-            this.dgvWords.AutoGenerateColumns = false;
-            this.dgvWords.BackgroundColor = System.Drawing.Color.Snow;
-            this.dgvWords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvWords.ColumnHeadersVisible = false;
-            this.dgvWords.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.wordIdDataGridViewTextBoxColumn,
-            this.historiesDataGridViewTextBoxColumn});
-            this.dgvWords.DataSource = this.bdsStagedWords;
-            this.dgvWords.Location = new System.Drawing.Point(17, 71);
-            this.dgvWords.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dgvWords.MultiSelect = false;
-            this.dgvWords.Name = "dgvWords";
-            this.dgvWords.RowTemplate.Height = 27;
-            this.dgvWords.Size = new System.Drawing.Size(187, 393);
-            this.dgvWords.TabIndex = 0;
-            // 
-            // wordIdDataGridViewTextBoxColumn
-            // 
-            this.wordIdDataGridViewTextBoxColumn.DataPropertyName = "WordId";
-            this.wordIdDataGridViewTextBoxColumn.HeaderText = "WordId";
-            this.wordIdDataGridViewTextBoxColumn.Name = "wordIdDataGridViewTextBoxColumn";
-            // 
-            // historiesDataGridViewTextBoxColumn
-            // 
-            this.historiesDataGridViewTextBoxColumn.DataPropertyName = "Histories";
-            this.historiesDataGridViewTextBoxColumn.HeaderText = "Histories";
-            this.historiesDataGridViewTextBoxColumn.Name = "historiesDataGridViewTextBoxColumn";
-            this.historiesDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // bdsStagedWords
-            // 
-            this.bdsStagedWords.DataSource = typeof(VocabularyEntities.Word);
             // 
             // TestStart
             // 
@@ -179,36 +143,65 @@
             this.button1.Text = "1급";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // pictureBox2
+            // pbNext
             // 
-            this.pictureBox2.Image = global::ChineseVocabulary.Properties.Resources.Right;
-            this.pictureBox2.Location = new System.Drawing.Point(586, 265);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(44, 48);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
+            this.pbNext.Image = global::ChineseVocabulary.Properties.Resources.Right;
+            this.pbNext.Location = new System.Drawing.Point(586, 265);
+            this.pbNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbNext.Name = "pbNext";
+            this.pbNext.Size = new System.Drawing.Size(44, 48);
+            this.pbNext.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbNext.TabIndex = 15;
+            this.pbNext.TabStop = false;
+            this.pbNext.Click += new System.EventHandler(this.pbNext_Click);
             // 
-            // pictureBox1
+            // pbPrev
             // 
-            this.pictureBox1.Image = global::ChineseVocabulary.Properties.Resources.Left;
-            this.pictureBox1.Location = new System.Drawing.Point(210, 265);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(46, 48);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
+            this.pbPrev.Image = global::ChineseVocabulary.Properties.Resources.Left;
+            this.pbPrev.Location = new System.Drawing.Point(210, 265);
+            this.pbPrev.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbPrev.Name = "pbPrev";
+            this.pbPrev.Size = new System.Drawing.Size(46, 48);
+            this.pbPrev.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPrev.TabIndex = 14;
+            this.pbPrev.TabStop = false;
             // 
-            // wordControl1
+            // uscWord
             // 
-            this.wordControl1.BackColor = System.Drawing.Color.White;
-            this.wordControl1.Location = new System.Drawing.Point(248, 124);
-            this.wordControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.wordControl1.Name = "wordControl1";
-            this.wordControl1.Size = new System.Drawing.Size(346, 340);
-            this.wordControl1.TabIndex = 16;
+            this.uscWord.BackColor = System.Drawing.Color.White;
+            this.uscWord.Location = new System.Drawing.Point(248, 124);
+            this.uscWord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uscWord.Name = "uscWord";
+            this.uscWord.Size = new System.Drawing.Size(346, 340);
+            this.uscWord.TabIndex = 16;
+            // 
+            // dgvWords
+            // 
+            this.dgvWords.AutoGenerateColumns = false;
+            this.dgvWords.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvWords.BackgroundColor = System.Drawing.Color.Snow;
+            this.dgvWords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvWords.ColumnHeadersVisible = false;
+            this.dgvWords.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ganchezaDataGridViewTextBoxColumn});
+            this.dgvWords.DataSource = this.bdsWord;
+            this.dgvWords.Location = new System.Drawing.Point(16, 72);
+            this.dgvWords.Name = "dgvWords";
+            this.dgvWords.RowHeadersVisible = false;
+            this.dgvWords.RowTemplate.Height = 23;
+            this.dgvWords.Size = new System.Drawing.Size(188, 391);
+            this.dgvWords.TabIndex = 17;
+            this.dgvWords.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvWords_CellEnter);
+            // 
+            // ganchezaDataGridViewTextBoxColumn
+            // 
+            this.ganchezaDataGridViewTextBoxColumn.DataPropertyName = "Gancheza";
+            this.ganchezaDataGridViewTextBoxColumn.HeaderText = "Gancheza";
+            this.ganchezaDataGridViewTextBoxColumn.Name = "ganchezaDataGridViewTextBoxColumn";
+            // 
+            // bdsWord
+            // 
+            this.bdsWord.DataSource = typeof(VocabularyEntities.Word);
             // 
             // StudyForm
             // 
@@ -216,9 +209,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(639, 519);
-            this.Controls.Add(this.wordControl1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.dgvWords);
+            this.Controls.Add(this.uscWord);
+            this.Controls.Add(this.pbNext);
+            this.Controls.Add(this.pbPrev);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -227,36 +221,33 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.TestStart);
-            this.Controls.Add(this.dgvWords);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "StudyForm";
             this.Text = "학습하기";
             this.Shown += new System.EventHandler(this.StudyForm_Shown);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvWords)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bdsStagedWords)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNext)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPrev)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWords)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsWord)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dgvWords;
         private System.Windows.Forms.Button TestStart;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.BindingSource bdsStagedWords;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private Controls.WordControl wordControl1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn wordIdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn historiesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.PictureBox pbNext;
+        private System.Windows.Forms.PictureBox pbPrev;
+        private Controls.WordControl uscWord;
+        private System.Windows.Forms.DataGridView dgvWords;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ganchezaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource bdsWord;
     }
 }

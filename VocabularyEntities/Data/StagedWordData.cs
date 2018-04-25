@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace VocabularyEntities.Data
 {
-    public class StagedData : EntityData<StagedWord>
+    public class StagedWordData : EntityData<StagedWord>
     {
         public List<Word> GetByGrade(int userKey, int grade)
         {
