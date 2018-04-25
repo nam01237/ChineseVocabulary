@@ -45,10 +45,10 @@ namespace ChineseVocabulary
             // btnStuddy
             // 
             this.btnStuddy.BackColor = System.Drawing.Color.White;
-            this.btnStuddy.Location = new System.Drawing.Point(537, 446);
+            this.btnStuddy.Location = new System.Drawing.Point(401, 445);
             this.btnStuddy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStuddy.Name = "btnStuddy";
-            this.btnStuddy.Size = new System.Drawing.Size(94, 57);
+            this.btnStuddy.Size = new System.Drawing.Size(84, 45);
             this.btnStuddy.TabIndex = 0;
             this.btnStuddy.Text = "학습하기";
             this.btnStuddy.UseVisualStyleBackColor = false;
@@ -57,10 +57,10 @@ namespace ChineseVocabulary
             // btnReStudy
             // 
             this.btnReStudy.BackColor = System.Drawing.Color.White;
-            this.btnReStudy.Location = new System.Drawing.Point(437, 446);
+            this.btnReStudy.Location = new System.Drawing.Point(491, 445);
             this.btnReStudy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReStudy.Name = "btnReStudy";
-            this.btnReStudy.Size = new System.Drawing.Size(94, 57);
+            this.btnReStudy.Size = new System.Drawing.Size(84, 45);
             this.btnReStudy.TabIndex = 1;
             this.btnReStudy.Text = "복습하기";
             this.btnReStudy.UseVisualStyleBackColor = false;
@@ -68,7 +68,7 @@ namespace ChineseVocabulary
             // userStateControl1
             // 
             this.userStateControl1.BackColor = System.Drawing.Color.White;
-            this.userStateControl1.Location = new System.Drawing.Point(24, 26);
+            this.userStateControl1.Location = new System.Drawing.Point(18, 25);
             this.userStateControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userStateControl1.Name = "userStateControl1";
             this.userStateControl1.Size = new System.Drawing.Size(355, 56);
@@ -78,7 +78,7 @@ namespace ChineseVocabulary
             // 
             this.userProgressControl1.BackColor = System.Drawing.Color.White;
             this.userProgressControl1.Grade = 1;
-            this.userProgressControl1.Location = new System.Drawing.Point(69, 94);
+            this.userProgressControl1.Location = new System.Drawing.Point(63, 93);
             this.userProgressControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userProgressControl1.Name = "userProgressControl1";
             this.userProgressControl1.Size = new System.Drawing.Size(512, 45);
@@ -88,7 +88,7 @@ namespace ChineseVocabulary
             // 
             this.userProgressControl2.BackColor = System.Drawing.Color.White;
             this.userProgressControl2.Grade = 2;
-            this.userProgressControl2.Location = new System.Drawing.Point(69, 150);
+            this.userProgressControl2.Location = new System.Drawing.Point(63, 149);
             this.userProgressControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userProgressControl2.Name = "userProgressControl2";
             this.userProgressControl2.Size = new System.Drawing.Size(512, 45);
@@ -98,7 +98,7 @@ namespace ChineseVocabulary
             // 
             this.userProgressControl3.BackColor = System.Drawing.Color.White;
             this.userProgressControl3.Grade = 3;
-            this.userProgressControl3.Location = new System.Drawing.Point(69, 206);
+            this.userProgressControl3.Location = new System.Drawing.Point(63, 205);
             this.userProgressControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userProgressControl3.Name = "userProgressControl3";
             this.userProgressControl3.Size = new System.Drawing.Size(512, 45);
@@ -108,7 +108,7 @@ namespace ChineseVocabulary
             // 
             this.userProgressControl4.BackColor = System.Drawing.Color.White;
             this.userProgressControl4.Grade = 4;
-            this.userProgressControl4.Location = new System.Drawing.Point(69, 262);
+            this.userProgressControl4.Location = new System.Drawing.Point(63, 261);
             this.userProgressControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userProgressControl4.Name = "userProgressControl4";
             this.userProgressControl4.Size = new System.Drawing.Size(512, 45);
@@ -118,7 +118,7 @@ namespace ChineseVocabulary
             // 
             this.userProgressControl5.BackColor = System.Drawing.Color.White;
             this.userProgressControl5.Grade = 5;
-            this.userProgressControl5.Location = new System.Drawing.Point(69, 318);
+            this.userProgressControl5.Location = new System.Drawing.Point(63, 317);
             this.userProgressControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userProgressControl5.Name = "userProgressControl5";
             this.userProgressControl5.Size = new System.Drawing.Size(512, 45);
@@ -128,7 +128,7 @@ namespace ChineseVocabulary
             // 
             this.userProgressControl6.BackColor = System.Drawing.Color.White;
             this.userProgressControl6.Grade = 6;
-            this.userProgressControl6.Location = new System.Drawing.Point(69, 376);
+            this.userProgressControl6.Location = new System.Drawing.Point(63, 375);
             this.userProgressControl6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userProgressControl6.Name = "userProgressControl6";
             this.userProgressControl6.Size = new System.Drawing.Size(512, 45);
@@ -139,7 +139,7 @@ namespace ChineseVocabulary
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(644, 530);
+            this.ClientSize = new System.Drawing.Size(639, 520);
             this.Controls.Add(this.userProgressControl6);
             this.Controls.Add(this.userProgressControl5);
             this.Controls.Add(this.userProgressControl4);
