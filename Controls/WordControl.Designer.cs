@@ -32,19 +32,21 @@
             this.txtWord = new System.Windows.Forms.TextBox();
             this.LblWordProgress = new System.Windows.Forms.Label();
             this.lblGrade = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtMeaning
             // 
             this.txtMeaning.BackColor = System.Drawing.Color.Snow;
-            this.txtMeaning.Font = new System.Drawing.Font("Gulim", 20F);
-            this.txtMeaning.Location = new System.Drawing.Point(14, 230);
+            this.txtMeaning.Font = new System.Drawing.Font("Gulim", 13F);
+            this.txtMeaning.Location = new System.Drawing.Point(14, 219);
             this.txtMeaning.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMeaning.Multiline = true;
             this.txtMeaning.Name = "txtMeaning";
             this.txtMeaning.ReadOnly = true;
             this.txtMeaning.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtMeaning.Size = new System.Drawing.Size(317, 93);
+            this.txtMeaning.Size = new System.Drawing.Size(317, 111);
             this.txtMeaning.TabIndex = 0;
             this.txtMeaning.Text = "뜻";
             this.txtMeaning.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -58,7 +60,7 @@
             this.txtWord.Multiline = true;
             this.txtWord.Name = "txtWord";
             this.txtWord.ReadOnly = true;
-            this.txtWord.Size = new System.Drawing.Size(317, 179);
+            this.txtWord.Size = new System.Drawing.Size(317, 95);
             this.txtWord.TabIndex = 1;
             this.txtWord.Text = "단어";
             this.txtWord.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -83,11 +85,43 @@
             this.lblGrade.TabIndex = 30;
             this.lblGrade.Text = "N급";
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.Snow;
+            this.textBox1.Font = new System.Drawing.Font("Gulim", 13F);
+            this.textBox1.Location = new System.Drawing.Point(14, 192);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox1.Size = new System.Drawing.Size(317, 28);
+            this.textBox1.TabIndex = 31;
+            this.textBox1.Text = "품사";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.Snow;
+            this.textBox2.Font = new System.Drawing.Font("Gulim", 30F);
+            this.textBox2.Location = new System.Drawing.Point(14, 139);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox2.Size = new System.Drawing.Size(317, 49);
+            this.textBox2.TabIndex = 32;
+            this.textBox2.Text = "병음";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // WordControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblGrade);
             this.Controls.Add(this.LblWordProgress);
             this.Controls.Add(this.txtWord);
@@ -106,5 +140,7 @@
         public System.Windows.Forms.TextBox txtWord;
         public System.Windows.Forms.Label LblWordProgress;
         public System.Windows.Forms.Label lblGrade;
+        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox textBox2;
     }
 }
