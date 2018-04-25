@@ -66,13 +66,13 @@
             // LblWordProgress
             // 
             this.LblWordProgress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LblWordProgress.AutoSize = true;
             this.LblWordProgress.Font = new System.Drawing.Font("Gulim", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LblWordProgress.Location = new System.Drawing.Point(277, 18);
+            this.LblWordProgress.Location = new System.Drawing.Point(241, 18);
             this.LblWordProgress.Name = "LblWordProgress";
-            this.LblWordProgress.Size = new System.Drawing.Size(54, 19);
+            this.LblWordProgress.Size = new System.Drawing.Size(90, 19);
             this.LblWordProgress.TabIndex = 2;
             this.LblWordProgress.Text = "0 / n";
+            this.LblWordProgress.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblGrade
             // 
