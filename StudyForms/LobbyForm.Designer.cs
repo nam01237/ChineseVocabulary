@@ -33,7 +33,7 @@ namespace ChineseVocabulary
         {
             this.btnStuddy = new System.Windows.Forms.Button();
             this.btnReStudy = new System.Windows.Forms.Button();
-            this.userStateControl1 = new ChineseVocabulary.Main_Lobby.UserStateControl();
+            this.userStateControl1 = new ChineseVocabulary.Controls.UserStateControl();
             this.userProgressControl1 = new ChineseVocabulary.Controls.UserProgressControl();
             this.userProgressControl2 = new ChineseVocabulary.Controls.UserProgressControl();
             this.userProgressControl3 = new ChineseVocabulary.Controls.UserProgressControl();

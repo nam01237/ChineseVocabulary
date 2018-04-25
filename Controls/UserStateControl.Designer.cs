@@ -1,4 +1,4 @@
-﻿namespace ChineseVocabulary.Main_Lobby
+﻿namespace ChineseVocabulary.Controls
 {
     partial class UserStateControl
     {

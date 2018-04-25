@@ -1,4 +1,4 @@
-﻿namespace ChineseVocabulary.Main_Lobby.Test
+﻿namespace ChineseVocabulary.Controls
 {
     partial class TestControl
     {

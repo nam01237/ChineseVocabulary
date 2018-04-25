@@ -70,10 +70,10 @@
     <Compile Include="StudyForms\StudyForm.Designer.cs">
       <DependentUpon>StudyForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudyForms\Lobby\UserStateControl.cs">
+    <Compile Include="Controls\UserStateControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="StudyForms\Lobby\UserStateControl.Designer.cs">
+    <Compile Include="Controls\UserStateControl.Designer.cs">
       <DependentUpon>UserStateControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\UserProgressControl.cs">
@@ -94,16 +94,16 @@
     <Compile Include="Controls\WordControl.Designer.cs">
       <DependentUpon>WordControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudyForms\Test\TestControl.cs">
+    <Compile Include="Controls\TestControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="StudyForms\Test\TestControl.Designer.cs">
+    <Compile Include="Controls\TestControl.Designer.cs">
       <DependentUpon>TestControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudyForms\Test\TestForm.cs">
+    <Compile Include="StudyForms\TestForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StudyForms\Test\TestForm.Designer.cs">
+    <Compile Include="StudyForms\TestForm.Designer.cs">
       <DependentUpon>TestForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForms\JoinForm.cs">
@@ -132,7 +132,7 @@
     <EmbeddedResource Include="StudyForms\StudyForm.resx">
       <DependentUpon>StudyForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudyForms\Lobby\UserStateControl.resx">
+    <EmbeddedResource Include="Controls\UserStateControl.resx">
       <DependentUpon>UserStateControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\UserProgressControl.resx">
@@ -144,10 +144,10 @@
     <EmbeddedResource Include="Controls\WordControl.resx">
       <DependentUpon>WordControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudyForms\Test\TestControl.resx">
+    <EmbeddedResource Include="Controls\TestControl.resx">
       <DependentUpon>TestControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudyForms\Test\TestForm.resx">
+    <EmbeddedResource Include="StudyForms\TestForm.resx">
       <DependentUpon>TestForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForms\JoinForm.resx">
@@ -224,7 +224,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Main_Lobby\" />
-    <Folder Include="StudyForms\Study\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
