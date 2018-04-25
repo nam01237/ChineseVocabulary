@@ -61,7 +61,7 @@
             this.wordIdDataGridViewTextBoxColumn,
             this.historiesDataGridViewTextBoxColumn});
             this.dgvWords.DataSource = this.bdsStagedWords;
-            this.dgvWords.Location = new System.Drawing.Point(24, 71);
+            this.dgvWords.Location = new System.Drawing.Point(17, 71);
             this.dgvWords.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvWords.MultiSelect = false;
             this.dgvWords.Name = "dgvWords";
@@ -89,7 +89,7 @@
             // TestStart
             // 
             this.TestStart.Font = new System.Drawing.Font("Gulim", 12F);
-            this.TestStart.Location = new System.Drawing.Point(23, 468);
+            this.TestStart.Location = new System.Drawing.Point(16, 468);
             this.TestStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TestStart.Name = "TestStart";
             this.TestStart.Size = new System.Drawing.Size(188, 39);
@@ -101,7 +101,7 @@
             // 
             this.pictureBox3.BackgroundImage = global::ChineseVocabulary.Properties.Resources.pandewhite;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(514, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(507, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(112, 102);
             this.pictureBox3.TabIndex = 6;
@@ -111,7 +111,7 @@
             // 
             this.button6.BackColor = System.Drawing.Color.White;
             this.button6.Font = new System.Drawing.Font("Gulim", 13F);
-            this.button6.Location = new System.Drawing.Point(303, 11);
+            this.button6.Location = new System.Drawing.Point(296, 11);
             this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(51, 42);
@@ -123,7 +123,7 @@
             // 
             this.button5.BackColor = System.Drawing.Color.White;
             this.button5.Font = new System.Drawing.Font("Gulim", 13F);
-            this.button5.Location = new System.Drawing.Point(247, 10);
+            this.button5.Location = new System.Drawing.Point(240, 10);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(51, 42);
@@ -135,7 +135,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.White;
             this.button4.Font = new System.Drawing.Font("Gulim", 13F);
-            this.button4.Location = new System.Drawing.Point(191, 11);
+            this.button4.Location = new System.Drawing.Point(184, 11);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(51, 42);
@@ -147,7 +147,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.White;
             this.button3.Font = new System.Drawing.Font("Gulim", 13F);
-            this.button3.Location = new System.Drawing.Point(135, 11);
+            this.button3.Location = new System.Drawing.Point(128, 11);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(51, 42);
@@ -159,7 +159,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.White;
             this.button2.Font = new System.Drawing.Font("Gulim", 13F);
-            this.button2.Location = new System.Drawing.Point(79, 11);
+            this.button2.Location = new System.Drawing.Point(72, 11);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(51, 42);
@@ -171,7 +171,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("Gulim", 13F);
-            this.button1.Location = new System.Drawing.Point(23, 11);
+            this.button1.Location = new System.Drawing.Point(16, 11);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(51, 42);
@@ -182,7 +182,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::ChineseVocabulary.Properties.Resources.Right;
-            this.pictureBox2.Location = new System.Drawing.Point(593, 265);
+            this.pictureBox2.Location = new System.Drawing.Point(586, 265);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(44, 48);
@@ -193,7 +193,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ChineseVocabulary.Properties.Resources.Left;
-            this.pictureBox1.Location = new System.Drawing.Point(217, 265);
+            this.pictureBox1.Location = new System.Drawing.Point(210, 265);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(46, 48);
@@ -204,7 +204,7 @@
             // wordControl1
             // 
             this.wordControl1.BackColor = System.Drawing.Color.White;
-            this.wordControl1.Location = new System.Drawing.Point(255, 124);
+            this.wordControl1.Location = new System.Drawing.Point(248, 124);
             this.wordControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.wordControl1.Name = "wordControl1";
             this.wordControl1.Size = new System.Drawing.Size(346, 340);
@@ -215,7 +215,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(644, 530);
+            this.ClientSize = new System.Drawing.Size(639, 519);
             this.Controls.Add(this.wordControl1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
