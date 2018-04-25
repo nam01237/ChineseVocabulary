@@ -69,7 +69,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::ChineseVocabulary.Properties.Resources.reset;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(524, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(524, 10);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(26, 25);
             this.pictureBox1.TabIndex = 3;
