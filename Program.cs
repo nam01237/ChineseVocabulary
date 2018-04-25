@@ -25,15 +25,15 @@ namespace ChineseVocabulary
             //Application.Run(lobbyForm);
             //RootForm currentForm = lobbyForm;
 
-            //RootForm.AccessUserKey = 7;
+            RootForm.AccessUserKey = 7;
 
-            //StudyForm studyForm = new StudyForm(1);
-            //RootForm currentForm = studyForm;
-            //Application.Run(studyForm);
+            StudyForm studyForm = new StudyForm(1);
+            RootForm currentForm = studyForm;
+            Application.Run(studyForm);
 
-            LoginForm loginForm = new LoginForm();
-            RootForm currentForm = loginForm;
-            Application.Run(loginForm);
+            //LoginForm loginForm = new LoginForm();
+            //RootForm currentForm = loginForm;
+            //Application.Run(loginForm);
 
             while (true)
             {

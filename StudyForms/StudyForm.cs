@@ -45,28 +45,30 @@ namespace ChineseVocabulary
 
             uscWord.lblGrade.Text = $"{_currentGrade} 급";
             bdsWord.DataSource = words;
-            bdsWord.MoveLast();
-            _gradeCount = DataRepository.Words.GetCount(x => x.Grade == _currentGrade);
+            bdsWord.Position = bdsWord.Count - 1;
         }
 
         private void pbNext_Click(object sender, EventArgs e)
         {
-            if( bdsWord.Position == bdsWord.Count - 1)
+            if (bdsWord.Position == bdsWord.Count - 1 && bdsWord.Position < bdsWord.Count - 1)
             {
                 Word currentWord = bdsWord.Current as Word;
                 Word nextWord = DataRepository.Words.GetNetxWord(currentWord, AccessUserKey);
                 bdsWord.Add(nextWord);
 
                 StagedWord stagedWord =
-                    new StagedWord {
+                    new StagedWord
+                    {
                         UserKey = AccessUserKey,
                         WordId = nextWord.WordId,
-                        };
+                    };
 
                 DataRepository.StagedWords.Insert(stagedWord);
+                return;
             }
 
             bdsWord.MoveNext();
+            
         }
 
         private void dgvWords_CellEnter(object sender, DataGridViewCellEventArgs e)
@@ -74,7 +76,7 @@ namespace ChineseVocabulary
             Word word = bdsWord.Current as Word;
             uscWord.txtWord.Text = word.Gancheza;
             uscWord.txtMeaning.Text = word.Meaning;
-            uscWord.LblWordProgress.Text = $"{bdsWord.Count} / {_gradeCount}";
+            uscWord.LblWordProgress.Text = $"{bdsWord.Position + 1} / {_gradeCount}";
         }
 
         private void pbPrev_Click(object sender, EventArgs e)
