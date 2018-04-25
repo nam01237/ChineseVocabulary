@@ -31,6 +31,8 @@
             this.pgbLearn = new System.Windows.Forms.ProgressBar();
             this.lblLearnPer = new System.Windows.Forms.Label();
             this.lblGrade = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pgbLearn
@@ -63,22 +65,34 @@
             this.lblGrade.TabIndex = 2;
             this.lblGrade.Text = "n급";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::ChineseVocabulary.Properties.Resources.reset;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(524, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(26, 25);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // UserProgressControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblGrade);
             this.Controls.Add(this.lblLearnPer);
             this.Controls.Add(this.pgbLearn);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserProgressControl";
-            this.Size = new System.Drawing.Size(523, 45);
+            this.Size = new System.Drawing.Size(564, 45);
             this.Load += new System.EventHandler(this.UserProgressControl_Load);
             this.Enter += new System.EventHandler(this.UserProgressControl_Enter);
             this.Leave += new System.EventHandler(this.UserProgressControl_Leave);
             this.MouseEnter += new System.EventHandler(this.UserProgressControl_MouseEnter);
             this.MouseLeave += new System.EventHandler(this.UserProgressControl_MouseLeave);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -89,5 +103,6 @@
         private System.Windows.Forms.ProgressBar pgbLearn;
         private System.Windows.Forms.Label lblLearnPer;
         public System.Windows.Forms.Label lblGrade;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
