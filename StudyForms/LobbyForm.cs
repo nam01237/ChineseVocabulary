@@ -28,7 +28,7 @@ namespace ChineseVocabulary
 
         private void btnStuddy_Click(object sender, EventArgs e)
         {
-            StudyForm studyForm = new StudyForm(_selectedGrade);
+            MemorizeForm studyForm = new MemorizeForm(_selectedGrade);
             studyForm.ModalParentForm = this;
             studyForm.ShowDialog();
         }

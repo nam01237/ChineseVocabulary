@@ -2,7 +2,7 @@
 
 namespace ChineseVocabulary
 {
-    partial class StudyForm
+    partial class MemorizeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -40,12 +40,12 @@ namespace ChineseVocabulary
             this.btnGrade1 = new ChineseVocabulary.Controls.GradeSelectButton();
             this.uscWord = new ChineseVocabulary.Controls.WordControl();
             this.dgvWords = new System.Windows.Forms.DataGridView();
+            this.ganchezaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ByeongEum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bdsWord = new System.Windows.Forms.BindingSource(this.components);
             this.pbNext = new System.Windows.Forms.PictureBox();
             this.pbPrev = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.ganchezaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ByeongEum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvWords)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsWord)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNext)).BeginInit();
@@ -174,6 +174,19 @@ namespace ChineseVocabulary
             this.dgvWords.Size = new System.Drawing.Size(188, 391);
             this.dgvWords.TabIndex = 17;
             this.dgvWords.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvWords_CellEnter);
+            this.dgvWords.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgvWords_RowsAdded);
+            // 
+            // ganchezaDataGridViewTextBoxColumn
+            // 
+            this.ganchezaDataGridViewTextBoxColumn.DataPropertyName = "Gancheza";
+            this.ganchezaDataGridViewTextBoxColumn.HeaderText = "Gancheza";
+            this.ganchezaDataGridViewTextBoxColumn.Name = "ganchezaDataGridViewTextBoxColumn";
+            // 
+            // ByeongEum
+            // 
+            this.ByeongEum.DataPropertyName = "ByeongEum";
+            this.ByeongEum.HeaderText = "ByeongEum";
+            this.ByeongEum.Name = "ByeongEum";
             // 
             // bdsWord
             // 
@@ -214,19 +227,7 @@ namespace ChineseVocabulary
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // ganchezaDataGridViewTextBoxColumn
-            // 
-            this.ganchezaDataGridViewTextBoxColumn.DataPropertyName = "Gancheza";
-            this.ganchezaDataGridViewTextBoxColumn.HeaderText = "Gancheza";
-            this.ganchezaDataGridViewTextBoxColumn.Name = "ganchezaDataGridViewTextBoxColumn";
-            // 
-            // ByeongEum
-            // 
-            this.ByeongEum.DataPropertyName = "ByeongEum";
-            this.ByeongEum.HeaderText = "ByeongEum";
-            this.ByeongEum.Name = "ByeongEum";
-            // 
-            // StudyForm
+            // MemorizeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -245,7 +246,7 @@ namespace ChineseVocabulary
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.TestStart);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "StudyForm";
+            this.Name = "MemorizeForm";
             this.Text = "학습하기";
             this.Shown += new System.EventHandler(this.StudyForm_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvWords)).EndInit();

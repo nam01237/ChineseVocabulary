@@ -13,17 +13,17 @@ using ChineseVocabulary.Controls;
 
 namespace ChineseVocabulary
 {
-    public partial class StudyForm : RootForm
+    public partial class MemorizeForm : RootForm
     {
         private int _currentGrade;
         private int _gradeCount;
 
-        public StudyForm()
+        public MemorizeForm()
         {
             InitializeComponent();
         }
 
-        public StudyForm(int grade) : this()
+        public MemorizeForm(int grade) : this()
         {
             _currentGrade = grade;
         }

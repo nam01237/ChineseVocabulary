@@ -73,11 +73,11 @@
     <Compile Include="StudyForms\LobbyForm.Designer.cs">
       <DependentUpon>LobbyForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudyForms\StudyForm.cs">
+    <Compile Include="StudyForms\MomorizeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StudyForms\StudyForm.Designer.cs">
-      <DependentUpon>StudyForm.cs</DependentUpon>
+    <Compile Include="StudyForms\MomorizeForm.Designer.cs">
+      <DependentUpon>MomorizeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\UserStateControl.cs">
       <SubType>UserControl</SubType>
@@ -132,8 +132,8 @@
     <EmbeddedResource Include="StudyForms\LobbyForm.resx">
       <DependentUpon>LobbyForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudyForms\StudyForm.resx">
-      <DependentUpon>StudyForm.cs</DependentUpon>
+    <EmbeddedResource Include="StudyForms\MomorizeForm.resx">
+      <DependentUpon>MomorizeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\UserStateControl.resx">
       <DependentUpon>UserStateControl.cs</DependentUpon>
