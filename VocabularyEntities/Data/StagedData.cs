@@ -9,13 +9,18 @@ namespace VocabularyEntities.Data
 {
     public class StagedData : EntityData<StagedWord>
     {
-        public List<StagedWord> GetByGrade(int userKey, int grade)
+        public List<Word> GetByGrade(int userKey, int grade)
         {
             using (VocabularyEntities context = new VocabularyEntities())
             {
-                var list = context.StagedWords
-                            .Where(x  => x.UserKey == userKey && x.Word.Grade == grade)
-                            .ToList();
+                var list = (from x in context.StagedWords
+                            where x.UserKey == userKey && x.Word.Grade == grade
+                            select x.Word
+                           ).ToList();
+
+
+                            //.Where(x  => x.UserKey == userKey && x.Word.Grade == grade)
+                            //.ToList();
 
                 return list;
 
