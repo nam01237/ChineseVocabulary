@@ -45,7 +45,7 @@ namespace ChineseVocabulary
             // btnStuddy
             // 
             this.btnStuddy.BackColor = System.Drawing.Color.White;
-            this.btnStuddy.Location = new System.Drawing.Point(401, 445);
+            this.btnStuddy.Location = new System.Drawing.Point(491, 443);
             this.btnStuddy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStuddy.Name = "btnStuddy";
             this.btnStuddy.Size = new System.Drawing.Size(84, 45);
@@ -57,7 +57,7 @@ namespace ChineseVocabulary
             // btnReStudy
             // 
             this.btnReStudy.BackColor = System.Drawing.Color.White;
-            this.btnReStudy.Location = new System.Drawing.Point(491, 445);
+            this.btnReStudy.Location = new System.Drawing.Point(401, 443);
             this.btnReStudy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReStudy.Name = "btnReStudy";
             this.btnReStudy.Size = new System.Drawing.Size(84, 45);
