@@ -23,7 +23,7 @@ namespace ChineseVocabulary.Controls
         private void UserProgressControl_MouseEnter(object sender, EventArgs e)
         {
             if (!_focused)
-                BackColor = Color.Pink;
+                BackColor = Color.LightGoldenrodYellow;
         }
 
         private void UserProgressControl_MouseLeave(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace ChineseVocabulary.Controls
         private void UserProgressControl_Enter(object sender, EventArgs e)
         {
             _focused = true;
-            BackColor = Color.Violet;
+            BackColor = Color.YellowGreen;
         }
 
         private void UserProgressControl_Leave(object sender, EventArgs e)

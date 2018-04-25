@@ -228,5 +228,8 @@
   <ItemGroup>
     <None Include="Resources\PnadaW.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
