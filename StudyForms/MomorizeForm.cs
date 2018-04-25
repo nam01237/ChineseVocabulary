@@ -48,7 +48,16 @@ namespace ChineseVocabulary
             if( words.Count == 0)
             {
                 words = new List<Word>();
-                words.Add(DataRepository.Words.GetFirst( x => x.Grade == _currentGrade  ));
+                Word firstWord = DataRepository.Words.GetFirst(x => x.Grade == _currentGrade);
+                words.Add(firstWord);
+
+                StagedWord stagedWord = new StagedWord
+                {
+                    UserKey = AccessUserKey,
+                    WordId = firstWord.WordId,
+                };
+
+                DataRepository.StagedWords.Insert(stagedWord);
             }
 
             uscWord.lblGrade.Text = $"{_currentGrade} 급";
