@@ -65,6 +65,7 @@
             // 
             // LblWordProgress
             // 
+            this.LblWordProgress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LblWordProgress.AutoSize = true;
             this.LblWordProgress.Font = new System.Drawing.Font("Gulim", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.LblWordProgress.Location = new System.Drawing.Point(277, 18);
@@ -73,11 +74,11 @@
             this.LblWordProgress.TabIndex = 2;
             this.LblWordProgress.Text = "0 / n";
             // 
-            // label1
+            // lblGrade
             // 
             this.lblGrade.Font = new System.Drawing.Font("Gulim", 20F);
             this.lblGrade.Location = new System.Drawing.Point(9, 10);
-            this.lblGrade.Name = "label1";
+            this.lblGrade.Name = "lblGrade";
             this.lblGrade.Size = new System.Drawing.Size(65, 37);
             this.lblGrade.TabIndex = 30;
             this.lblGrade.Text = "N급";
