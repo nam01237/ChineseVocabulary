@@ -48,7 +48,7 @@ namespace ChineseVocabulary
             {
                 if( user.PassWord.Equals(pw) )
                 {
-                    AccessId = id;
+                    AccessUserKey = user.UserKey;
                     ChildeForm = new LobbyForm();
                     ShowChild = true;
                     Close();

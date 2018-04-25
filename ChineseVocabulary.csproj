@@ -58,64 +58,64 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main Lobby\Study\StudyForm.cs">
+    <Compile Include="StudyForms\LobbyForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main Lobby\Study\StudyForm.Designer.cs">
-      <DependentUpon>StudyForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Main Lobby\Lobby\LobbyForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Main Lobby\Lobby\LobbyForm.Designer.cs">
+    <Compile Include="StudyForms\LobbyForm.Designer.cs">
       <DependentUpon>LobbyForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main Lobby\Lobby\UserStateControl.cs">
+    <Compile Include="StudyForms\StudyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudyForms\StudyForm.Designer.cs">
+      <DependentUpon>StudyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudyForms\Lobby\UserStateControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Main Lobby\Lobby\UserStateControl.Designer.cs">
+    <Compile Include="StudyForms\Lobby\UserStateControl.Designer.cs">
       <DependentUpon>UserStateControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main Lobby\Lobby\UserProgressControl.cs">
+    <Compile Include="Controls\UserProgressControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Main Lobby\Lobby\UserProgressControl.Designer.cs">
+    <Compile Include="Controls\UserProgressControl.Designer.cs">
       <DependentUpon>UserProgressControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main Lobby\Study\UserClassLevelControl.cs">
+    <Compile Include="Controls\UserClassLevelControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Main Lobby\Study\UserClassLevelControl.Designer.cs">
+    <Compile Include="Controls\UserClassLevelControl.Designer.cs">
       <DependentUpon>UserClassLevelControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main Lobby\Study\WordControl.cs">
+    <Compile Include="Controls\WordControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Main Lobby\Study\WordControl.Designer.cs">
+    <Compile Include="Controls\WordControl.Designer.cs">
       <DependentUpon>WordControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main Lobby\Test\TestControl.cs">
+    <Compile Include="StudyForms\Test\TestControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Main Lobby\Test\TestControl.Designer.cs">
+    <Compile Include="StudyForms\Test\TestControl.Designer.cs">
       <DependentUpon>TestControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main Lobby\Test\TestForm.cs">
+    <Compile Include="StudyForms\Test\TestForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main Lobby\Test\TestForm.Designer.cs">
+    <Compile Include="StudyForms\Test\TestForm.Designer.cs">
       <DependentUpon>TestForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginForm\JoinForm.cs">
+    <Compile Include="LoginForms\JoinForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm\JoinForm.Designer.cs">
+    <Compile Include="LoginForms\JoinForm.Designer.cs">
       <DependentUpon>JoinForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginForm\LoginForm.cs">
+    <Compile Include="LoginForms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm\LoginForm.Designer.cs">
+    <Compile Include="LoginForms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -126,34 +126,34 @@
     <Compile Include="RootForm.Designer.cs">
       <DependentUpon>RootForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Main Lobby\Study\StudyForm.resx">
-      <DependentUpon>StudyForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Main Lobby\Lobby\LobbyForm.resx">
+    <EmbeddedResource Include="StudyForms\LobbyForm.resx">
       <DependentUpon>LobbyForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main Lobby\Lobby\UserStateControl.resx">
+    <EmbeddedResource Include="StudyForms\StudyForm.resx">
+      <DependentUpon>StudyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudyForms\Lobby\UserStateControl.resx">
       <DependentUpon>UserStateControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main Lobby\Lobby\UserProgressControl.resx">
+    <EmbeddedResource Include="Controls\UserProgressControl.resx">
       <DependentUpon>UserProgressControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main Lobby\Study\UserClassLevelControl.resx">
+    <EmbeddedResource Include="Controls\UserClassLevelControl.resx">
       <DependentUpon>UserClassLevelControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main Lobby\Study\WordControl.resx">
+    <EmbeddedResource Include="Controls\WordControl.resx">
       <DependentUpon>WordControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main Lobby\Test\TestControl.resx">
+    <EmbeddedResource Include="StudyForms\Test\TestControl.resx">
       <DependentUpon>TestControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main Lobby\Test\TestForm.resx">
+    <EmbeddedResource Include="StudyForms\Test\TestForm.resx">
       <DependentUpon>TestForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm\JoinForm.resx">
+    <EmbeddedResource Include="LoginForms\JoinForm.resx">
       <DependentUpon>JoinForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm\LoginForm.resx">
+    <EmbeddedResource Include="LoginForms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -167,6 +167,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\VocabularyEntities.StagedWord.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -219,6 +220,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pandewhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Main_Lobby\" />
+    <Folder Include="StudyForms\Study\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

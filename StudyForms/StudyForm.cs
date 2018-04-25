@@ -7,8 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VocabularyEntities;
+using VocabularyEntities.Data;
 
-namespace ChineseVocabulary.Main_Lobby
+namespace ChineseVocabulary
 {
     public partial class StudyForm : RootForm
     {
@@ -20,9 +22,12 @@ namespace ChineseVocabulary.Main_Lobby
             InitializeComponent();
         }
 
-        private void testControl1_Load(object sender, EventArgs e)
-        {
 
+        private void StudyForm_Shown(object sender, EventArgs e)
+        {
+            List<StagedWord> stagedWords = DataRepository.StagedWords.GetByGrade(AccessUserKey, _currentGrade);
+            bdsStagedWords.DataSource = stagedWords;
+            
         }
     }
 }

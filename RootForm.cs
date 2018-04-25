@@ -12,7 +12,7 @@ namespace ChineseVocabulary
 {
     public partial class RootForm : Form
     {
-        public static string AccessId { get; set; }
+        public static int AccessUserKey { get; set; }
         public RootForm ChildeForm { get; set; } 
         public bool ShowChild { get; set; }
 

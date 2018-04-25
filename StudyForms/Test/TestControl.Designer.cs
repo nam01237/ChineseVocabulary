@@ -116,7 +116,7 @@
             // 
             this.btnReveal.BackColor = System.Drawing.Color.White;
             this.btnReveal.Font = new System.Drawing.Font("Gulim", 12F);
-            this.btnReveal.Location = new System.Drawing.Point(346, 261);
+            this.btnReveal.Location = new System.Drawing.Point(346, 260);
             this.btnReveal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReveal.Name = "btnReveal";
             this.btnReveal.Size = new System.Drawing.Size(28, 31);

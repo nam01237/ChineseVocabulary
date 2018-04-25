@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ChineseVocabulary.Main_Lobby
+namespace ChineseVocabulary.Controls
 {
     public partial class UserProgressControl : UserControl
     {

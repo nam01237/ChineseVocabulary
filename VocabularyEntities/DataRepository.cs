@@ -10,5 +10,6 @@ namespace VocabularyEntities.Data
     public class DataRepository
     {
         public static UserData Users { get; } = new UserData();
+        public static StagedData StagedWords { get; } = new StagedData();
     }
 }

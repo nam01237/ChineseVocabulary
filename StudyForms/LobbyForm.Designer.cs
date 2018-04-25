@@ -1,4 +1,7 @@
-﻿namespace ChineseVocabulary.Main_Lobby
+﻿using ChineseVocabulary.Controls;
+using ChineseVocabulary.Main_Lobby;
+
+namespace ChineseVocabulary
 {
     partial class LobbyForm
     {
@@ -31,12 +34,12 @@
             this.btnStuddy = new System.Windows.Forms.Button();
             this.btnReStudy = new System.Windows.Forms.Button();
             this.userStateControl1 = new ChineseVocabulary.Main_Lobby.UserStateControl();
-            this.userProgressControl1 = new ChineseVocabulary.Main_Lobby.UserProgressControl();
-            this.userProgressControl2 = new ChineseVocabulary.Main_Lobby.UserProgressControl();
-            this.userProgressControl3 = new ChineseVocabulary.Main_Lobby.UserProgressControl();
-            this.userProgressControl4 = new ChineseVocabulary.Main_Lobby.UserProgressControl();
-            this.userProgressControl5 = new ChineseVocabulary.Main_Lobby.UserProgressControl();
-            this.userProgressControl6 = new ChineseVocabulary.Main_Lobby.UserProgressControl();
+            this.userProgressControl1 = new ChineseVocabulary.Controls.UserProgressControl();
+            this.userProgressControl2 = new ChineseVocabulary.Controls.UserProgressControl();
+            this.userProgressControl3 = new ChineseVocabulary.Controls.UserProgressControl();
+            this.userProgressControl4 = new ChineseVocabulary.Controls.UserProgressControl();
+            this.userProgressControl5 = new ChineseVocabulary.Controls.UserProgressControl();
+            this.userProgressControl6 = new ChineseVocabulary.Controls.UserProgressControl();
             this.SuspendLayout();
             // 
             // btnStuddy
