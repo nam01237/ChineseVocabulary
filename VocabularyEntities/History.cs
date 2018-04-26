@@ -21,7 +21,6 @@ namespace VocabularyEntities
         public int WordId { get; set; }
         public int UserKey { get; set; }
     
-        public virtual StagedWord StagedWord { get; set; }
         public virtual User User { get; set; }
         public virtual Word Word { get; set; }
     }

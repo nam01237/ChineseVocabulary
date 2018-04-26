@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F2C4FD2B-6B7F-494C-8E23-0ECBEE2D56D9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ChineseVocabulary</RootNamespace>
+    <AssemblyName>ChineseVocabulary</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\GradeSelectButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudyForms\FirstTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudyForms\FirstTestForm.Designer.cs">
+      <DependentUpon>FirstTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudyForms\LobbyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudyForms\LobbyForm.Designer.cs">
+      <DependentUpon>LobbyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudyForms\MomorizeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudyForms\MomorizeForm.Designer.cs">
+      <DependentUpon>MomorizeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserStateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UserStateControl.Designer.cs">
+      <DependentUpon>UserStateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserProgressControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UserProgressControl.Designer.cs">
+      <DependentUpon>UserProgressControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserClassLevelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UserClassLevelControl.Designer.cs">
+      <DependentUpon>UserClassLevelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WordControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WordControl.Designer.cs">
+      <DependentUpon>WordControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudyForms\ReviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudyForms\ReviewForm.Designer.cs">
+      <DependentUpon>ReviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudyForms\TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudyForms\TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForms\JoinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForms\JoinForm.Designer.cs">
+      <DependentUpon>JoinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RootForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RootForm.Designer.cs">
+      <DependentUpon>RootForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="StudyForms\FirstTestForm.resx">
+      <DependentUpon>FirstTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudyForms\LobbyForm.resx">
+      <DependentUpon>LobbyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudyForms\MomorizeForm.resx">
+      <DependentUpon>MomorizeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UserStateControl.resx">
+      <DependentUpon>UserStateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UserProgressControl.resx">
+      <DependentUpon>UserProgressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UserClassLevelControl.resx">
+      <DependentUpon>UserClassLevelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WordControl.resx">
+      <DependentUpon>WordControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudyForms\ReviewForm.resx">
+      <DependentUpon>ReviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudyForms\TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForms\JoinForm.resx">
+      <DependentUpon>JoinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\VocabularyEntities.StagedWord.datasource" />
+    <None Include="Properties\DataSources\VocabularyEntities.Word.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nihao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="EntityDataLibrary\EntityDataLibrary.csproj">
+      <Project>{e747e0d6-fa38-44db-a354-5aef0925e022}</Project>
+      <Name>EntityDataLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="VocabularyEntities\VocabularyEntities.csproj">
+      <Project>{be6bf0a3-76da-434d-89d8-db10a97a8f52}</Project>
+      <Name>VocabularyEntities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pandas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pandared.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pandagreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pandewhite.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\PnadaW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

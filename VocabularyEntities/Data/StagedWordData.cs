@@ -23,7 +23,6 @@ namespace VocabularyEntities.Data
             }
         }
 
-
         public int IncreasePassedCount(int userKey, int wordId)
         {
             using (VocabularyEntities context = new VocabularyEntities())
@@ -35,6 +34,20 @@ namespace VocabularyEntities.Data
 
                 return stagedWord.PassedCount;
 
+            }
+        }
+
+        public void DeleteWordByGrade(int userKey, int grade)
+        {
+            using (VocabularyEntities context = new VocabularyEntities())
+            {
+                List<StagedWord> list = (from x in context.StagedWords
+                                        where x.UserKey == userKey && x.Word.Grade == grade
+                                        select x).ToList();
+
+                context.StagedWords.RemoveRange(list);
+
+                context.SaveChanges();
             }
         }
 

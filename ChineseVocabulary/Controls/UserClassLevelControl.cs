@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ChineseVocabulary
+namespace ChineseVocabulary.Main_Lobby
 {
-    public partial class Form1 : Form
+    public partial class UserClassLevelControl : UserControl
     {
-        public Form1()
+        public UserClassLevelControl()
         {
             InitializeComponent();
         }

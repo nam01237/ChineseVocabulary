@@ -14,19 +14,11 @@ namespace VocabularyEntities
     
     public partial class StagedWord
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public StagedWord()
-        {
-            this.Histories = new HashSet<History>();
-        }
-    
         public int UserKey { get; set; }
         public int WordId { get; set; }
         public int PassedCount { get; set; }
     
         public virtual User User { get; set; }
         public virtual Word Word { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<History> Histories { get; set; }
     }
 }
