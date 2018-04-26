@@ -48,13 +48,20 @@ namespace ChineseVocabulary.StudyForms
             uscWord.lblMeaning.Text = "";
             uscWord.lblGrade.Text = $"{word.Grade} 급";
             uscWord.LblWordProgress.Text = $"{bdsWord.Position + 1} / {_totalCount}";
+
         }
 
         protected void AddWord()
         {
-            bdsWord.Add(_testWords[_index]);
-            bdsWord.MoveNext();
-            _index++;
+            if (!_finished)
+            {
+                bdsWord.Add(_testWords[_index]);
+                bdsWord.MoveNext();
+                _index++;
+
+                if (_index == _testWords.Count)
+                    _finished = true;
+            }
         }
 
         protected void dgvWords_CellEnter(object sender, DataGridViewCellEventArgs e)

@@ -73,13 +73,13 @@ namespace VocabularyEntities.Data
             }
         }
 
-        public List<Word> GetTestList(int userKey)
+        public List<Word> GetReviewList(int userKey)
         {
             using (VocabularyEntities context = new VocabularyEntities())
             {
                 var list = (from x in context.StagedWords
-                            where x.UserKey == userKey && x.PassedCount < 3
-                            orderby x.PassedCount descending
+                            where x.UserKey == userKey && x.PassedCount < 3 && x.PassedCount >0
+                            orderby x.PassedCount
                             select new { x.Word, x.PassedCount }
                             ).ToList();
 

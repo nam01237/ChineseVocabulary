@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pgbLearn = new System.Windows.Forms.ProgressBar();
+            this.prbMemorize = new System.Windows.Forms.ProgressBar();
             this.lblMemorize = new System.Windows.Forms.Label();
             this.lblGrade = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pgbLearn
+            // prbMemorize
             // 
-            this.pgbLearn.BackColor = System.Drawing.Color.White;
-            this.pgbLearn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pgbLearn.Location = new System.Drawing.Point(79, 12);
-            this.pgbLearn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pgbLearn.Name = "pgbLearn";
-            this.pgbLearn.Size = new System.Drawing.Size(357, 22);
-            this.pgbLearn.TabIndex = 0;
+            this.prbMemorize.BackColor = System.Drawing.Color.White;
+            this.prbMemorize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.prbMemorize.Location = new System.Drawing.Point(79, 12);
+            this.prbMemorize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.prbMemorize.Name = "prbMemorize";
+            this.prbMemorize.Size = new System.Drawing.Size(357, 22);
+            this.prbMemorize.TabIndex = 0;
             // 
             // lblMemorize
             // 
@@ -83,7 +83,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblGrade);
             this.Controls.Add(this.lblMemorize);
-            this.Controls.Add(this.pgbLearn);
+            this.Controls.Add(this.prbMemorize);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserProgressControl";
             this.Size = new System.Drawing.Size(564, 45);
@@ -99,10 +99,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ProgressBar pgbLearn;
         public System.Windows.Forms.Label lblGrade;
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Label lblMemorize;
+        public System.Windows.Forms.ProgressBar prbMemorize;
     }
 }

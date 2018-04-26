@@ -67,9 +67,11 @@ namespace ChineseVocabulary.StudyForms
 
                     int grade = upc.Grade;
                     int totalCount = DataRepository.Words.GetCount(x => x.Grade == grade);
-                    int memorizeCount = DataRepository.StagedWords.GetCount(x => x.UserKey == AccessUserKey && x.Word.Grade == grade);
+                    int memorizeCount = DataRepository.StagedWords.GetCount(x => x.UserKey == AccessUserKey && x.Word.Grade == grade && x.PassedCount >= 1);
 
-                    upc.lblMemorize.Text = $" {memorizeCount} / {totalCount}";
+                    upc.lblMemorize.Text = $"{memorizeCount} / {totalCount}";
+
+                    upc.prbMemorize.Value = (int)((double)memorizeCount / totalCount * 100);
 
                     upc.lblGrade.Text = $"{grade}급";
                     control.Enter += GradeSelected;
