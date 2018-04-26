@@ -24,7 +24,19 @@ namespace VocabularyEntities.Data
         }
 
 
+        public int IncreasePassedCount(int userKey, int wordId)
+        {
+            using (VocabularyEntities context = new VocabularyEntities())
+            {
+                StagedWord stagedWord = context.StagedWords.FirstOrDefault(x => x.UserKey == userKey && x.WordId == wordId);
+                stagedWord.PassedCount++;
 
+                context.SaveChanges();
+
+                return stagedWord.PassedCount;
+
+            }
+        }
 
 
     }

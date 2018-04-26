@@ -42,12 +42,14 @@ namespace ChineseVocabulary
             uscWord.txtWord.Text = word.Gancheza;
             uscWord.txtByeongEum.Text = word.ByeongEum;
             uscWord.txtWordClass.Text = word.WordClass;
+            uscWord.txtMeaning.Text = "";
             uscWord.LblWordProgress.Text = $"{bdsWord.Position + 1} / {_totalCount}";
         }
 
         private void AddWord()
         {
             bdsWord.Add(_testWords[_index]);
+            bdsWord.MoveNext();
             _index++;
         }
 
@@ -56,6 +58,7 @@ namespace ChineseVocabulary
             InitForm();
         }
 
+
         private void dgvWords_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
             UpdateWordControl();
@@ -63,8 +66,48 @@ namespace ChineseVocabulary
 
         private void btnYes_Click(object sender, EventArgs e)
         {
-
+            dgvWords.CurrentRow.DefaultCellStyle.BackColor = Color.GreenYellow;
+            int wordId = ((Word)bdsWord.Current).WordId;
+            int passedCount = DataRepository.StagedWords.IncreasePassedCount(AccessUserKey, wordId);
+            DataRepository.Histiries.Insert(
+                new History
+                {
+                    Pass = true,
+                    UserKey = AccessUserKey,
+                    WordId = wordId,
+                    IncreasedTo = passedCount,
+                    At = DateTime.Now
+                });
+            AddWord();
         }
 
+        private void btnNo_Click(object sender, EventArgs e)
+        {
+            dgvWords.CurrentRow.DefaultCellStyle.BackColor = Color.Pink;
+            int wordId = ((Word)bdsWord.Current).WordId;
+
+            DataRepository.Histiries.Insert(
+                new History
+                {
+                    Pass = false,
+                    UserKey = AccessUserKey,
+                    WordId = wordId,
+                    IncreasedTo = 0,
+                    At = DateTime.Now
+                });
+            AddWord();
+        }
+
+        private void TestStart_Click(object sender, EventArgs e)
+        {
+            CloseParent = false;
+            Close();
+        }
+
+        private void btnReveal_Click(object sender, EventArgs e)
+        {
+            Word word = bdsWord.Current as Word;
+            uscWord.txtMeaning.Text = word.Meaning;
+        }
     }
 }

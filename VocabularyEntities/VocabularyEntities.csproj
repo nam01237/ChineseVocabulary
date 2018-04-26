@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataRepository.cs" />
+    <Compile Include="Data\HistoryData.cs" />
     <Compile Include="Data\StagedWordData.cs" />
     <Compile Include="Data\UserData.cs" />
     <Compile Include="Data\WordData.cs" />

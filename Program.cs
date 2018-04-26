@@ -20,13 +20,20 @@ namespace ChineseVocabulary
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new LoginForm());
+            Application.Run(new LoginForm());
 
-            LobbyForm lobbyForm = new LobbyForm();
-            RootForm.AccessUserKey = 7;
-            RootForm.AccessUSerId = "n";
+            //RootForm.AccessUserKey = 7;
+            //RootForm.AccessUSerId = "n";
+            //RootForm.CurrentGrade = 1;
 
-            Application.Run(lobbyForm);
+            //LobbyForm lobbyForm = new LobbyForm();
+            //Application.Run(lobbyForm);
+
+            //TestForm testForm = new TestForm();
+            //Application.Run(testForm);
+
+            //MemorizeForm memorizeForm = new MemorizeForm();
+            //Application.Run(memorizeForm);
 
         }
 

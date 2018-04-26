@@ -15,15 +15,14 @@ namespace VocabularyEntities
     public partial class History
     {
         public int HistoryId { get; set; }
-        public int StagedId { get; set; }
         public bool Pass { get; set; }
-        public string IncreasedTo { get; set; }
+        public int IncreasedTo { get; set; }
         public System.DateTime At { get; set; }
         public int WordId { get; set; }
         public int UserKey { get; set; }
     
+        public virtual StagedWord StagedWord { get; set; }
         public virtual User User { get; set; }
         public virtual Word Word { get; set; }
-        public virtual StagedWord StagedWord { get; set; }
     }
 }

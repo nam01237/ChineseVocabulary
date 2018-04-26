@@ -141,6 +141,7 @@
             this.TestStart.TabIndex = 18;
             this.TestStart.Text = "돌아가기";
             this.TestStart.UseVisualStyleBackColor = false;
+            this.TestStart.Click += new System.EventHandler(this.TestStart_Click);
             // 
             // pictureBox4
             // 
@@ -184,6 +185,7 @@
             this.btnNo.TabIndex = 29;
             this.btnNo.Text = "모르겠어요";
             this.btnNo.UseVisualStyleBackColor = false;
+            this.btnNo.Click += new System.EventHandler(this.btnNo_Click);
             // 
             // btnReveal
             // 
@@ -196,6 +198,7 @@
             this.btnReveal.TabIndex = 33;
             this.btnReveal.Text = "답";
             this.btnReveal.UseVisualStyleBackColor = false;
+            this.btnReveal.Click += new System.EventHandler(this.btnReveal_Click);
             // 
             // uscWord
             // 

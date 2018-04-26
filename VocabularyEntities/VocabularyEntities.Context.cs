@@ -25,10 +25,10 @@ namespace VocabularyEntities
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<History> Histories { get; set; }
         public virtual DbSet<LastSelect> LastSelects { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Word> Words { get; set; }
         public virtual DbSet<StagedWord> StagedWords { get; set; }
+        public virtual DbSet<History> Histories { get; set; }
     }
 }

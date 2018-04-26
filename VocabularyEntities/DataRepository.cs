@@ -12,5 +12,6 @@ namespace VocabularyEntities.Data
         public static UserData Users { get; } = new UserData();
         public static StagedWordData StagedWords { get; } = new StagedWordData();
         public static WordData Words { get; } = new WordData();
+        public static HistoryData Histiries { get; } = new HistoryData();
     }
 }
