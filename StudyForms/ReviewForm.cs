@@ -11,19 +11,19 @@ using VocabularyEntities.Data;
 
 namespace ChineseVocabulary.StudyForms
 {
-    public partial class FirstTestForm : TestForm
+    public partial class ReviewForm : TestForm
     {
-        public FirstTestForm()
+        public ReviewForm()
         {
             InitializeComponent();
         }
 
         protected override void SetWordList()
         {
-            _testWords = DataRepository.Words.GetTestList(AccessUserKey, CurrentGrade);
+            _testWords = DataRepository.Words.GetTestList(AccessUserKey); 
         }
 
-        private void FirstTestForm_Load(object sender, EventArgs e)
+        private void ReviewForm_Load(object sender, EventArgs e)
         {
             InitForm();
         }

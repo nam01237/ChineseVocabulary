@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ChineseVocabulary.Main_Lobby;
+using ChineseVocabulary.StudyForms;
 using EntityDataLibrary;
 
 namespace ChineseVocabulary
@@ -26,8 +27,8 @@ namespace ChineseVocabulary
             RootForm.AccessUSerId = "n";
             RootForm.CurrentGrade = 1;
 
-            //LobbyForm lobbyForm = new LobbyForm();
-            //Application.Run(lobbyForm);
+            LobbyForm lobbyForm = new LobbyForm();
+            Application.Run(lobbyForm);
 
             //TestForm testForm = new TestForm();
             //Application.Run(testForm);
@@ -35,8 +36,8 @@ namespace ChineseVocabulary
             //MemorizeForm memorizeForm = new MemorizeForm();
             //Application.Run(memorizeForm);
 
-            FirstTestForm firstTest = new FirstTestForm();
-            Application.Run(firstTest);
+            //FirstTestForm firstTest = new FirstTestForm();
+            //Application.Run(firstTest);
 
         }
 

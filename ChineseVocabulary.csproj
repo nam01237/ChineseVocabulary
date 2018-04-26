@@ -109,6 +109,12 @@
     <Compile Include="Controls\WordControl.Designer.cs">
       <DependentUpon>WordControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudyForms\ReviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudyForms\ReviewForm.Designer.cs">
+      <DependentUpon>ReviewForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudyForms\TestForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +141,9 @@
     <Compile Include="RootForm.Designer.cs">
       <DependentUpon>RootForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StudyForms\FirstTestForm.resx">
+      <DependentUpon>FirstTestForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StudyForms\LobbyForm.resx">
       <DependentUpon>LobbyForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\WordControl.resx">
       <DependentUpon>WordControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudyForms\ReviewForm.resx">
+      <DependentUpon>ReviewForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudyForms\TestForm.resx">
       <DependentUpon>TestForm.cs</DependentUpon>

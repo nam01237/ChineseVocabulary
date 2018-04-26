@@ -1,6 +1,6 @@
 ﻿using ChineseVocabulary.Controls;
 
-namespace ChineseVocabulary
+namespace ChineseVocabulary.StudyForms
 {
     partial class MemorizeForm
     {

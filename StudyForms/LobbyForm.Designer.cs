@@ -1,7 +1,7 @@
 ﻿using ChineseVocabulary.Controls;
 using ChineseVocabulary.Main_Lobby;
 
-namespace ChineseVocabulary
+namespace ChineseVocabulary.StudyForms
 {
     partial class LobbyForm
     {
@@ -64,6 +64,7 @@ namespace ChineseVocabulary
             this.btnReStudy.TabIndex = 1;
             this.btnReStudy.Text = "복습하기";
             this.btnReStudy.UseVisualStyleBackColor = false;
+            this.btnReStudy.Click += new System.EventHandler(this.btnReStudy_Click);
             // 
             // userStateControl1
             // 

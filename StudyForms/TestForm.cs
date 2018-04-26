@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using VocabularyEntities;
 using VocabularyEntities.Data;
 
-namespace ChineseVocabulary
+namespace ChineseVocabulary.StudyForms
 {
     public partial class TestForm : RootForm
     {
@@ -30,6 +30,7 @@ namespace ChineseVocabulary
         protected void InitForm()
         {
             CloseParent = true;
+            SetWordList();
             _finished = false;
             _index = 0;
             _totalCount = _testWords.Count;
@@ -45,6 +46,7 @@ namespace ChineseVocabulary
             uscWord.lblByeongEum.Text = word.ByeongEum;
             uscWord.lblWordClass.Text = word.WordClass;
             uscWord.lblMeaning.Text = "";
+            uscWord.lblGrade.Text = $"{word.Grade} 급";
             uscWord.LblWordProgress.Text = $"{bdsWord.Position + 1} / {_totalCount}";
         }
 
@@ -116,5 +118,7 @@ namespace ChineseVocabulary
             Word word = bdsWord.Current as Word;
             uscWord.lblMeaning.Text = word.Meaning;
         }
+
+
     }
 }

@@ -11,7 +11,7 @@ using VocabularyEntities;
 using VocabularyEntities.Data;
 using ChineseVocabulary.Controls;
 
-namespace ChineseVocabulary
+namespace ChineseVocabulary.StudyForms
 {
     public partial class MemorizeForm : RootForm
     {
@@ -137,7 +137,7 @@ namespace ChineseVocabulary
 
         private void TestStart_Click(object sender, EventArgs e)
         {
-            TestForm testForm = new TestForm();
+            FirstTestForm testForm = new FirstTestForm();
             testForm.StartLocation = Location;
 
             Visible = false;

@@ -1,4 +1,4 @@
-﻿namespace ChineseVocabulary
+﻿namespace ChineseVocabulary.StudyForms
 {
     partial class TestForm
     {

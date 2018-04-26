@@ -1,6 +1,6 @@
 ﻿namespace ChineseVocabulary.StudyForms
 {
-    partial class FirstTestForm
+    partial class ReviewForm
     {
         /// <summary>
         /// Required designer variable.
@@ -43,14 +43,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.bdsWord)).BeginInit();
             this.SuspendLayout();
             // 
-            // FirstTestForm
+            // ReviewForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(649, 519);
-            this.Name = "FirstTestForm";
-            this.Text = "FirstTestForm";
-            this.Load += new System.EventHandler(this.FirstTestForm_Load);
+            this.ClientSize = new System.Drawing.Size(639, 519);
+            this.Name = "ReviewForm";
+            this.Text = "ReviewForm";
+            this.Load += new System.EventHandler(this.ReviewForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

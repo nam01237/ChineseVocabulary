@@ -1,4 +1,5 @@
 ﻿using ChineseVocabulary.Controls;
+using ChineseVocabulary.StudyForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,7 +12,7 @@ using System.Windows.Forms;
 using VocabularyEntities;
 using VocabularyEntities.Data;
 
-namespace ChineseVocabulary
+namespace ChineseVocabulary.StudyForms
 {
     public partial class LobbyForm : RootForm
     {
@@ -76,6 +77,17 @@ namespace ChineseVocabulary
             }
 
             CurrentGrade = 1;
+            SelectGradeControl();
+        }
+
+        private void btnReStudy_Click(object sender, EventArgs e)
+        {
+            ReviewForm reviewForm = new ReviewForm();
+            reviewForm.StartLocation = Location;
+
+            Visible = false;
+            reviewForm.ShowDialog();
+            Visible = true;
             SelectGradeControl();
         }
     }

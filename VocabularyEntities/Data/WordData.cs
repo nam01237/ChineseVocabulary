@@ -73,5 +73,20 @@ namespace VocabularyEntities.Data
             }
         }
 
+        public List<Word> GetTestList(int userKey)
+        {
+            using (VocabularyEntities context = new VocabularyEntities())
+            {
+                var list = (from x in context.StagedWords
+                            where x.UserKey == userKey && x.PassedCount < 3
+                            orderby x.PassedCount descending
+                            select new { x.Word, x.PassedCount }
+                            ).ToList();
+
+                return list.ConvertAll(x => new Word(x.Word, x.PassedCount));
+
+            }
+        }
+
     }
 }
