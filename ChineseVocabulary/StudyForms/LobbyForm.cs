@@ -85,7 +85,7 @@ namespace ChineseVocabulary.StudyForms
                     upc.lblMemorize.Text = $"{memorizeCount} / {totalCount}";
                     upc.prbMemorize.Value = (int)((double)memorizeCount / totalCount * 100);
                     upc.lblGrade.Text = $"{grade}급";
-                    upc.pbReset.Click += pbReset_Click;
+                    upc.ReSetClick += ReSetClick;
 
                     control.Enter += GradeSelected;
                 }
@@ -93,7 +93,7 @@ namespace ChineseVocabulary.StudyForms
 
         }
 
-        private void pbReset_Click(object sender, EventArgs e)
+        private void ReSetClick(object sender, EventArgs e)
         {
             if (MessageBox.Show("정말로 리셋하시겠습니까?", "알림", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {

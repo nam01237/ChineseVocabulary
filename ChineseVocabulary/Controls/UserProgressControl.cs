@@ -7,17 +7,44 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VocabularyEntities.Data;
 
 namespace ChineseVocabulary.Controls
 {
     public partial class UserProgressControl : UserControl
     {
         private bool _focused = false;
-        public int Grade { get; set; } 
+        public int Grade { get; set; }
 
         public UserProgressControl()
         {
             InitializeComponent();
+        }
+
+        public event EventHandler<ReSetClickEventArgs> ReSetClick;
+
+        protected virtual void OnReSetClick()
+        {
+            ReSetClickEventArgs e = new ReSetClickEventArgs();
+            e.Grade = Grade;
+
+            ReSetClick(this, e);
+
+        }
+
+        public class ReSetClickEventArgs : System.EventArgs
+        {
+            public bool Reset { get; set; }
+            public int Grade { get; set; }
+
+            public ReSetClickEventArgs()
+            { }
+
+            public ReSetClickEventArgs(int grade, bool reset)
+            {
+                Grade = grade;
+                Reset = reset;
+            }
         }
 
         private void UserProgressControl_MouseEnter(object sender, EventArgs e)

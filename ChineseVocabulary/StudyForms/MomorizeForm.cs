@@ -125,6 +125,9 @@ namespace ChineseVocabulary.StudyForms
 
         private void pbRetuen_Click(object sender, EventArgs e)
         {
+            LastSelect lastSelect = new LastSelect
+            { Grade = CurrentGrade, UserKey = AccessUserKey};
+            DataRepository.LastSelects.Insert(lastSelect);
             Close();
         }
 
