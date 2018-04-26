@@ -326,7 +326,6 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TestForm";
             this.Text = "Test";
-            this.Load += new System.EventHandler(this.Test_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvWords)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsWord)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -347,28 +346,28 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvWords;
-        private System.Windows.Forms.DataGridViewTextBoxColumn wordIdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn historiesDataGridViewTextBoxColumn;
-        private Controls.WordControl uscWord;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button TestStart;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Button btnYes;
-        private System.Windows.Forms.Button btnNo;
-        private System.Windows.Forms.Button btnReveal;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ganchezaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn byeongEumDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource bdsWord;
+        protected System.Windows.Forms.DataGridView dgvWords;
+        protected System.Windows.Forms.DataGridViewTextBoxColumn wordIdDataGridViewTextBoxColumn;
+        protected System.Windows.Forms.DataGridViewTextBoxColumn historiesDataGridViewTextBoxColumn;
+        protected Controls.WordControl uscWord;
+        protected System.Windows.Forms.PictureBox pictureBox3;
+        protected System.Windows.Forms.Button TestStart;
+        protected System.Windows.Forms.PictureBox pictureBox4;
+        protected System.Windows.Forms.PictureBox pictureBox5;
+        protected System.Windows.Forms.Button btnYes;
+        protected System.Windows.Forms.Button btnNo;
+        protected System.Windows.Forms.Button btnReveal;
+        protected System.Windows.Forms.PictureBox pictureBox1;
+        protected System.Windows.Forms.PictureBox pictureBox2;
+        protected System.Windows.Forms.PictureBox pictureBox6;
+        protected System.Windows.Forms.PictureBox pictureBox7;
+        protected System.Windows.Forms.PictureBox pictureBox8;
+        protected System.Windows.Forms.PictureBox pictureBox9;
+        protected System.Windows.Forms.PictureBox pictureBox10;
+        protected System.Windows.Forms.PictureBox pictureBox11;
+        protected System.Windows.Forms.PictureBox pictureBox12;
+        protected System.Windows.Forms.DataGridViewTextBoxColumn ganchezaDataGridViewTextBoxColumn;
+        protected System.Windows.Forms.DataGridViewTextBoxColumn byeongEumDataGridViewTextBoxColumn;
+        protected System.Windows.Forms.BindingSource bdsWord;
     }
 }

@@ -20,11 +20,11 @@ namespace ChineseVocabulary
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            //Application.Run(new LoginForm());
 
-            //RootForm.AccessUserKey = 7;
-            //RootForm.AccessUSerId = "n";
-            //RootForm.CurrentGrade = 1;
+            RootForm.AccessUserKey = 7;
+            RootForm.AccessUSerId = "n";
+            RootForm.CurrentGrade = 1;
 
             //LobbyForm lobbyForm = new LobbyForm();
             //Application.Run(lobbyForm);
@@ -34,6 +34,9 @@ namespace ChineseVocabulary
 
             //MemorizeForm memorizeForm = new MemorizeForm();
             //Application.Run(memorizeForm);
+
+            FirstTestForm firstTest = new FirstTestForm();
+            Application.Run(firstTest);
 
         }
 

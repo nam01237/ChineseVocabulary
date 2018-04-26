@@ -96,10 +96,10 @@ namespace ChineseVocabulary
         private void UpdateWordControl()
         {
             Word word = bdsWord.Current as Word;
-            uscWord.txtWord.Text = word.Gancheza;
-            uscWord.txtMeaning.Text = word.Meaning;
-            uscWord.txtByeongEum.Text = word.ByeongEum;
-            uscWord.txtWordClass.Text = word.WordClass;
+            uscWord.lblWord.Text = word.Gancheza;
+            uscWord.lblMeaning.Text = word.Meaning;
+            uscWord.lblByeongEum.Text = word.ByeongEum;
+            uscWord.lblWordClass.Text = word.WordClass;
             uscWord.LblWordProgress.Text = $"{bdsWord.Position + 1} / {_gradeCount}";
         }
 

@@ -14,57 +14,53 @@ namespace ChineseVocabulary
 {
     public partial class TestForm : RootForm
     {
-        private List<Word> _testWords;
-        private int _index;
-        private int _totalCount;
-        private bool _finished;
+        protected List<Word> _testWords;
+        protected int _index;
+        protected int _totalCount;
+        protected bool _finished;
 
         public TestForm()
         {
             InitializeComponent();
         }
 
-        private void InitForm()
+        protected virtual void SetWordList()
+        { }
+
+        protected void InitForm()
         {
             CloseParent = true;
             _finished = false;
             _index = 0;
-            _testWords = DataRepository.Words.GetTestList(AccessUserKey, CurrentGrade);
             _totalCount = _testWords.Count;
             Location = StartLocation;
             AddWord();
 
         }
 
-        private void UpdateWordControl()
+        protected void UpdateWordControl()
         {
             Word word = bdsWord.Current as Word;
-            uscWord.txtWord.Text = word.Gancheza;
-            uscWord.txtByeongEum.Text = word.ByeongEum;
-            uscWord.txtWordClass.Text = word.WordClass;
-            uscWord.txtMeaning.Text = "";
+            uscWord.lblWord.Text = word.Gancheza;
+            uscWord.lblByeongEum.Text = word.ByeongEum;
+            uscWord.lblWordClass.Text = word.WordClass;
+            uscWord.lblMeaning.Text = "";
             uscWord.LblWordProgress.Text = $"{bdsWord.Position + 1} / {_totalCount}";
         }
 
-        private void AddWord()
+        protected void AddWord()
         {
             bdsWord.Add(_testWords[_index]);
             bdsWord.MoveNext();
             _index++;
         }
 
-        private void Test_Load(object sender, EventArgs e)
-        {
-            InitForm();
-        }
-
-
-        private void dgvWords_CellEnter(object sender, DataGridViewCellEventArgs e)
+        protected void dgvWords_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
             UpdateWordControl();
         }
 
-        private void btnYes_Click(object sender, EventArgs e)
+        protected void CorrectWord()
         {
             dgvWords.CurrentRow.DefaultCellStyle.BackColor = Color.GreenYellow;
             int wordId = ((Word)bdsWord.Current).WordId;
@@ -78,10 +74,15 @@ namespace ChineseVocabulary
                     IncreasedTo = passedCount,
                     At = DateTime.Now
                 });
+        }
+
+        protected void btnYes_Click(object sender, EventArgs e)
+        {
+            CorrectWord();
             AddWord();
         }
 
-        private void btnNo_Click(object sender, EventArgs e)
+        protected void WrongWord()
         {
             dgvWords.CurrentRow.DefaultCellStyle.BackColor = Color.Pink;
             int wordId = ((Word)bdsWord.Current).WordId;
@@ -95,19 +96,25 @@ namespace ChineseVocabulary
                     IncreasedTo = 0,
                     At = DateTime.Now
                 });
+
+        }
+
+        protected void btnNo_Click(object sender, EventArgs e)
+        {
+            WrongWord();
             AddWord();
         }
 
-        private void TestStart_Click(object sender, EventArgs e)
+        protected void TestStart_Click(object sender, EventArgs e)
         {
             CloseParent = false;
             Close();
         }
 
-        private void btnReveal_Click(object sender, EventArgs e)
+        protected void btnReveal_Click(object sender, EventArgs e)
         {
             Word word = bdsWord.Current as Word;
-            uscWord.txtMeaning.Text = word.Meaning;
+            uscWord.lblMeaning.Text = word.Meaning;
         }
     }
 }
