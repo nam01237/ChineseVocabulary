@@ -71,7 +71,7 @@ namespace ChineseVocabulary
             this.userStateControl1.Location = new System.Drawing.Point(18, 25);
             this.userStateControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userStateControl1.Name = "userStateControl1";
-            this.userStateControl1.Size = new System.Drawing.Size(355, 63);
+            this.userStateControl1.Size = new System.Drawing.Size(355, 69);
             this.userStateControl1.TabIndex = 17;
             // 
             // userProgressControl1
