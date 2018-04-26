@@ -69,7 +69,7 @@
             // 
             this.pbReset.BackgroundImage = global::ChineseVocabulary.Properties.Resources.reset;
             this.pbReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbReset.Location = new System.Drawing.Point(524, 10);
+            this.pbReset.Location = new System.Drawing.Point(546, 9);
             this.pbReset.Name = "pbReset";
             this.pbReset.Size = new System.Drawing.Size(26, 25);
             this.pbReset.TabIndex = 3;
