@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using VocabularyEntities;
 using VocabularyEntities.Data;
@@ -28,6 +29,8 @@ namespace ChineseVocabulary
 
         private bool SignUpCheck()
         {
+            Regex regex = new Regex(@"^[a-z0-9_]{5,12}$");
+
             if ( txtId.Text.Equals("") )
             {
                 MessageBox.Show("아이디를 입력해주세요", "알림");
@@ -43,11 +46,23 @@ namespace ChineseVocabulary
                 MessageBox.Show("비밀번호가 서로 다릅니다.", "알림");
                 return false;
             }
-            else if (DataRepository.Users.GetByUserId(txtId.Text) != null)
+
+            if (regex.IsMatch(txtId.Text))
             {
-                MessageBox.Show("중복된 아이디 입니다.", "알림");
+                if (DataRepository.Users.GetByUserId(txtId.Text) != null)
+                {
+                    MessageBox.Show("중복된 아이디 입니다.", "알림");
+                    return false;
+                }
+            }
+            else
+            {
+                MessageBox.Show("아이디는 영문대소문자, 숫자, 특수문자만 사용가능합니다.\n(5 ~ 12자)", "알림");
                 return false;
             }
+
+
+
 
             return true;
         }
