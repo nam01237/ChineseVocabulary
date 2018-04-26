@@ -45,12 +45,12 @@ namespace ChineseVocabulary
             this.bdsWord = new System.Windows.Forms.BindingSource(this.components);
             this.pbNext = new System.Windows.Forms.PictureBox();
             this.pbPrev = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pbReturn = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvWords)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsWord)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNext)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPrev)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbReturn)).BeginInit();
             this.SuspendLayout();
             // 
             // TestStart
@@ -216,16 +216,16 @@ namespace ChineseVocabulary
             this.pbPrev.TabStop = false;
             this.pbPrev.Click += new System.EventHandler(this.pbPrev_Click);
             // 
-            // pictureBox3
+            // pbReturn
             // 
-            this.pictureBox3.BackgroundImage = global::ChineseVocabulary.Properties.Resources.PnadaW;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(507, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(112, 102);
-            this.pictureBox3.TabIndex = 6;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pbReturn.BackgroundImage = global::ChineseVocabulary.Properties.Resources.PnadaW;
+            this.pbReturn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbReturn.Location = new System.Drawing.Point(507, 2);
+            this.pbReturn.Name = "pbReturn";
+            this.pbReturn.Size = new System.Drawing.Size(112, 102);
+            this.pbReturn.TabIndex = 6;
+            this.pbReturn.TabStop = false;
+            this.pbReturn.Click += new System.EventHandler(this.pbRetuen_Click);
             // 
             // MemorizeForm
             // 
@@ -243,7 +243,7 @@ namespace ChineseVocabulary
             this.Controls.Add(this.btnGrade3);
             this.Controls.Add(this.btnGrade2);
             this.Controls.Add(this.btnGrade1);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pbReturn);
             this.Controls.Add(this.TestStart);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MemorizeForm";
@@ -253,14 +253,14 @@ namespace ChineseVocabulary
             ((System.ComponentModel.ISupportInitialize)(this.bdsWord)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNext)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPrev)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbReturn)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Button TestStart;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pbReturn;
         private GradeSelectButton btnGrade6;
         private GradeSelectButton btnGrade5;
         private GradeSelectButton btnGrade4;

@@ -24,7 +24,7 @@
           </Key>
           <Property Name="UserKey" Type="int" Nullable="false" />
           <Property Name="Grade" Type="int" Nullable="false" />
-          <Property Name="WordId" Type="int" Nullable="false" />
+          <Property Name="StagedWord" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="StagedWord">
           <Key>
@@ -34,7 +34,6 @@
           <Property Name="UserKey" Type="int" Nullable="false" />
           <Property Name="WordId" Type="int" Nullable="false" />
           <Property Name="PassedCount" Type="int" Nullable="false" />
-          <Property Name="Tested" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="User">
           <Key>
@@ -70,7 +69,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_History_User">
-          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="User" Type="Self.User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="History" Type="Self.History" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="User">
@@ -94,7 +95,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_LastSelect_User">
-          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="User" Type="Self.User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="LastSelect" Type="Self.LastSelect" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="User">
@@ -105,20 +108,10 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_LastSelect_Word">
-          <End Role="Word" Type="Self.Word" Multiplicity="1" />
-          <End Role="LastSelect" Type="Self.LastSelect" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Word">
-              <PropertyRef Name="WordId" />
-            </Principal>
-            <Dependent Role="LastSelect">
-              <PropertyRef Name="WordId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_StagedWord_User">
-          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="User" Type="Self.User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="StagedWord" Type="Self.StagedWord" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="User">
@@ -130,7 +123,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_StagedWord_Word1">
-          <End Role="Word" Type="Self.Word" Multiplicity="1" />
+          <End Role="Word" Type="Self.Word" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="StagedWord" Type="Self.StagedWord" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Word">
@@ -163,10 +158,6 @@
             <End Role="User" EntitySet="User" />
             <End Role="LastSelect" EntitySet="LastSelect" />
           </AssociationSet>
-          <AssociationSet Name="FK_LastSelect_Word" Association="Self.FK_LastSelect_Word">
-            <End Role="Word" EntitySet="Word" />
-            <End Role="LastSelect" EntitySet="LastSelect" />
-          </AssociationSet>
           <AssociationSet Name="FK_StagedWord_User" Association="Self.FK_StagedWord_User">
             <End Role="User" EntitySet="User" />
             <End Role="StagedWord" EntitySet="StagedWord" />
@@ -183,13 +174,8 @@
         <EntityContainer Name="VocabularyEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Histories" EntityType="VocabularyModel.History" />
           <EntitySet Name="LastSelects" EntityType="VocabularyModel.LastSelect" />
-          <EntitySet Name="StagedWords" EntityType="VocabularyModel.StagedWord" />
           <EntitySet Name="Users" EntityType="VocabularyModel.User" />
           <EntitySet Name="Words" EntityType="VocabularyModel.Word" />
-          <AssociationSet Name="FK_History_StagedWord1" Association="VocabularyModel.FK_History_StagedWord1">
-            <End Role="StagedWord" EntitySet="StagedWords" />
-            <End Role="History" EntitySet="Histories" />
-          </AssociationSet>
           <AssociationSet Name="FK_History_User" Association="VocabularyModel.FK_History_User">
             <End Role="User" EntitySet="Users" />
             <End Role="History" EntitySet="Histories" />
@@ -202,9 +188,10 @@
             <End Role="User" EntitySet="Users" />
             <End Role="LastSelect" EntitySet="LastSelects" />
           </AssociationSet>
-          <AssociationSet Name="FK_LastSelect_Word" Association="VocabularyModel.FK_LastSelect_Word">
-            <End Role="Word" EntitySet="Words" />
-            <End Role="LastSelect" EntitySet="LastSelects" />
+          <EntitySet Name="StagedWords" EntityType="VocabularyModel.StagedWord" />
+          <AssociationSet Name="FK_History_StagedWord1" Association="VocabularyModel.FK_History_StagedWord1">
+            <End Role="StagedWord" EntitySet="StagedWords" />
+            <End Role="History" EntitySet="Histories" />
           </AssociationSet>
           <AssociationSet Name="FK_StagedWord_User" Association="VocabularyModel.FK_StagedWord_User">
             <End Role="User" EntitySet="Users" />
@@ -214,7 +201,7 @@
             <End Role="Word" EntitySet="Words" />
             <End Role="StagedWord" EntitySet="StagedWords" />
           </AssociationSet>
-        </EntityContainer>
+          </EntityContainer>
         <EntityType Name="History">
           <Key>
             <PropertyRef Name="HistoryId" />
@@ -226,9 +213,9 @@
           <Property Name="At" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="WordId" Type="Int32" Nullable="false" />
           <Property Name="UserKey" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="StagedWord" Relationship="VocabularyModel.FK_History_StagedWord1" FromRole="History" ToRole="StagedWord" />
           <NavigationProperty Name="User" Relationship="VocabularyModel.FK_History_User" FromRole="History" ToRole="User" />
           <NavigationProperty Name="Word" Relationship="VocabularyModel.FK_History_Word" FromRole="History" ToRole="Word" />
+          <NavigationProperty Name="StagedWord" Relationship="VocabularyModel.FK_History_StagedWord1" FromRole="History" ToRole="StagedWord" />
         </EntityType>
         <EntityType Name="LastSelect">
           <Key>
@@ -237,22 +224,8 @@
           </Key>
           <Property Name="UserKey" Type="Int32" Nullable="false" />
           <Property Name="Grade" Type="Int32" Nullable="false" />
-          <Property Name="WordId" Type="Int32" Nullable="false" />
+          <Property Name="StagedWord" Type="Int32" Nullable="false" />
           <NavigationProperty Name="User" Relationship="VocabularyModel.FK_LastSelect_User" FromRole="LastSelect" ToRole="User" />
-          <NavigationProperty Name="Word" Relationship="VocabularyModel.FK_LastSelect_Word" FromRole="LastSelect" ToRole="Word" />
-        </EntityType>
-        <EntityType Name="StagedWord">
-          <Key>
-            <PropertyRef Name="UserKey" />
-            <PropertyRef Name="WordId" />
-          </Key>
-          <Property Name="UserKey" Type="Int32" Nullable="false" />
-          <Property Name="WordId" Type="Int32" Nullable="false" />
-          <Property Name="PassedCount" Type="Int32" Nullable="false" />
-          <Property Name="Tested" Type="Boolean" Nullable="false" />
-          <NavigationProperty Name="Histories" Relationship="VocabularyModel.FK_History_StagedWord1" FromRole="StagedWord" ToRole="History" />
-          <NavigationProperty Name="User" Relationship="VocabularyModel.FK_StagedWord_User" FromRole="StagedWord" ToRole="User" />
-          <NavigationProperty Name="Word" Relationship="VocabularyModel.FK_StagedWord_Word1" FromRole="StagedWord" ToRole="Word" />
         </EntityType>
         <EntityType Name="User">
           <Key>
@@ -276,25 +249,12 @@
           <Property Name="Meaning" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Grade" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Histories" Relationship="VocabularyModel.FK_History_Word" FromRole="Word" ToRole="History" />
-          <NavigationProperty Name="LastSelects" Relationship="VocabularyModel.FK_LastSelect_Word" FromRole="Word" ToRole="LastSelect" />
           <NavigationProperty Name="StagedWords" Relationship="VocabularyModel.FK_StagedWord_Word1" FromRole="Word" ToRole="StagedWord" />
         </EntityType>
-        <Association Name="FK_History_StagedWord1">
-          <End Type="VocabularyModel.StagedWord" Role="StagedWord" Multiplicity="1" />
-          <End Type="VocabularyModel.History" Role="History" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="StagedWord">
-              <PropertyRef Name="UserKey" />
-              <PropertyRef Name="WordId" />
-            </Principal>
-            <Dependent Role="History">
-              <PropertyRef Name="UserKey" />
-              <PropertyRef Name="WordId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_History_User">
-          <End Type="VocabularyModel.User" Role="User" Multiplicity="1" />
+          <End Type="VocabularyModel.User" Role="User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Type="VocabularyModel.History" Role="History" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="User">
@@ -318,7 +278,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_LastSelect_User">
-          <End Type="VocabularyModel.User" Role="User" Multiplicity="1" />
+          <End Type="VocabularyModel.User" Role="User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Type="VocabularyModel.LastSelect" Role="LastSelect" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="User">
@@ -329,20 +291,36 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_LastSelect_Word">
-          <End Type="VocabularyModel.Word" Role="Word" Multiplicity="1" />
-          <End Type="VocabularyModel.LastSelect" Role="LastSelect" Multiplicity="*" />
+        <EntityType Name="StagedWord">
+          <Key>
+            <PropertyRef Name="UserKey" />
+            <PropertyRef Name="WordId" />
+          </Key>
+          <Property Name="UserKey" Type="Int32" Nullable="false" />
+          <Property Name="WordId" Type="Int32" Nullable="false" />
+          <Property Name="PassedCount" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Histories" Relationship="VocabularyModel.FK_History_StagedWord1" FromRole="StagedWord" ToRole="History" />
+          <NavigationProperty Name="User" Relationship="VocabularyModel.FK_StagedWord_User" FromRole="StagedWord" ToRole="User" />
+          <NavigationProperty Name="Word" Relationship="VocabularyModel.FK_StagedWord_Word1" FromRole="StagedWord" ToRole="Word" />
+        </EntityType>
+        <Association Name="FK_History_StagedWord1">
+          <End Type="VocabularyModel.StagedWord" Role="StagedWord" Multiplicity="1" />
+          <End Type="VocabularyModel.History" Role="History" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="Word">
+            <Principal Role="StagedWord">
+              <PropertyRef Name="UserKey" />
               <PropertyRef Name="WordId" />
             </Principal>
-            <Dependent Role="LastSelect">
+            <Dependent Role="History">
+              <PropertyRef Name="UserKey" />
               <PropertyRef Name="WordId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_StagedWord_User">
-          <End Type="VocabularyModel.User" Role="User" Multiplicity="1" />
+          <End Type="VocabularyModel.User" Role="User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Type="VocabularyModel.StagedWord" Role="StagedWord" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="User">
@@ -354,7 +332,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_StagedWord_Word1">
-          <End Type="VocabularyModel.Word" Role="Word" Multiplicity="1" />
+          <End Type="VocabularyModel.Word" Role="Word" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Type="VocabularyModel.StagedWord" Role="StagedWord" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Word">
@@ -365,7 +345,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-      </Schema>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
@@ -387,18 +367,8 @@
           <EntitySetMapping Name="LastSelects">
             <EntityTypeMapping TypeName="VocabularyModel.LastSelect">
               <MappingFragment StoreEntitySet="LastSelect">
-                <ScalarProperty Name="WordId" ColumnName="WordId" />
+                <ScalarProperty Name="StagedWord" ColumnName="StagedWord" />
                 <ScalarProperty Name="Grade" ColumnName="Grade" />
-                <ScalarProperty Name="UserKey" ColumnName="UserKey" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="StagedWords">
-            <EntityTypeMapping TypeName="VocabularyModel.StagedWord">
-              <MappingFragment StoreEntitySet="StagedWord">
-                <ScalarProperty Name="Tested" ColumnName="Tested" />
-                <ScalarProperty Name="PassedCount" ColumnName="PassedCount" />
-                <ScalarProperty Name="WordId" ColumnName="WordId" />
                 <ScalarProperty Name="UserKey" ColumnName="UserKey" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -421,6 +391,15 @@
                 <ScalarProperty Name="ByeongEum" ColumnName="ByeongEum" />
                 <ScalarProperty Name="Gancheza" ColumnName="Gancheza" />
                 <ScalarProperty Name="WordId" ColumnName="WordId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StagedWords">
+            <EntityTypeMapping TypeName="VocabularyModel.StagedWord">
+              <MappingFragment StoreEntitySet="StagedWord">
+                <ScalarProperty Name="PassedCount" ColumnName="PassedCount" />
+                <ScalarProperty Name="WordId" ColumnName="WordId" />
+                <ScalarProperty Name="UserKey" ColumnName="UserKey" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

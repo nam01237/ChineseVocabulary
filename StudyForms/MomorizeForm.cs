@@ -15,7 +15,6 @@ namespace ChineseVocabulary
 {
     public partial class MemorizeForm : RootForm
     {
-        private int _currentGrade;
         private int _gradeCount;
 
         public MemorizeForm()
@@ -23,19 +22,15 @@ namespace ChineseVocabulary
             InitializeComponent();
         }
 
-        public MemorizeForm(int grade) : this()
+        private void InitForm()
         {
-            _currentGrade = grade;
-        }
-
-        private void StudyForm_Shown(object sender, EventArgs e)
-        {
-            _gradeCount = DataRepository.Words.GetCount(x => x.Grade == _currentGrade);
+            _gradeCount = DataRepository.Words.GetCount(x => x.Grade == CurrentGrade);
+            Location = StartLocation;
 
             foreach (Control control in Controls)
             {
                 if (control is GradeSelectButton)
-                    ((GradeSelectButton)control).GradeButtonClicked += btnGrade_Click;
+                    control.Click += btnGrade_Click;
             }
 
             UpdateWordList();
@@ -43,12 +38,12 @@ namespace ChineseVocabulary
 
         private void UpdateWordList()
         {
-            List<Word> words = DataRepository.StagedWords.GetByGrade(AccessUserKey, _currentGrade);
+            List<Word> words = DataRepository.Words.GetByGrade(AccessUserKey, CurrentGrade);
 
             if( words.Count == 0)
             {
                 words = new List<Word>();
-                Word firstWord = DataRepository.Words.GetFirst(x => x.Grade == _currentGrade);
+                Word firstWord = DataRepository.Words.GetFirst(x => x.Grade == CurrentGrade);
                 words.Add(firstWord);
 
                 StagedWord stagedWord = new StagedWord
@@ -60,7 +55,7 @@ namespace ChineseVocabulary
                 DataRepository.StagedWords.Insert(stagedWord);
             }
 
-            uscWord.lblGrade.Text = $"{_currentGrade} 급";
+            uscWord.lblGrade.Text = $"{CurrentGrade} 급";
             bdsWord.DataSource = words;
             bdsWord.Position = bdsWord.Count - 1;
 
@@ -68,7 +63,7 @@ namespace ChineseVocabulary
             {
                 Word word = (Word)item;
                 
-                if( !word.Tested)
+                if( word.PassedCount == 0 )
                 {
                     int index = bdsWord.IndexOf(word);
                     dgvWords.Rows[index].DefaultCellStyle.BackColor = Color.Pink;
@@ -76,7 +71,7 @@ namespace ChineseVocabulary
             }
         }
 
-        private void pbNext_Click(object sender, EventArgs e)
+        private void MoveNextWord()
         {
             if (bdsWord.Position == bdsWord.Count - 1 && bdsWord.Position < _gradeCount - 1)
             {
@@ -94,12 +89,11 @@ namespace ChineseVocabulary
 
                 DataRepository.StagedWords.Insert(stagedWord);
             }
-            
+
             bdsWord.MoveNext();
-            
         }
 
-        private void dgvWords_CellEnter(object sender, DataGridViewCellEventArgs e)
+        private void UpdateWordControl()
         {
             Word word = bdsWord.Current as Word;
             uscWord.txtWord.Text = word.Gancheza;
@@ -109,19 +103,34 @@ namespace ChineseVocabulary
             uscWord.LblWordProgress.Text = $"{bdsWord.Position + 1} / {_gradeCount}";
         }
 
+        private void StudyForm_Shown(object sender, EventArgs e)
+        {
+            InitForm();
+        }
+
+        private void pbNext_Click(object sender, EventArgs e)
+        {
+            MoveNextWord();
+        }
+
+        private void dgvWords_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            UpdateWordControl();
+        }
+
         private void pbPrev_Click(object sender, EventArgs e)
         {
             bdsWord.MovePrevious();
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void pbRetuen_Click(object sender, EventArgs e)
         {
             Close();
         }
 
         private void btnGrade_Click(object sender, EventArgs e)
         {
-            _currentGrade = ((GradeButtonClickedEventArgs)e).Geade;
+            CurrentGrade = ((GradeSelectButton)sender).Grade;
             UpdateWordList();
 
         }
@@ -129,8 +138,16 @@ namespace ChineseVocabulary
         private void TestStart_Click(object sender, EventArgs e)
         {
             TestForm testForm = new TestForm();
-            testForm.ModalParentForm = this;
+            testForm.StartLocation = Location;
+
+            Visible = false;
             testForm.ShowDialog();
+
+            if (testForm.CloseParent)
+                Close();
+
+            UpdateWordList();
+            Visible = true;
         }
     }
 }

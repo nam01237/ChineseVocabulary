@@ -8,7 +8,7 @@ namespace VocabularyEntities
 {
     public partial class Word
     {
-        public Word(Word word, bool tested)
+        public Word(Word word, int passedCount)
         {
             WordId = word.WordId;
             Gancheza = word.Gancheza;
@@ -16,10 +16,10 @@ namespace VocabularyEntities
             Meaning = word.Meaning;
             WordClass = word.WordClass;
             Grade = word.Grade;
-            Tested = tested;
+            PassedCount = passedCount;
             
         }
 
-        public bool Tested { get; set; }
+        public int PassedCount { get; set; }
     }
 }

@@ -52,7 +52,7 @@ namespace ChineseVocabulary
                     AccessUSerId = id;
 
                     LobbyForm lobbyForm = new LobbyForm();
-                    lobbyForm.ModalParentForm = this;
+                    Visible = false;
                     lobbyForm.ShowDialog();
                     Close();
                     

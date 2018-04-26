@@ -23,7 +23,6 @@ namespace VocabularyEntities
         public int UserKey { get; set; }
         public int WordId { get; set; }
         public int PassedCount { get; set; }
-        public bool Tested { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<History> Histories { get; set; }

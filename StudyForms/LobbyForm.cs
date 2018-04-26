@@ -24,11 +24,14 @@ namespace ChineseVocabulary
 
         private void btnStuddy_Click(object sender, EventArgs e)
         {
-            MemorizeForm studyForm = new MemorizeForm(_selectedGrade);
-            studyForm.ModalParentForm = this;
-            studyForm.ShowDialog();
-            GradeControlSelect();
+            CurrentGrade = _selectedGrade;
+            MemorizeForm studyForm = new MemorizeForm();
+            studyForm.StartLocation = Location;
 
+            Visible = false;
+            studyForm.ShowDialog();
+            Visible = true;
+            SelectGradeControl();
         }
 
         private void GradeSelected(object sender, EventArgs e)
@@ -36,14 +39,14 @@ namespace ChineseVocabulary
             _selectedGrade = ((UserProgressControl)sender).Grade;
         }
 
-        private void GradeControlSelect()
+        private void SelectGradeControl()
         {
             foreach (Control control in Controls)
             {
                 if (control is UserProgressControl)
                 {
                     int grade = ((UserProgressControl)control).Grade;
-                    if (grade == _selectedGrade)
+                    if (grade == CurrentGrade)
                     {
                         control.Select();
                         break;
@@ -54,8 +57,6 @@ namespace ChineseVocabulary
 
         private void LobbyForm_Shown(object sender, EventArgs e)
         {
-
-            ModalParentForm.Visible = false;
 
             foreach (Control control in Controls)
             {
@@ -74,8 +75,8 @@ namespace ChineseVocabulary
                 }
             }
 
-            GradeControlSelect();
-            //userProgressControl1.Select();
+            CurrentGrade = 1;
+            SelectGradeControl();
         }
     }
 }

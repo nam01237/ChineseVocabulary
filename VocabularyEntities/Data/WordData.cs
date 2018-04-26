@@ -45,5 +45,33 @@ namespace VocabularyEntities.Data
             }
         }
 
+        public List<Word> GetByGrade(int userKey, int grade)
+        {
+            using (VocabularyEntities context = new VocabularyEntities())
+            {
+                var list = (from x in context.StagedWords
+                            where x.UserKey == userKey && x.Word.Grade == grade
+                            select new { x.Word, x.PassedCount }
+                           ).ToList();
+
+                return list.ConvertAll(x => new Word(x.Word, x.PassedCount));
+
+            }
+        }
+
+        public List<Word> GetTestList (int userKey, int grade)
+        {
+            using (VocabularyEntities context = new VocabularyEntities())
+            {
+                var list = (from x in context.StagedWords
+                            where x.UserKey == userKey && x.Word.Grade == grade && x.PassedCount == 0
+                            select new { x.Word, x.PassedCount }
+                            ).ToList();
+
+                return list.ConvertAll(x => new Word(x.Word, x.PassedCount));
+
+            }
+        }
+
     }
 }

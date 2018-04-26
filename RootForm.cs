@@ -14,10 +14,13 @@ namespace ChineseVocabulary
     {
         public static int AccessUserKey { get; set; }
         public static string AccessUSerId { get; set; }
-        public RootForm ModalParentForm { get; set; }
+        protected static int CurrentGrade { get; set; }
+        public bool CloseParent { get; set; }
+        public Point StartLocation { get; set; }
 
         protected RootForm()
         {
+            CloseParent = false;
             InitializeComponent();
         }
     }
