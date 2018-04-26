@@ -19,16 +19,19 @@ namespace ChineseVocabulary
         {
             EntityDataInitializer.ConnectionString = "VocabularyEntities";
 
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new LoginForm());
+            Application.Run(new LoginForm());
 
-            RootForm.AccessUserKey = 7;
-            RootForm.AccessUSerId = "n";
-            RootForm.CurrentGrade = 1;
 
-            LobbyForm lobbyForm = new LobbyForm();
-            Application.Run(lobbyForm);
+
+            //RootForm.AccessUserKey = 7;
+            //RootForm.AccessUSerId = "n";
+            //RootForm.CurrentGrade = 1;
+
+            //LobbyForm lobbyForm = new LobbyForm();
+            //Application.Run(lobbyForm);
 
             //TestForm testForm = new TestForm();
             //Application.Run(testForm);

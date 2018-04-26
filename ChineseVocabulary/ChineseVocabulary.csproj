@@ -195,6 +195,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Fonts\bmyeonsung.ttf" />
+    <None Include="Resources\Fonts\DXred.ttf" />
     <None Include="Resources\square.png" />
   </ItemGroup>
   <ItemGroup>
