@@ -39,8 +39,8 @@ namespace ChineseVocabulary.StudyForms
             this.userProgressControl4 = new ChineseVocabulary.Controls.UserProgressControl();
             this.userProgressControl5 = new ChineseVocabulary.Controls.UserProgressControl();
             this.userProgressControl6 = new ChineseVocabulary.Controls.UserProgressControl();
-            this.userPicture = new System.Windows.Forms.PictureBox();
             this.lblId = new System.Windows.Forms.Label();
+            this.userPicture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.userPicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,13 +67,6 @@ namespace ChineseVocabulary.StudyForms
             this.btnReStudy.Text = "복습하기";
             this.btnReStudy.UseVisualStyleBackColor = false;
             this.btnReStudy.Click += new System.EventHandler(this.btnReStudy_Click);
-            // 
-            this.userStateControl1.BackColor = System.Drawing.Color.White;
-            this.userStateControl1.Location = new System.Drawing.Point(18, 25);
-            this.userStateControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.userStateControl1.Name = "userStateControl1";
-            this.userStateControl1.Size = new System.Drawing.Size(355, 69);
-            this.userStateControl1.TabIndex = 17;
             // 
             // userProgressControl1
             // 
@@ -135,26 +128,27 @@ namespace ChineseVocabulary.StudyForms
             this.userProgressControl6.Size = new System.Drawing.Size(608, 45);
             this.userProgressControl6.TabIndex = 18;
             // 
-            // userPicture
-            // 
-            this.userPicture.BackgroundImage = global::ChineseVocabulary.Properties.Resources.pandewhite;
-            this.userPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.userPicture.Location = new System.Drawing.Point(48, 11);
-            this.userPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.userPicture.Name = "userPicture";
-            this.userPicture.Size = new System.Drawing.Size(70, 60);
-            this.userPicture.TabIndex = 20;
-            this.userPicture.TabStop = false;
-            // 
             // lblId
             // 
             this.lblId.AutoSize = true;
             this.lblId.Font = new System.Drawing.Font("Gulim", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblId.Location = new System.Drawing.Point(124, 24);
+            this.lblId.Location = new System.Drawing.Point(120, 32);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(103, 30);
             this.lblId.TabIndex = 19;
             this.lblId.Text = "사용자";
+            // 
+            // userPicture
+            // 
+            this.userPicture.BackgroundImage = global::ChineseVocabulary.Properties.Resources.PnadaW;
+            this.userPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.userPicture.Location = new System.Drawing.Point(22, 13);
+            this.userPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.userPicture.Name = "userPicture";
+            this.userPicture.Size = new System.Drawing.Size(70, 70);
+            this.userPicture.TabIndex = 20;
+            this.userPicture.TabStop = false;
+            this.userPicture.Click += new System.EventHandler(this.userPicture_Click);
             // 
             // LobbyForm
             // 
@@ -192,7 +186,7 @@ namespace ChineseVocabulary.StudyForms
         private UserProgressControl userProgressControl4;
         private UserProgressControl userProgressControl5;
         private UserProgressControl userProgressControl6;
-        private System.Windows.Forms.PictureBox userPicture;
         private System.Windows.Forms.Label lblId;
+        private System.Windows.Forms.PictureBox userPicture;
     }
 }

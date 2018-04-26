@@ -13,9 +13,9 @@ namespace ChineseVocabulary
 {
     public partial class RootForm : Form
     {
-        public static int AccessUserKey { get; set; }
-        public static string AccessUSerId { get; set; }
-        public static int CurrentGrade { get; set; }
+        protected static int AccessUserKey { get; set; }
+        protected static string AccessUSerId { get; set; }
+        protected static int CurrentGrade { get; set; }
         public bool CloseParent { get; set; }
         public Point StartLocation { get; set; }
 

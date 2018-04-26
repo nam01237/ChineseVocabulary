@@ -55,8 +55,12 @@ namespace ChineseVocabulary
                     LobbyForm lobbyForm = new LobbyForm();
                     Visible = false;
                     lobbyForm.ShowDialog();
-                    Close();
-                    
+
+                    if( lobbyForm.CloseParent )
+                        Close();
+
+                    txtPw.Text = "";
+                    Visible = true;
                 }
                 else
                 {

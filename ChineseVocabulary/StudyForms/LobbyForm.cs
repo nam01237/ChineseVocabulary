@@ -61,6 +61,7 @@ namespace ChineseVocabulary.StudyForms
 
         private void LobbyForm_Shown(object sender, EventArgs e)
         {
+            CloseParent = true;
             lblId.Text = AccessUSerId;
 
             UpdateUserProgressControl();
@@ -114,6 +115,12 @@ namespace ChineseVocabulary.StudyForms
 
             Visible = true;
 
+        }
+
+        private void userPicture_Click(object sender, EventArgs e)
+        {
+            CloseParent = false;
+            Close();
         }
     }
 }
