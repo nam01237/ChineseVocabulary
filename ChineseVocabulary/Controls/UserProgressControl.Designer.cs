@@ -51,9 +51,9 @@
             this.lblMemorize.Font = new System.Drawing.Font("Gulim", 10F, System.Drawing.FontStyle.Bold);
             this.lblMemorize.Location = new System.Drawing.Point(442, 16);
             this.lblMemorize.Name = "lblMemorize";
-            this.lblMemorize.Size = new System.Drawing.Size(62, 14);
+            this.lblMemorize.Size = new System.Drawing.Size(98, 14);
             this.lblMemorize.TabIndex = 1;
-            this.lblMemorize.Text = "0  /   n";
+            this.lblMemorize.Text = "2500 / 2500";
             // 
             // lblGrade
             // 
@@ -86,7 +86,7 @@
             this.Controls.Add(this.prbMemorize);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserProgressControl";
-            this.Size = new System.Drawing.Size(564, 45);
+            this.Size = new System.Drawing.Size(589, 45);
             this.Load += new System.EventHandler(this.UserProgressControl_Load);
             this.Enter += new System.EventHandler(this.UserProgressControl_Enter);
             this.Leave += new System.EventHandler(this.UserProgressControl_Leave);
