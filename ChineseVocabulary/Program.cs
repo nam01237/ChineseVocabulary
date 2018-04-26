@@ -19,12 +19,9 @@ namespace ChineseVocabulary
         {
             EntityDataInitializer.ConnectionString = "VocabularyEntities";
 
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LoginForm());
-
-
 
             //RootForm.AccessUserKey = 7;
             //RootForm.AccessUSerId = "n";
