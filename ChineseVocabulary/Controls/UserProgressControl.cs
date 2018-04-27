@@ -40,6 +40,11 @@ namespace ChineseVocabulary.Controls
             public ReSetClickEventArgs()
             { }
 
+            public ReSetClickEventArgs(int grade)
+            {
+                Grade = grade;
+            }
+
             public ReSetClickEventArgs(int grade, bool reset)
             {
                 Grade = grade;
@@ -84,6 +89,11 @@ namespace ChineseVocabulary.Controls
         private void ChildControlClicked(object sender, EventArgs e)
         {
             Select();
+        }
+
+        private void pbReset_Click(object sender, EventArgs e)
+        {
+            OnReSetClick();
         }
     }
 }

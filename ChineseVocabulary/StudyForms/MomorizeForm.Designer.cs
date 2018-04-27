@@ -248,6 +248,7 @@ namespace ChineseVocabulary.StudyForms
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MemorizeForm";
             this.Text = "학습하기";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MemorizeForm_FormClosed);
             this.Shown += new System.EventHandler(this.StudyForm_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvWords)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsWord)).EndInit();

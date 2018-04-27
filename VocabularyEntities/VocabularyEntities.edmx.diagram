@@ -6,14 +6,15 @@
     <edmx:Diagrams>
       <Diagram DiagramId="7bc01e2b0a1242e0a4f75f069bea2572" Name="Diagram1">
         <EntityTypeShape EntityType="VocabularyModel.History" Width="1.5" PointX="3" PointY="1.75" />
-        <EntityTypeShape EntityType="VocabularyModel.LastSelect" Width="1.5" PointX="7" PointY="7.875" />
         <EntityTypeShape EntityType="VocabularyModel.StagedWord" Width="1.5" PointX="3" PointY="5" />
         <EntityTypeShape EntityType="VocabularyModel.User" Width="1.5" PointX="0.75" PointY="5" />
-        <EntityTypeShape EntityType="VocabularyModel.Word" Width="1.5" PointX="0.75" PointY="0.75" />
         <AssociationConnector Association="VocabularyModel.FK_History_User" />
+        <AssociationConnector Association="VocabularyModel.FK_StagedWord_User" />
+        <EntityTypeShape EntityType="VocabularyModel.LastSelect" Width="1.5" PointX="6" PointY="3.125" />
+        <EntityTypeShape EntityType="VocabularyModel.Word" Width="1.5" PointX="0.75" PointY="1" />
         <AssociationConnector Association="VocabularyModel.FK_History_Word" />
         <AssociationConnector Association="VocabularyModel.FK_LastSelect_User" />
-        <AssociationConnector Association="VocabularyModel.FK_StagedWord_User" />
+        <AssociationConnector Association="VocabularyModel.FK_LastSelect_Word" />
         <AssociationConnector Association="VocabularyModel.FK_StagedWord_Word1" />
       </Diagram>
     </edmx:Diagrams>

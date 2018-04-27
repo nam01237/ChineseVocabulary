@@ -16,8 +16,9 @@ namespace VocabularyEntities
     {
         public int UserKey { get; set; }
         public int Grade { get; set; }
-        public int StagedWord { get; set; }
+        public int WordId { get; set; }
     
         public virtual User User { get; set; }
+        public virtual Word Word { get; set; }
     }
 }

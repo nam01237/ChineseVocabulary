@@ -57,12 +57,17 @@ namespace ChineseVocabulary.StudyForms
 
             uscWord.lblGrade.Text = $"{CurrentGrade} 급";
             bdsWord.DataSource = words;
+            LastSelect lastSelect = DataRepository.LastSelects.GetLastSelect(AccessUserKey, CurrentGrade);
+
             bdsWord.Position = bdsWord.Count - 1;
 
             foreach (var item in bdsWord)
             {
                 Word word = (Word)item;
-                
+
+                if (word.WordId == lastSelect.WordId)
+                    bdsWord.Position = bdsWord.IndexOf(word);
+
                 if( word.PassedCount == 0 )
                 {
                     int index = bdsWord.IndexOf(word);
@@ -103,6 +108,13 @@ namespace ChineseVocabulary.StudyForms
             uscWord.LblWordProgress.Text = $"{bdsWord.Position + 1} / {_gradeCount}";
         }
 
+        private void InsertLastSelect()
+        {
+            LastSelect lastSelect = new LastSelect
+            { Grade = CurrentGrade, UserKey = AccessUserKey, WordId = ((Word)bdsWord.Current).WordId };
+            DataRepository.LastSelects.Insert(lastSelect);
+        }
+
         private void StudyForm_Shown(object sender, EventArgs e)
         {
             InitForm();
@@ -125,9 +137,6 @@ namespace ChineseVocabulary.StudyForms
 
         private void pbRetuen_Click(object sender, EventArgs e)
         {
-            LastSelect lastSelect = new LastSelect
-            { Grade = CurrentGrade, UserKey = AccessUserKey};
-            DataRepository.LastSelects.Insert(lastSelect);
             Close();
         }
 
@@ -151,6 +160,11 @@ namespace ChineseVocabulary.StudyForms
 
             UpdateWordList();
             Visible = true;
+        }
+
+        private void MemorizeForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            DataRepository.LastSelects.SetLastSelect(AccessUserKey, CurrentGrade, ((Word)bdsWord.Current).WordId);
         }
     }
 }

@@ -38,6 +38,17 @@ namespace ChineseVocabulary.StudyForms
             SelectGradeControl();
         }
 
+        private void AddResetHandler()
+        {
+            foreach (Control control in Controls)
+            {
+                if (control is UserProgressControl)
+                {
+                    ((UserProgressControl)control).ReSetClick += ReSetClick;
+                }
+            }
+        }
+
         private void GradeSelected(object sender, EventArgs e)
         {
             _selectedGrade = ((UserProgressControl)sender).Grade;
@@ -65,10 +76,12 @@ namespace ChineseVocabulary.StudyForms
             lblId.Text = AccessUSerId;
 
             UpdateUserProgressControl();
+            AddResetHandler();
 
             CurrentGrade = 1;
             SelectGradeControl();
         }
+
 
         private void UpdateUserProgressControl()
         {
@@ -85,7 +98,6 @@ namespace ChineseVocabulary.StudyForms
                     upc.lblMemorize.Text = $"{memorizeCount} / {totalCount}";
                     upc.prbMemorize.Value = (int)((double)memorizeCount / totalCount * 100);
                     upc.lblGrade.Text = $"{grade}급";
-                    upc.ReSetClick += ReSetClick;
 
                     control.Enter += GradeSelected;
                 }
@@ -99,6 +111,10 @@ namespace ChineseVocabulary.StudyForms
             {
                 DataRepository.StagedWords.DeleteWordByGrade(AccessUserKey, _selectedGrade);
                 UpdateUserProgressControl();
+            }
+            else
+            {
+                return;
             }
         }
 

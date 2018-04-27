@@ -74,6 +74,7 @@
             this.pbReset.Size = new System.Drawing.Size(26, 25);
             this.pbReset.TabIndex = 3;
             this.pbReset.TabStop = false;
+            this.pbReset.Click += new System.EventHandler(this.pbReset_Click);
             // 
             // UserProgressControl
             // 
