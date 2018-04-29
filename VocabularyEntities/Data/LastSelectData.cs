@@ -13,6 +13,20 @@ namespace VocabularyEntities.Data
             {
                 LastSelect lastSelect = context.LastSelects.FirstOrDefault(x => x.UserKey == userKey && x.Grade == grade);
 
+                if (lastSelect == null)
+                {
+                    lastSelect = new LastSelect
+                    {
+                        UserKey = userKey,
+                        Grade = grade,
+                        WordId = context.Words.Where(x => x.Grade == grade).FirstOrDefault().WordId
+                    };
+
+                    context.LastSelects.Add(lastSelect);
+                    context.SaveChanges();
+                    return lastSelect;
+                }
+
                 return lastSelect;
             }
         }
