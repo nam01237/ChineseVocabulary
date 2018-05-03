@@ -1,0 +1,2 @@
+설치폴더에 NDP461-KB3102438-Web.exe 실행해서
+.net framework 4.6.1 설치해보세요
