@@ -11,7 +11,7 @@ namespace EntityDataLibrary
 {
     public class EntityDataInitializer
     {
-        public static string ConnectionString { get; set; } // <-- "name=ChinookEntities"
+        public static string ConnectionString { get; set; }
     }
 
     public partial class EntityData<T> : EntityDataInitializer where T : class

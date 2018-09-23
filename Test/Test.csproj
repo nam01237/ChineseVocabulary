@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BE6BF0A3-76DA-434D-89D8-DB10A97A8F52}</ProjectGuid>
+    <ProjectGuid>{5374E459-3670-4F8B-AF14-EC125B494ACC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>VocabularyEntities</RootNamespace>
-    <AssemblyName>VocabularyEntities</AssemblyName>
+    <RootNamespace>Test</RootNamespace>
+    <AssemblyName>Test</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -41,8 +41,6 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,81 +49,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataRepository.cs" />
-    <Compile Include="Data\HistoryData.cs" />
-    <Compile Include="Data\LastSelectData.cs" />
-    <Compile Include="Data\StagedWordData.cs" />
-    <Compile Include="Data\UserData.cs" />
-    <Compile Include="Data\WordData.cs" />
-    <Compile Include="History.cs">
-      <DependentUpon>VocabularyEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="LastSelect.cs">
-      <DependentUpon>VocabularyEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\StagedWords.cs" />
-    <Compile Include="Models\Word.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StagedWord.cs">
-      <DependentUpon>VocabularyEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="User.cs">
-      <DependentUpon>VocabularyEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="VocabularyEntities.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VocabularyEntities.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="VocabularyEntities.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VocabularyEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="VocabularyEntities.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VocabularyEntities.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Word.cs">
-      <DependentUpon>VocabularyEntities.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="VocabularyEntities.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>VocabularyEntities.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <None Include="packages.config" />
-    <None Include="VocabularyEntities.edmx.diagram">
-      <DependentUpon>VocabularyEntities.edmx</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entities\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EntityDataLibrary\EntityDataLibrary.csproj">
       <Project>{e747e0d6-fa38-44db-a354-5aef0925e022}</Project>
       <Name>EntityDataLibrary</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="VocabularyEntities.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>VocabularyEntities.edmx</DependentUpon>
-      <LastGenOutput>VocabularyEntities.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="VocabularyEntities.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>VocabularyEntities.edmx</DependentUpon>
-      <LastGenOutput>VocabularyEntities.cs</LastGenOutput>
-    </Content>
+    <ProjectReference Include="..\VocabularyEntities\VocabularyEntities.csproj">
+      <Project>{be6bf0a3-76da-434d-89d8-db10a97a8f52}</Project>
+      <Name>VocabularyEntities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

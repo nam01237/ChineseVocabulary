@@ -61,7 +61,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -204,7 +204,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="ChineseVocabulary_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\VocabularyEntities.StagedWord.datasource" />
     <None Include="Properties\DataSources\VocabularyEntities.Word.datasource" />
@@ -242,16 +241,6 @@
     <None Include="Resources\panda.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EntityDataLibrary\EntityDataLibrary.csproj">
-      <Project>{e747e0d6-fa38-44db-a354-5aef0925e022}</Project>
-      <Name>EntityDataLibrary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\VocabularyEntities\VocabularyEntities.csproj">
-      <Project>{be6bf0a3-76da-434d-89d8-db10a97a8f52}</Project>
-      <Name>VocabularyEntities</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\pandas.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -283,6 +272,16 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntityDataLibrary\EntityDataLibrary.csproj">
+      <Project>{e747e0d6-fa38-44db-a354-5aef0925e022}</Project>
+      <Name>EntityDataLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VocabularyEntities\VocabularyEntities.csproj">
+      <Project>{be6bf0a3-76da-434d-89d8-db10a97a8f52}</Project>
+      <Name>VocabularyEntities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
